@@ -15,6 +15,7 @@ Configured for continuous loop operation:
 import os
 import sys
 import json
+import re
 import time
 import subprocess
 from pathlib import Path
@@ -27,7 +28,7 @@ import shutil
 # CONFIGURATION - ADVANCED OVERNIGHT RESEARCH PROTOCOL v4.0+
 # =============================================================================
 
-DATABASE_PATH = "/home/avalonas/.hermes/gematria/database/gematria_database.json"
+DATABASE_PATH = "/home/avalonas/.hermes/gematria/unified_overnight_research/database/gematria_database.json"
 OBSIDIAN_EXPORTS = "./unified_overnight_research/obsidian_exports"
 RESEARCH_LOG = "./unified_overnight_research/research_log.tsv"
 GIT_REPO = "./unified_overnight_research"

@@ -637,6 +637,8 @@ class EnhancedLoopRunner:
         # Track phase results for reporting  
         phase_results = {}
         all_phases_passed = True
+        error_phase = None  # Initialize to avoid UnboundLocalError
+        should_restart = True  # Enable restart by default for cron job
         
         try:
             # Phase 1: Stability Test
@@ -648,9 +650,8 @@ class EnhancedLoopRunner:
                 all_phases_passed = False
                 error_phase = "stability"
                 self.log_phase_marker("stability", f"⚠️ STABILITY TEST FAILED - Error: {stability_result.get('error', 'Unknown')}")
-                
+
                 # Attempt auto-restart if configured to continue on failure
-                should_restart = True  # Enable restart by default for cron job
                 if should_restart and not stability_result.get("success", False):
                     print("\n🔄 Attempting auto-restart after failure...")
                     self.log_main(f"   → Action: TRIGGERING AUTO-RESTART after {error_phase} phase failure")
@@ -679,9 +680,12 @@ class EnhancedLoopRunner:
                             all_phases_passed = False
             
             # Phase 2: Auto-Sync (only if stability passed or restart didn't happen)
-            elif error_phase != "stability":
-                print("\n🧪 Running Enhanced Stability Test...")
-            
+            if error_phase in [None, "none", "stability"]:
+                # Stability test already passed - proceed to sync
+                pass
+            else:
+                print(f"\n⚠️ Unexpected error_phase: {error_phase} - Skipping to sync phase")
+
             # Phase 2: Auto-Sync  
             print("\n🔄 Running Auto-Obsidian Sync...")
             sync_result = self.run_with_retry(self.run_auto_sync)
