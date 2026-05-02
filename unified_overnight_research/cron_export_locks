@@ -1,0 +1,45 @@
+# =============================================================================
+# Visual Archive Export Lock Manager - Crontab Configuration
+# =============================================================================
+# Install with: crontab -u avalonas < /home/avalonas/.hermes/gematria/unified_overnight_research/cron_export_locks
+# Edit with: crontab -e (user: avalonas) or sudo crontab -e (system-wide)
+# =============================================================================
+
+# Environment variables
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOME=/home/avalonas
+
+# =============================================================================
+# EXPORT JOB LOCK MANAGEMENT
+# =============================================================================
+
+# Check for lock files BEFORE each Visual Archive export job (at start time)
+# 15 mins before scheduled exports
+*/15 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh check >> /home/avalonas/.hermes/cron/output/export-locks-check.log 2>&1
+
+# Safe cleanup AFTER each export job completes or if interrupted
+# Example: Run at end of typical export job (adjust time based on your workflow)
+# Or use a separate post-export hook that calls this script
+# */30 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh safe-cleanup >> /home/avalonas/.hermes/cron/output/export-locks-safe.log 2>&1
+
+# Alternative: Run cleanup after specific export jobs (add comments and times)
+# # After cycle_XXX export completes (adjust based on your naming convention)
+# 0 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh safe-cleanup -s visual_archive >> /home/avalonas/.hermes/cron/output/export-locks-cleanup.log 2>&1
+
+# =============================================================================
+# HEALTH CHECKS (Optional)
+# =============================================================================
+
+# Run health check every 4 hours to monitor system status
+0 */4 * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh health >> /home/avalonas/.hermes/cron/output/export-locks-health.log 2>&1
+
+# =============================================================================
+# MANUAL INTERVENTION COMMANDS (Add to user's crontab or run manually)
+# =============================================================================
+
+# Quick cleanup check
+# * * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh check >> /tmp/export-locks-check.log 2>&1
+
+# Immediate safe cleanup (add on-demand as needed)
+# */5 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh safe-cleanup >> /home/avalonas/.hermes/cron/output/export-locks-immediate.log 2>&1

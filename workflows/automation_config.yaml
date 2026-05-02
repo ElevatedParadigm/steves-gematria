@@ -1,0 +1,34 @@
+workflow_name: gematria_parallel_scanning
+primary_agent: Firecrawl-local-scanner
+firecrawl_endpoint: http://localhost:3002/v1/search
+observation_interval: overnight_3am
+cross_reference_update: enabled
+
+parallel_agents:
+  - name: fire_domain_agent
+    elemental_force: fire
+    targets: ["volcano_symbols", "124_km_cubed", "666_completion"]
+    
+  - name: earth_domain_agent
+    elemental_force: earth
+    targets: ["55_grounding", "terra_markers", "mossy_backgrounds"]
+    
+  - name: air_frequency_agent
+    elemental_force: air
+    targets: ["963_patterns", "spiritual_resonance", "frequency_markers"]
+    
+  - name: water_wintering_agent
+    elemental_force: water
+    targets: ["ice_landscapes", "winter_themes", "frost_patterns"]
+    
+  - name: spiritual_cube26_agent
+    elemental_force: spiritual
+    targets: ["yhw_h_26_artwork", "cube26_variations", "religious_symbolism"]
+
+integration:
+  database_path: /home/avalonas/.hermes/gematria/database/gematria_database.json
+  reports_dir: /home/avalonas/.hermes/gematria/reports/
+  obsidian_vault: ~/.hermes/obsidian_vault
+  log_file: /home/avalonas/.hermes/gematria/logs/multi_agent_runs.log
+
+cron_schedule: "0 3 * * *"

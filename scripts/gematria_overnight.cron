@@ -1,0 +1,38 @@
+#!/bin/bash
+# Steve's Gematria — Overnight Research Protocol Runner (No external dependencies)
+# Executes at 3:00 AM via /etc/cron.d/gematria-overnight
+
+set -e
+
+SCRIPTS_DIR="/home/avalonas/.hermes/gematria/scripts"
+LOG_DIR="/home/avalonas/.hermes/gematria/cron_logs"
+ORCHESTRATOR="${SCRIPTS_DIR}/overnight_research.py"
+
+# Ensure log directory exists
+mkdir -p "$LOG_DIR"
+
+# Log timestamp
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
+DATE_STAMP=$(date '+%Y%m%d')
+LOG_FILE="$LOG_DIR/overnight_${DATE_STAMP}.log"
+
+echo "[$TIMESTAMP] === Starting Overnight Research Protocol ===" >> "$LOG_FILE" 2>&1
+echo "[$TIMESTAMP] Mode: overnight (web research + relationship extraction)" >> "$LOG_FILE" 2>&1
+echo "[$TIMESTAMP] Script: $ORCHESTRATOR" >> "$LOG_FILE" 2>&1
+
+# Execute the working script directly
+/usr/local/bin/python3 ${ORCHESTRATOR} >> "$LOG_FILE" 2>&1
+
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -eq 0 ]; then
+    echo "[$TIMESTAMP] ✅ SUCCESS: Overnight research protocol completed" >> "$LOG_FILE"
+else
+    echo "[$TIMESTAMP] ❌ ERROR: Script exited with code $EXIT_CODE" >> "$LOG_FILE"
+    tail -100 "$LOG_FILE" >> "$LOG_FILE.err" 2>&1 || true
+fi
+
+echo "[$TIMESTAMP] === Overnight Research Complete ===" >> "$LOG_FILE"
+
+# Always exit successfully for cron
+exit 0

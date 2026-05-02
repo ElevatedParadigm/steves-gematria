@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  firecrawl-api-1:
+    image: firecrawl/fc-api-oss
+    container_name: firecrawl-api-1
+    ports:
+      - "3002:3002"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3002
+      - API_HOST=0.0.0.0
+      - API_PORT=3002
+      - FC_ENABLE_WEBHOOKS=false
+      - MAX_CONCURRENT_REQUESTS=10
+    networks:
+      - gematria-network
+    restart: unless-stopped
+
+  firecrawl-redis-1:
+    image: redis:alpine
+    container_name: firecrawl-redis-1
+    ports:
+      - "6379:6379"
+    networks:
+      - gematria-network
+
+  firecrawl-rabbitmq-1:
+    image: rabbitmq:3-management
+    container_name: firecrawl-rabbitmq-1
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks:
+      - gematria-network
+
+networks:
+  gematria-network:
+    driver: bridge

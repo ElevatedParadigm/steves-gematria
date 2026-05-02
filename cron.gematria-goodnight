@@ -1,0 +1,6 @@
+# Steve's Gematria - Goodnight Cron Entry (Alternative to system crontab)
+# Add this line to your preferred scheduler (systemd timer, cronie, etc.)
+# Or create a wrapper script that runs at 10 PM nightly
+
+# Schedule: 10 PM daily
+0 22 * * * root cd /home/avalonas/.hermes/gematria && python scripts/run_research_now.sh >> /home/avalonas/.hermes/gematria/logs/goodnight.log 2>&1

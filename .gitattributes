@@ -1,0 +1,6 @@
+# Gematria Research - Large Files Configuration
+# Configure Git LFS for large files (>100MB) that should NOT be committed
+
+# Text files over 100MB should use external sync instead
+cron_logs/autonomous_*.txt filter=lfs diff=lfs merge=lfs -text
+cron_logs/*.tsv filter=lfs diff=lfs merge=lfs -text

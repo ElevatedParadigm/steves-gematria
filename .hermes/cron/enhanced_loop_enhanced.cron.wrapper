@@ -1,0 +1,4 @@
+#!/bin/bash
+# Wrapper for enhanced loop cron job
+source /home/avalonas/.hermes/gematria/cron/enhanced_loop_enhanced.cron
+wrapper

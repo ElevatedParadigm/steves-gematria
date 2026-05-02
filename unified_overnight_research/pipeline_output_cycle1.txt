@@ -1,0 +1,4 @@
+  File "/home/avalonas/.hermes/gematria/unified_overnight_research/execute_pipeline.py", line 975
+    if sym_id in convergence_matrix := cycle_results.get("convergence_matrix", {}):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: cannot use assignment expressions with comparison

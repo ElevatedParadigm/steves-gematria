@@ -1,0 +1,23 @@
+{
+  "mode": "continuous_loop",
+  "iterations": 9999,
+  "items_per_cycle": 30,
+  "base_directory": "/home/avalonas/.hermes/gematria/unified_overnight_research",
+  "database_path": "/home/avalonas/.hermes/gematria/database/gematria_database.json",
+  "image_vault": "/home/avalonas/Pictures/Steves%20gematria/",
+  "obsidian_exports_dir": "/home/avalonas/.hermes/gematria/unified_overnight_research/obsidian_exports",
+  "core_symbols": {
+    "124": {"name": "Universal Bridge/Threshold", "domains": ["Political", "Religious", "Economic", "Military"], "confidence_score": 0.95},
+    "666": {"name": "Completion→9 / Political Cycles", "domains": ["Political", "Religious"], "confidence_score": 0.88, "type": "HIDDEN_LAYERS"},
+    "963": {"name": "Cycle Turning Variant", "domains": ["Political"], "confidence_score": 0.75},
+    "279": {"name": "Cycle Turning Variant", "domains": ["Economic", "Military"], "confidence_score": 0.81, "type": "HIDDEN_LAYERS"},
+    "55": {"name": "Cycle Turning Variant", "domains": ["Political", "Religious"], "confidence_score": 0.88},
+    "111": {"name": "Activation Initiation", "domains": ["Elemental"], "confidence_score": 0.92, "type": "HIDDEN_LAYERS"},
+    "17": {"name": "Vessel/Holds Fire", "domains": ["Elemental"], "confidence_score": 0.85}
+  },
+  "orchestrator_status": "initialized",
+  "current_cycle": 1,
+  "total_cycles_run": 0,
+  "last_execution_timestamp": null,
+  "status": "ready_to_start"
+}

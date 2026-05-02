@@ -1,0 +1,8 @@
+obsidian_exports/*.md
+*.pyc
+__pycache__/
+logs/
+*~
+firecrawl_config.json
+database/gematria_database.json
+.obsidian/

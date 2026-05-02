@@ -1,0 +1,13 @@
+# Steve's Gematria - Overnight Research Protocol
+# Deploy to crontab using: crontab -e gematria-overnight || crontab -e > /home/avalonas/.hermes/gematria/crontab.gematria-overnight-v2
+
+# ==============================================
+# OVERNIGHT RESEARCH PIPELINE (3:00 AM Daily)
+# Runs locally, tracks core symbols across all domains
+# ==============================================
+
+# Main overnight research task - runs at 3:00 AM daily
+0 3 * * * /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py >> /home/avalonas/.hermes/gematria/logs/sync.log 2>&1
+
+# Alternative Python runner (if needed)
+# 0 3 * * * cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py >> /home/avalonas/.hermes/gematria/logs/research.log 2>&1

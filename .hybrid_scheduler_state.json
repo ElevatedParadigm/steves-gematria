@@ -1,0 +1,11 @@
+{
+  "current_phase": "slow_down",
+  "timestamp": "2026-05-02T06:00:01Z",
+  "phase_history": [
+    {
+      "from": "baseline",
+      "to": "slow_down",
+      "timestamp": "2026-05-02T06:00:01Z"
+    }
+  ]
+}

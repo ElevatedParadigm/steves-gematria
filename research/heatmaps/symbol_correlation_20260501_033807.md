@@ -1,0 +1,1 @@
+Not enough symbols for heatmap visualization

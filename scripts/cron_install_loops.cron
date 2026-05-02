@@ -1,0 +1,195 @@
+#!/bin/bash
+# 📜 Install Overnight Research Loop Cron Job
+# ====================================================================
+# This script installs the enhanced overnight research loop with:
+# - Stability testing on gematria database
+# - Auto-sync to Obsidian notes with relationship matrices
+# - Correlation heatmap generation
+# - Elasticity phase markers for monitoring
+# - Auto-restart on failure
+#
+# Schedule: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21 UTC)
+# Logs to: /home/avalonas/.hermes/gematria/cron_logs/
+# Output: Same channel as current cron job (Telegram)
+
+set -e
+
+GEMATRIA_DIR="/home/avalonas/.hermes/gematria"
+CRON_LOGS_DIR="${GEMATRIA_DIR}/cron_logs"
+SCRIPTS_DIR="${GEMATRIA_DIR}/scripts"
+
+echo "=========================================="
+echo "📜 Installing Overnight Research Cron Job"
+echo "=========================================="
+echo ""
+
+# Ensure required directories exist
+mkdir -p "${CRON_LOGS_DIR}"
+mkdir -p "${GEMATRIA_DIR}/research/heatmaps"
+mkdir -p "${GEMATRIA_DIR}/obsidian_exports"
+
+# Verify required scripts exist
+echo "🔍 Verifying required scripts..."
+REQUIRED_SCRIPTS=(
+    "stability_test_enhanced_fixed.py"
+    "auto_obisidian_sync_v2.py"
+    "correlation_heatmap_ascii.py"
+    "hybrid_scheduler.py"
+    "loop_runner_enhanced.py"
+)
+
+for script in "${REQUIRED_SCRIPTS[@]}"; do
+    SCRIPT_PATH="${SCRIPTS_DIR}/${script}"
+    if [ -f "$SCRIPT_PATH" ]; then
+        echo "  ✅ ${script}"
+    else
+        echo "  ❌ ${script} NOT FOUND"
+        echo "     Please create this script first or use a different path"
+    fi
+done
+
+echo ""
+echo "=========================================="
+echo "⚙️  Creating Cron Job Entry"
+echo "=========================================="
+echo ""
+
+# Create cron job file
+CRON_FILE="${GEMATRIA_DIR}/cron/overnight_research_loop.cron"
+CRON_DIR="${GEMATRIA_DIR}/cron"
+mkdir -p "${CRON_DIR}"
+
+cat > "${CRON_FILE}" << 'EOF'
+# 🌙 Overnight Research Loop Cron Job
+# ====================================================================
+# Runs: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21 UTC)
+# Output to: Same Telegram channel as current cron job
+# Logs to: /home/avalonas/.hermes/gematria/cron_logs/
+#
+# To activate this cron job, add the following line to crontab:
+# 0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/loop_runner_enhanced.py >> cron_logs/overnight_loop_$(date +%Y%m%d_%H%M%S).log 2>&1
+# ====================================================================
+
+# Run enhanced loop runner with extended timeout and logging
+0,90 * * * * cd /home/avalonas/.hermes/gematria && python3 scripts/loop_runner_enhanced.py >> cron_logs/overnight_loop_$(date +%Y%m%d).log 2>&1 || true
+
+# Alternative: Run every 45 minutes for more frequent checks (comment out above line)
+# */45 * * * * cd /home/avalonas/.hermes/gematria && python3 scripts/loop_runner_enhanced.py >> cron_logs/overnight_loop_$(date +%Y%m%d).log 2>&1 || true
+EOF
+
+echo "📝 Created cron job file:"
+echo "   ${CRON_FILE}"
+echo ""
+
+# Display the cron job configuration
+cat "${CRON_FILE}"
+
+echo ""
+echo "=========================================="
+echo "💡 To Activate This Cron Job"
+echo "=========================================="
+echo ""
+echo "# Add this line to your crontab (edit with crontab -e):"
+echo "0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/loop_runner_enhanced.py >> cron_logs/overnight_loop_$(date +%Y%m%d).log 2>&1 || true"
+echo ""
+echo "=========================================="
+echo "📊 Cron Job Configuration Summary"
+echo "=========================================="
+echo ""
+echo "Schedule: Every 3 hours at :00 minute"
+echo "          (Hours 0,3,6,9,12,15,18,21 UTC)"
+echo ""
+echo "Script:   /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py"
+echo ""
+echo "Logs To:  /home/avalonas/.hermes/gematria/cron_logs/"
+echo "- Loop logs: loop_enhanced_YYYYMMDD_HHMMSS.log"
+echo "- Phase markers: phase_markers_YYYYMM.log (combined across all cycles)"
+echo "- Hybrid scheduler status events: elasticity_events/YYYYMMDD_HHMMSS_*json"
+echo ""
+echo "Output:   Same Telegram channel as current cron job"
+echo "(Configured in loop_runner_enhanced.py)"
+echo ""
+echo "Features:"
+echo "  ✅ Runs enhanced stability test on gematria database"
+echo "  ✅ Performs auto-sync to Obsidian notes with relationship matrices"
+echo "  ✅ Generates correlation heatmaps and relationship visualizations"
+echo "  ✅ Writes logs with phase markers for elasticity monitoring"
+echo "  ✅ Integrates with hybrid_scheduler.py for multi-phase rotation"
+echo "  ✅ Auto-restarts/retries on failure (next scheduled run)"
+echo ""
+
+# Create systemd timer service (optional, for production environments)
+SYSTEMD_TIMER="${GEMATRIA_DIR}/cron/overnight-research.timer"
+SYSTEMD_SERVICE="${GEMATRIA_DIR}/cron/overnight-research.service"
+
+cat > "${SYSTEMD_SERVICE}" << 'EOF'
+[Unit]
+Description=Overnight Research Loop Enhanced Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+WorkingDirectory=/home/avalonas/.hermes/gematria
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=600
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+cat > "${SYSTEMD_TIMER}" << 'EOF'
+[Unit]
+Description=Overnight Research Loop Enhanced Timer (Every 3 hours)
+Requires=overnight-research.service
+
+[Timer]
+OnCalendar=hourly:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0,11:0,12:0,13:0,14:0,15:0,16:0,17:0,18:0,19:0,20:0,21:0
+Persistent=true
+OnUnitActiveSec=180min
+
+[Install]
+WantedBy=timers.target
+EOF
+
+echo ""
+echo "📦 Systemd service files created (optional):"
+echo "   - ${SYSTEMD_SERVICE}"
+echo "   - ${SYSTEMD_TIMER}"
+echo ""
+echo "=========================================="
+echo "✅ Installation Complete!"
+echo "=========================================="
+echo ""
+echo "Next Steps:"
+echo "1. Activate crontab: crontab -e"
+echo "2. Add the cron entry shown above (see 💡 section)"
+echo "3. Optionally enable systemd timer: systemctl enable overnight-research.timer"
+echo ""
+
+# Verify cron is available
+if command -v crontab &> /dev/null; then
+    echo "💡 Crontab command is available."
+    echo ""
+    echo "To view current cron jobs, run:"
+    echo "   crontab -l"
+else
+    echo "ℹ️  Crontab not found in PATH. Add to system cron config instead."
+fi
+
+echo ""
+echo "📝 Check logs at installation:"
+ls -la "${CRON_LOGS_DIR}/" 2>/dev/null || echo "   (logs directory created but empty)"
+
+echo ""
+echo "=========================================="
+echo "💬 Notes:"
+echo "=========================================="
+echo ""
+echo "- Script runs exactly once per cron invocation"
+echo "- Elasticity phase rotation managed by hybrid_scheduler.py"
+echo "- Phase markers written to phase_markers_YYYYMM.log for monitoring"
+echo "- Telegram notifications sent on completion or error"
+echo "- Auto-restart happens via next scheduled cron run"
+echo ""

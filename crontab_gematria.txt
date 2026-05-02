@@ -1,0 +1,9 @@
+# Steve's Gematria Overnight Research - Manual Cron Configuration
+# Copy this file to your crontab with: crontab -e && paste this content
+
+# Run overnight research at 4:15 AM daily (with random delay)
+# This scans web sources for gematria patterns and updates database
+0 4 * * * cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py --mode overnight >> cron_logs/overnight_cron.log 2>&1
+
+# Optional: Run auto-sync at 5 AM to update Obsidian exports
+30 5 * * * cd /home/avalonas/.hermes/gematria && python scripts/auto_obisidian_sync_v2.py >> cron_logs/sync_$(date +%Y%m%d).log 2>&1

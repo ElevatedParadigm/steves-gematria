@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2026-04-27T09:18:04.909215",
+    "last_updated": "2026-04-27T09:18:04.909218"
+  },
+  "translations": {},
+  "usage_stats": {},
+  "relationships": [
+    {
+      "from": 124,
+      "to": 666,
+      "intermediate": [
+        55,
+        279
+      ],
+      "type": "threshold_to_wholeness",
+      "confidence": 0.87,
+      "created_at": "2026-04-27T09:18:04.912788"
+    },
+    {
+      "from": 963,
+      "to": 111,
+      "intermediate": [
+        124
+      ],
+      "type": "spiritual_to_catalyst",
+      "confidence": 0.85,
+      "created_at": "2026-04-27T09:18:04.912858"
+    }
+  ],
+  "domains_tracked": []
+}

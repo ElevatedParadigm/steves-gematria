@@ -1,0 +1,24 @@
+[Unit]
+Description=Enhanced Overnight Research Loop - Multi-phase elasticity monitoring
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/avalonas/.hermes/gematria
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/hybrid_scheduler.py --interval 1800 &
+ExecStartPost=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+TimeoutSec=3600
+
+# Environment
+Environment=GEMATRIA_DIR=/home/avalonas/.hermes/gematria
+Environment=PYTHONPATH=/home/avalonas/.hermes/gematria/scripts
+
+# Restart on failure (auto-restart capability)
+Restart=on-failure
+RestartSec=30
+StandardOutput=append:/home/avalonas/.hermes/gematria/cron_logs/service.log
+StandardError=append:/home/avalonas/.hermes/gematria/cron_logs/service_error.log
+
+[Install]
+WantedBy=multi-user.target

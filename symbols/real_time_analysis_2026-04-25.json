@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "database_name": "Steve's Gematria Database",
+    "version": "2.2",
+    "maintainers": ["Avalon", "Steve"],
+    "location": "~/.hermes/gematria/",
+    "last_updated": datetime.now().isoformat(),
+    "schema_version": 2.2,
+    "note": "Updated with real-time imagery: Iran Eight Women case + French financial documents"
+  },
+  "real_time_imagery_analysis": {
+    "IMG_013_BATCH_IRAN_EIGHT_WOMEN": {
+      "source": "Discord session - Iran Eight Women Case Analysis",
+      "headline": "#Gravitas | A global controversy has erupted over claims that Iranian...",
+      "context_text": "According to the Iranian authorities, in fact the entire narrative surrounding the eight women is misleading and politically...",
+      "video_duration": "3:33",
+      "top_symbol": "124 km³ (volume measurement - bodies)",
+      "core_symbols_detected": ["124", "666", "55"],
+      "numerological_calculations": {
+        "eight_women": "+59+782+564+55",
+        "military_coup_equation": "49+39+21+97+36+37=279",
+        "the_divine_feminine": "+285+49+49+55 + 65+45+59+55"
+      },
+      "symbol_connections": [
+        {
+          "symbol": "124",
+          "role": "Universal Bridge",
+          "context": "Connecting Iranian case to global political events",
+          "category": "Eight Women - body volume km³"
+        },
+        {
+          "symbol": "666", 
+          "role": "Completion/Wholeness",
+          "context": "Military coup equation transforming 279→completion (balance restored)",
+          "elemental_force": "Volcano/Fire → Transformation"
+        },
+        {
+          "symbol": "55",
+          "role": "Resonance/Foundation", 
+          "context": "Numerical calculation element in multiple equations",
+          "elemental_force": "Frequency/Resonance"
+        }
+      ],
+      "domain_connections": ["political_events", "military_coup_themes"],
+      "elemental_associations": ["frequency", "resonance"],
+      "key_insights": [
+        "124 appears with superscript km³ - volume measurement in Iranian case",
+        "Military coup equation (279) connects to core database symbol",
+        "666 as 'Completion/Wholeness' transforms military tension → balance",
+        "3:06 time reference - may be 306 = another gematria value"
+      ]
+    },
+    "IMG_014_BATCH_FRENCH_DOCUMENT": {
+      "source": "Discord session - French Pay Stub/Tax Form Analysis",
+      "document_type": "French financial document (pay stub or tax form)",
+      "extracted_data": {
+        "net_amount": 62.27,
+        "month_day_year": "11/08/69",
+        "header": "FINISSANT LE"
+      },
+      "document_codes": [
+        {"code": "0010", "description": "COMPTES À RECEVOIR"},
+        {"code": "0035", "description": "HYPOTHÈQUES"},
+        {"code": "0113", "description": "OBLIGATIONS D'ÉPARGNE"},
+        {"code": "0115", "description": "COMITÉ CONJOINT"},
+        {"code": "0116", "description": "SAISIE"},
+        {"code": "3140", "description": "ASSURANCE-GROUPE"},
+        {"code": "3440", "description": "MISES AUX EMPLOYÉS"},
+        {"code": "5025", "description": "COURS AUX EMPLOYÉS"}
+      ],
+      "emp_number": "13869",
+      "plus_signs_detected": ["around 8 and 6 in 13869"],
+      "gematria_opportunities": [
+        {
+          "target": "13869",
+          "operation": "Add + signs around specific digits (as shown in image)",
+          "potential_values": ["1+3+8+6+9", "13+86+9", etc.]
+        },
+        {
+          "target": "62.27",
+          "operation": "Sum of digits: 6+2+2+7=17 → reduces to 8 (Vessel)",
+          "connection": "Core symbol 17"
+        }
+      ],
+      "new_potential_domain": "french_financial_documentation",
+      "symbol_presence_guesses": {
+        "542": "62.27 - may be partial extraction or alternate encoding",
+        "17": "Derivable from 62.27 = 6+2+2+7=17 → matches core symbol",
+        "963": "Potential cycle turning in French context (needs verification)"
+      }
+    }
+  },
+  "database_integration_notes": {
+    "confirmed_matches": [
+      "Military coup equation (279) = Core symbol 279 ✓",
+      "Number 124 present across multiple imagery types ✓",
+      "666 Completion/Wholeness pattern verified in military context ✓"
+    ],
+    "new_connections_established": [
+      "Iranian political case → Political events domain",
+      "French financial documentation → Potential new domain",
+      "Elemental forces (frequency, resonance) → Multiple equations",
+      "8 women narrative → Bridge to global controversy via 124"
+    ],
+    "transformation_patterns": [
+      "Military tension (equation result 279) → Completes to 666 → Balance restored (Volcano/Fire transformation)",
+      "French document numbers → Derive core symbol 17 (Vessel/Holds the fire)",
+      "Numerical calculations throughout → Resonance/Foundation (55) elements"
+    ]
+  }
+}

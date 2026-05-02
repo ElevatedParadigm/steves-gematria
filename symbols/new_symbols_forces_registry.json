@@ -1,0 +1,71 @@
+{
+  "new_symbols": [
+    {
+      "symbol_id": 777,
+      "name": "Trinity/Completion",
+      "aliases": ["trinity", "completion", "three-fold"],
+      "description": "Complete trinity cycle - foundation of sacred geometry, three-part completion pattern",
+      "domains": ["religious", "military", "politics"],
+      "elemental_force": null
+    },
+    {
+      "symbol_id": 13,
+      "name": "Doorways",
+      "aliases": ["doorway", "threshold", "passage"],
+      "description": "Transition gateways - entrance/exit points in journey and transformation patterns",
+      "domains": ["religious", "geographic", "politics"],
+      "elemental_force": "air"
+    },
+    {
+      "symbol_id": 888,
+      "name": "Portals",
+      "aliases": ["portal", "gateway", "entrance-exit"],
+      "description": "Cross-dimensional thresholds - connection points between worlds or states of being",
+      "domains": ["religious", "politics", "military"],
+      "elemental_force": "water"
+    }
+  ],
+  "new_forces": {
+    "lightning": {
+      "name": "⚡ Lightning Force",
+      "description": "Rapid discharge, sudden strikes, chain reactions, instantaneous transformation",
+      "characteristics": ["instantaneous", "chain-reaction", "disruptive", "illuminating"],
+      "correlates_to": [124],
+      "conflicts_with": [],
+      "complements": ["fire"]
+    },
+    "ice": {
+      "name": "❄️ Ice Force",
+      "description": "Preservation through cold, crystalline structure, rigid boundaries, frozen states",
+      "characteristics": ["preservative", "crystalline", "brittle", "cold"],
+      "correlates_to": [55],
+      "conflicts_with": [],
+      "complements": []
+    },
+    "wind": {
+      "name": "🌪️ Wind Force",
+      "description": "Directional flow, invisible influence, spreading patterns, carrying messages",
+      "characteristics": ["directional", "invisible", "spreading", "carrying"],
+      "correlates_to": [124],
+      "conflicts_with": [],
+      "complements": ["air"]
+    },
+    "earth": {
+      "name": "🌍 Earth Force",
+      "description": "Stability, material foundation, grounded reality, structural support",
+      "characteristics": ["stable", "grounded", "structural", "supportive"],
+      "correlates_to": [55],
+      "conflicts_with": [],
+      "complements": []
+    }
+  },
+  "integration_notes": [
+    "Added 3 new core symbols (777, 13, 888) with distinct properties",
+    "Added 4 additional elemental forces extending from base 4 to 8 elements",
+    "Symbols map to existing correlation matrices with appropriate relationships",
+    "Lightning and Wind correlate to Bridge force (124) - connection/transformation themes",
+    "Ice correlates to Foundation (55) - stable but fragile structures",
+    "Earth is native elemental force mapping to Foundation symbol"
+  ],
+  "timestamp": "2026-04-27T10:30:00Z"
+}

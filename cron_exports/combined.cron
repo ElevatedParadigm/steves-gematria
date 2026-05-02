@@ -1,0 +1,24 @@
+# GEMATRIA OVERNIGHT RESEARCH SYSTEM
+# Combined cron jobs - run at 3 AM daily
+# ======================================
+
+# --- Overnight Research System (Foundation) ---
+# Scans web, maintains database, creates reports
+0 3 * * * cd /home/avalonas/.hermes && python /home/avalonas/.hermes/gematria/scripts/overnight_research.py >> /home/avalonas/.hermes/gematria/cron_exports/overnight.log 2>&1
+
+# --- Multi-Agent System (Analysis) ---
+# Runs autonomous agents for pattern analysis
+0 4 * * * cd /home/avalonas/.hermes && python /home/avalonas/.hermes/gematria/scripts/multi_agent_system.py >> /home/avalonas/.hermes/gematria/cron_exports/agents.log 2>&1
+
+# --- Auto Obsidian Sync (Relationship Tracking) ---
+# Keeps vault relationships updated from reports
+0 5 * * * cd /home/avalonas/.hermes && python /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py >> /home/avalonas/.hermes/gematria/cron_exports/sync.log 2>&1
+
+
+# --- Manual Testing (Uncomment to test) ---
+# Test overnight research manually:
+# python /home/avalonas/.hermes/gematria/scripts/overnight_research.py
+
+# Test multi-agent system manually:
+# python /home/avalonas/.hermes/gematria/scripts/multi_agent_system.py
+

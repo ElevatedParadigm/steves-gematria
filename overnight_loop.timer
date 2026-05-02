@@ -1,0 +1,13 @@
+[Unit]
+Description=Enhanced Overnight Research Loop - 3-hour interval timer
+Requires=overnight_loop.service
+After=overnight_loop.service
+
+[Timer]
+OnCalendar=*:0,15,30,45 0,3,6,9,12,15,18,21:00:UTC
+AccuracySec=1min
+Persistent=true
+Unit=overnight_loop.service
+
+[Install]
+WantedBy=timers.target

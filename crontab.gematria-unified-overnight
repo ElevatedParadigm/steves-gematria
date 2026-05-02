@@ -1,0 +1,7 @@
+# ✅ SearXNG Overnight Research Engine - Unified Analysis Mode
+# 📅 Runs at 3:00 AM (Option 1 default schedule)
+# 📂 Working directory: /home/avalonas/.hermes/gematria/unified_overnight_research
+# ⚙️ Script: unified_engine.py
+
+# Run overnight research analysis at 3:00 AM daily
+0 3 * * * cd /home/avalonas/.hermes/gematria/unified_overnight_research && python unified_engine.py >> /home/avalonas/.hermes/gematria/logs/unified_overnight.log 2>&1

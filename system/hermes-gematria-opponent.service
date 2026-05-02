@@ -1,0 +1,18 @@
+[Unit]
+Description=Gematra Opponent System - Adversarial Research Loop
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+User=avalonas
+WorkingDirectory=/home/avalonas/.hermes/gematria/scripts
+ExecStart=/usr/bin/python3 opponent_system.py --mode continuous
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/var/log/hermes/gematria-opponent.log
+StandardError=append:/var/log/hermes/gematria-opponent.log
+Environment="PYTHONPATH=/home/avalonas/.hermes"
+
+[Install]
+WantedBy=multi-user.target

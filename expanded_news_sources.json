@@ -1,0 +1,131 @@
+{
+  "political_news_sources": [
+    {
+      "name": "Politico Politics",
+      "url": "https://www.politico.com/",
+      "category": "political",
+      "keywords": ["politics", "government", "policy", "congress", "senate", "house"],
+      "priority": 1
+    },
+    {
+      "name": "Reuters US Politics",
+      "url": "https://www.reuters.com/world/us/",
+      "category": "political",
+      "keywords": ["us politics", "economy", "elections", "policy"],
+      "priority": 2
+    },
+    {
+      "name": "Axios Politics",
+      "url": "https://www.axios.com/politics/",
+      "category": "political",
+      "keywords": ["white house", "congress", "foreign policy"],
+      "priority": 3
+    },
+    {
+      "name": "CNN Politics",
+      "url": "https://www.cnn.com/politics",
+      "category": "political",
+      "keywords": ["politics", "government", "biden", "congress"],
+      "priority": 2
+    },
+    {
+      "name": "Bloomberg Politics",
+      "url": "https://www.bloomberg.com/news/politics/",
+      "category": "political",
+      "keywords": ["business politics", "regulation", "policy"],
+      "priority": 2
+    }
+  ],
+  
+  "financial_news_sources": [
+    {
+      "name": "Wall Street Journal Politics",
+      "url": "https://www.wsj.com/section/politics/",
+      "category": "financial",
+      "keywords": ["business policy", "government spending", "trading"],
+      "priority": 1
+    },
+    {
+      "name": "Bloomberg Business",
+      "url": "https://www.bloomberg.com/markets/",
+      "category": "financial",
+      "keywords": ["markets", "trading", "economy", "stocks"],
+      "priority": 1
+    },
+    {
+      "name": "Financial Times Politics & Economy",
+      "url": "https://www.ft.com/content/politics-business",
+      "category": "financial",
+      "keywords": ["global economy", "trade", "regulation"],
+      "priority": 2
+    },
+    {
+      "name": "Reuters Business",
+      "url": "https://www.reuters.com/business/",
+      "category": "financial",
+      "keywords": ["business", "markets", "economy"],
+      "priority": 2
+    }
+  ],
+  
+  "cryptocurrency_sources": [
+    {
+      "name": "CoinDesk News",
+      "url": "https://www.coindesk.com/",
+      "category": "cryptocurrency",
+      "keywords": ["bitcoin", "ethereum", "blockchain", "defi"],
+      "priority": 1
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "http://cointelegraph.com/",
+      "category": "cryptocurrency",
+      "keywords": ["cryptocurrency", "web3", "nft"],
+      "priority": 2
+    },
+    {
+      "name": "Decrypt News",
+      "url": "https://decrypt.co/",
+      "category": "cryptocurrency",
+      "keywords": ["web3", "metaverse", "blockchain privacy"],
+      "priority": 2
+    },
+    {
+      "name": "CryptoNewsWire",
+      "url": "https://feeds.feedburner.com/cryptonews-wire",
+      "category": "cryptocurrency",
+      "keywords": ["bitcoin", "altcoins", "crypto markets"],
+      "priority": 3
+    }
+  ],
+  
+  "rss_feeds": {
+    "political_rss": [
+      {"name": "Politico RSS", "url": "https://www.politico.com/rss/politics.xml"},
+      {"name": "Reuters US Politics RSS", "url": "http://rss.reuters.com/world/rss/us.xml"}
+    ],
+    
+    "financial_rss": [
+      {"name": "Bloomberg Markets RSS", "url": "http://feeds.bloomberg.com/rss/home/markets.xml"},
+      {"name": "Financial Times RSS", "url": "http://content.ft.com/rss/frontpage.html"}
+    ],
+    
+    "crypto_rss": [
+      {"name": "CoinDesk RSS", "url": "https://www.coindesk.com/rss.xml"},
+      {"name": "Cointelegraph RSS", "url": "http://cointelegraph.com/feed/all"}
+    ]
+  },
+  
+  "expanded_monitoring": {
+    "social_media": {
+      "twitter_handles": ["@Politico", "@Axios", "@Reuters", "@Bloomberg"],
+      "hashtags": ["#Politics", "#Economy", "#Bitcoin", "#Web3"]
+    },
+    
+    "alternative_sources": [
+      {"name": "Substack newsletters - politics", "enabled": true},
+      {"name": "Substack newsletters - finance", "enabled": true},
+      {"name": "Twitter threads tracking crypto regulation", "enabled": true}
+    ]
+  }
+}

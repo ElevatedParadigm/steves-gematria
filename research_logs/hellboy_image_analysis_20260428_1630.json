@@ -1,0 +1,223 @@
+{
+  "analysis_timestamp": "2026-04-28T16:30:48.294095",
+  "images_analyzed": 7,
+  "queries_generated": 27,
+  "symbol_frequency": {
+    "124": 5,
+    "963": 1,
+    "55": 2,
+    "666": 1
+  },
+  "key_findings_summary": {
+    "primary_image": "MILITARY_COUP_1989",
+    "significant_equation": "49+39+21+97+36+37=360\u00b0 \u2192 1989",
+    "convergence_patterns": [
+      "military_biblical",
+      "law_constitution",
+      "ancient_mystic"
+    ],
+    "core_symbols_detected": [
+      "124",
+      "963",
+      "55",
+      "666"
+    ],
+    "named_entities": [
+      "rasputin",
+      "cole thomas allen",
+      "liz",
+      "steve larou che"
+    ]
+  },
+  "research_queries": [
+    {
+      "image": "VOLCANO_463",
+      "topic": "Volcano",
+      "search_query": "VOLCANO Hellboy gematria numerology biblical military connections",
+      "domain": "elemental_fire",
+      "priority": "medium"
+    },
+    {
+      "image": "VOLCANO_463",
+      "topic": "Lava",
+      "search_query": "LAVA Hellboy gematria numerology biblical military connections",
+      "domain": "elemental_fire",
+      "priority": "medium"
+    },
+    {
+      "image": "VOLCANO_463",
+      "topic": "Eruption",
+      "search_query": "ERUPTION Hellboy gematria numerology biblical military connections",
+      "domain": "elemental_fire",
+      "priority": "medium"
+    },
+    {
+      "image": "VOLCANO_463",
+      "topic": "Equation Result 4633156",
+      "search_query": "463+3+156 total sum significance historical events",
+      "domain": "elemental_fire",
+      "priority": "high"
+    },
+    {
+      "image": "HELLBOY_124_km\u00b3",
+      "topic": "Hellboy",
+      "search_query": "HELLBOY Hellboy gematria numerology biblical military connections",
+      "domain": "geography_elemental",
+      "priority": "medium"
+    },
+    {
+      "image": "HELLBOY_124_km\u00b3",
+      "topic": "Bprd",
+      "search_query": "BPRD Hellboy gematria numerology biblical military connections",
+      "domain": "geography_elemental",
+      "priority": "medium"
+    },
+    {
+      "image": "HELLBOY_124_km\u00b3",
+      "topic": "Stone hand",
+      "search_query": "STONE HAND Hellboy gematria numerology biblical military connections",
+      "domain": "geography_elemental",
+      "priority": "medium"
+    },
+    {
+      "image": "MILITARY_COUP_1989",
+      "topic": "Coup",
+      "search_query": "COUP Hellboy gematria numerology biblical military connections",
+      "domain": "military_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "MILITARY_COUP_1989",
+      "topic": "Balance restored",
+      "search_query": "BALANCE RESTORED Hellboy gematria numerology biblical military connections",
+      "domain": "military_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "MILITARY_COUP_1989",
+      "topic": "Soviet",
+      "search_query": "SOVIET Hellboy gematria numerology biblical military connections",
+      "domain": "military_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "MILITARY_COUP_1989",
+      "topic": "Prophecy",
+      "search_query": "PROPHECY Hellboy gematria numerology biblical military connections",
+      "domain": "military_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "MILITARY_COUP_1989",
+      "topic": "Significant Number 1989",
+      "search_query": "1989 biblical numerology military coup significance gematria",
+      "domain": "military_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "RASPUTIN_1869",
+      "topic": "Rasputin",
+      "search_query": "RASPUTIN Hellboy gematria numerology biblical military connections",
+      "domain": "ancient_mystic_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "RASPUTIN_1869",
+      "topic": "Mystic",
+      "search_query": "MYSTIC Hellboy gematria numerology biblical military connections",
+      "domain": "ancient_mystic_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "RASPUTIN_1869",
+      "topic": "Russian empire",
+      "search_query": "RUSSIAN EMPIRE Hellboy gematria numerology biblical military connections",
+      "domain": "ancient_mystic_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "RASPUTIN_1869",
+      "topic": "Imperial family",
+      "search_query": "IMPERIAL FAMILY Hellboy gematria numerology biblical military connections",
+      "domain": "ancient_mystic_biblical",
+      "priority": "high"
+    },
+    {
+      "image": "CONSTITUTION_6696",
+      "topic": "Constitution",
+      "search_query": "CONSTITUTION Hellboy gematria numerology biblical military connections",
+      "domain": "biblical_law_constitution",
+      "priority": "high"
+    },
+    {
+      "image": "CONSTITUTION_6696",
+      "topic": "Law",
+      "search_query": "LAW Hellboy gematria numerology biblical military connections",
+      "domain": "biblical_law_constitution",
+      "priority": "high"
+    },
+    {
+      "image": "CONSTITUTION_6696",
+      "topic": "Truth",
+      "search_query": "TRUTH Hellboy gematria numerology biblical military connections",
+      "domain": "biblical_law_constitution",
+      "priority": "high"
+    },
+    {
+      "image": "CONSTITUTION_6696",
+      "topic": "Sunny",
+      "search_query": "SUNNY Hellboy gematria numerology biblical military connections",
+      "domain": "biblical_law_constitution",
+      "priority": "high"
+    },
+    {
+      "image": "CONSTITUTION_6696",
+      "topic": "Significant Number = 6696",
+      "search_query": "= 6696 biblical numerology military coup significance gematria",
+      "domain": "biblical_law_constitution",
+      "priority": "high"
+    },
+    {
+      "image": "COLE_ALLEN_369",
+      "topic": "Sun (135)",
+      "search_query": "SUN (135) Hellboy gematria numerology biblical military connections",
+      "domain": "military_graduation",
+      "priority": "high"
+    },
+    {
+      "image": "COLE_ALLEN_369",
+      "topic": "Law matrix 412996",
+      "search_query": "LAW MATRIX 412996 Hellboy gematria numerology biblical military connections",
+      "domain": "military_graduation",
+      "priority": "high"
+    },
+    {
+      "image": "COLE_ALLEN_369",
+      "topic": "Usa 311",
+      "search_query": "USA 311 Hellboy gematria numerology biblical military connections",
+      "domain": "military_graduation",
+      "priority": "high"
+    },
+    {
+      "image": "COLE_ALLEN_369",
+      "topic": "Equation Result 36352864111355",
+      "search_query": "+36+35+28+64+11+13+55 total sum significance historical events",
+      "domain": "military_graduation",
+      "priority": "high"
+    },
+    {
+      "image": "LIZ_FIRE_EARTH",
+      "topic": "Hellboy heroine",
+      "search_query": "HELLBOY HEROINE Hellboy gematria numerology biblical military connections",
+      "domain": "fire_earth_character_study",
+      "priority": "medium"
+    },
+    {
+      "image": "LIZ_FIRE_EARTH",
+      "topic": "Stephen king homage",
+      "search_query": "STEPHEN KING HOMAGE Hellboy gematria numerology biblical military connections",
+      "domain": "fire_earth_character_study",
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+# 🧿 Steve's Gematria Database - Cron Job Configuration
+# ============================================================================
+# Purpose: Automated maintenance scheduling for gematria database
+# Location: ~/.hermes/gematria/scripts/cron_config.cron
+# Usage: 
+#   1. Copy this file to ~/.crontab or paste into crontab -e
+#   2. Adjust frequencies as needed
+#   3. Install required scripts first (see README.md)
+
+# ============================================================================
+# MAINTENANCE SCHEDULE
+# ============================================================================
+
+# Database maintenance (weekly on Sunday at 2 AM)
+# Maintains search indices, creates backups, generates statistics
+0 2 * * 0    /bin/bash ~/.hermes/gematria/scripts/maintain_database.sh >> ~/.hermes/gematria/logs/maintenance.log 2>&1
+
+# Full database backup (daily at 3 AM)
+# Creates timestamped backup in database/backups/
+0 3 * * *     /bin/bash ~/.hermes/gematria/scripts/maintain_database.sh --full-backup >> ~/.hermes/gematria/logs/daily_backup.log 2>&1
+
+# Index regeneration (every 6 hours for frequent use)
+# Refreshes pattern and numeric sequence indexes
+0 */6 * * *   /bin/bash ~/.hermes/gematria/scripts/maintain_database.sh --index-refresh >> ~/.hermes/gematria/logs/index_refresh.log 2>&1
+
+# ============================================================================
+# ALERTING / MONITORING (optional - adjust based on your needs)
+# ============================================================================
+
+# Email notification if database grows beyond threshold (e.g., 50MB)
+# Uncomment and configure mail command as needed:
+# 0 */4 * * *   /usr/bin/find ~/.hermes/gematria/reports -type f -name "*.md" -exec du -b {} + | awk '{sum+=$1} END {exit sum > 52428800}' && echo "Database size threshold exceeded" | mail -s "Gematria DB Size Alert" your@email.com
+
+# ============================================================================
+# NOTIFICATION LOGGING
+# ============================================================================
+
+# Log maintenance completion status (always runs)
+@reboot       /bin/bash ~/.hermes/gematria/scripts/maintain_database.sh --status >> ~/.hermes/gematria/logs/status.log 2>&1
+
+# Generate weekly summary report
+0 5 * * 0     /bin/bash ~/.hermes/gematria/scripts/maintain_database.sh --weekly-report >> ~/.hermes/gematria/logs/weekly_report.log 2>&1
+
+# ============================================================================
+# CLEANUP TASKS (optional - remove if not needed)
+# ============================================================================
+
+# Remove backup files older than 30 days (monthly on 1st at 4 AM)
+# Edit the date threshold as needed:
+# 0 4 1 * *    /usr/bin/find ~/.hermes/gematria/database/backups -type f -name "*.json" -mtime +30 -delete
+
+# ============================================================================
+# USAGE EXAMPLES
+# ============================================================================
+
+# To install cron jobs:
+#   cp ~/.hermes/gematria/scripts/cron_config.cron ~/.crontab
+#   crontab ~/.crontab
+#
+# Or manually edit and run:
+#   crontab -e
+# Then paste the content above (adjust paths as needed)
+
+# ============================================================================
+# MONITORING COMMANDS
+# ============================================================================
+
+# Check if cron is running
+#   ps aux | grep crond
+
+# View last 10 maintenance runs
+#   tail -n10 ~/.hermes/gematria/logs/maintenance.log
+
+# List all scheduled gematria-related cron jobs
+#   crontab -l | grep gematria || echo "No gematria cron jobs found"

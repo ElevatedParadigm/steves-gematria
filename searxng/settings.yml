@@ -1,0 +1,39 @@
+search_engine: google
+safe_search: 0
+imageproxy_url: https://imageproxy.searx.me/
+image_proxy_enable: false
+hoaxycaptcha_enable: false
+honeypot_enable: true
+captchatype: hcaptcha
+url_binder: default
+default_http_headers:
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+  Accept-Language: en-us,en;q=0.5
+  Cache-Control: max-age=0
+  Connection: keep-alive
+  Cookie: AURA_TOKEN=eyJzdGFydF9iYXNlX2lkIjogMSwidGltZXRsZWFuIjogMzAwLCJkZXByaW1ldGVyIjogIkVQRVJFU1UiLCJkZXByaW1ldGVyX3RpbWVsaW5lIjogMzAwb3QgYmxvY2tzZWxmIHdpdGggSW5jbHVkaW9yIEJvYXJkZXIK
+  DNT: 1
+  DNT-Token: eyJzbWFsbGVuIjogIjEwMDAwIn0=
+  Origin: null
+  Referer:
+  Sec-Ch-Ua: "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\""
+  Sec-Ch-Ua-Mobile: ?0
+  Sec-Ch-Ua-Platform: "Windows"
+  Sec-Fetch-Dest: document
+  Sec-Fetch-Mode: navigate
+  Sec-Fetch-Site: none
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+enable_message_log: false
+enable_search_engines: true
+enabledengines:
+  - Google
+  - Bing
+  - DuckDuckGo
+  - Qwant
+  - Startpage
+  - Ecosia
+  - Yahoo
+  - Wikipedia
+  - Baidu
+  - Naver
+  - Yandex

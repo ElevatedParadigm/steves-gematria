@@ -1,0 +1,60 @@
+{
+  "knowledge": {
+    "symbols_found": {
+      "1": {
+        "context": "Hellboy Image Analysis",
+        "domains": [
+          "military_biblical"
+        ],
+        "keywords": "coup 1989 soviet military numerology gematria equation pattern historical",
+        "occurrences": 4
+      }
+    },
+    "relationships_tracked": [
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "military_biblical_connection",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Military Coup 1989"
+      },
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "biblical_law_constitution",
+        "relevance_score": 0.9,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Constitution Law Divine Order"
+      },
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "ancient_mystic_biblical",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Rasputin Mystic"
+      },
+      {
+        "source": "knowledge_graph",
+        "target": "military_biblical_domain_analysis",
+        "relevance_score": 0.62,
+        "timestamp": "2026-04-28T17:05:54.474026",
+        "confidence": 0.8,
+        "context": "Domain cross-reference: military_biblical"
+      },
+      {
+        "source": "numerical_analysis",
+        "target": "military_biblical_connection",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T17:05:54.474032",
+        "confidence": 0.75,
+        "context": "Equation pattern analysis from image data"
+      },
+      {
+        "source": "knowledge_graph",
+        "target": "general_gematria_domain_analysis",
+        "relevance_score": 0.62,
+        "timestamp": "2026-04-28T17:05:56.475312",
+        "confidence": 0.8,
+        "context": "Domain cross-reference: general_gematria"
+      }
+    ],
+    "domains_analyzed": 

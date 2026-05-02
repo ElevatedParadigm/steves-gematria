@@ -1,0 +1,1 @@
+Need at least 4 elemental forces for heatmap visualization

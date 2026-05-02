@@ -1,0 +1,119 @@
+{
+  "core_symbols": {
+    "124": {
+      "code": "124",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    },
+    "963": {
+      "code": "963",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    },
+    "55": {
+      "code": "55",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    },
+    "111": {
+      "code": "111",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    },
+    "279": {
+      "code": "279",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    },
+    "666": {
+      "code": "666",
+      "category": "core",
+      "status": "active",
+      "last_seen": "2026-04-28 13:01"
+    }
+  },
+  "analyzed_items": [
+    {
+      "type": "analysis_pattern",
+      "timestamp": "2026-04-28 13:01 UTC",
+      "domain": "military",
+      "items_found": 0,
+      "pattern_type": "domain_analysis",
+      "sample_item": null,
+      "note": "No new items from military domain this cycle"
+    },
+    {
+      "type": "analysis_pattern",
+      "timestamp": "2026-04-28 13:01 UTC",
+      "domain": "geography",
+      "items_found": 0,
+      "pattern_type": "domain_analysis",
+      "sample_item": null,
+      "note": "No new items from geography domain this cycle"
+    },
+    {
+      "type": "analysis_pattern",
+      "timestamp": "2026-04-28 13:01 UTC",
+      "domain": "elemental",
+      "items_found": 0,
+      "pattern_type": "domain_analysis",
+      "sample_item": null,
+      "note": "No new items from elemental domain this cycle"
+    },
+    {
+      "type": "analysis_pattern",
+      "timestamp": "2026-04-28 13:01 UTC",
+      "domain": "biblical",
+      "items_found": 0,
+      "pattern_type": "domain_analysis",
+      "sample_item": null,
+      "note": "No new items from biblical domain this cycle"
+    },
+    {
+      "type": "analysis_pattern",
+      "timestamp": "2026-04-28 13:01 UTC",
+      "domain": "ancient",
+      "items_found": 0,
+      "pattern_type": "domain_analysis",
+      "sample_item": null,
+      "note": "No new items from ancient domain this cycle"
+    }
+  ],
+  "connections": [
+    {
+      "timestamp": "2026-04-28 13:01 UTC",
+      "source_type": "domain_inference",
+      "symbol_a": "124/963",
+      "symbol_b": "military_biblical",
+      "co_occurrences": 2,
+      "weight": 8.0,
+      "confidence": 0.85,
+      "context_note": "Military history documents often contain biblical references"
+    },
+    {
+      "timestamp": "2026-04-28 13:01 UTC",
+      "source_type": "domain_inference",
+      "symbol_a": "55/279",
+      "symbol_b": "geography_elemental",
+      "co_occurrences": 2,
+      "weight": 8.0,
+      "confidence": 0.85,
+      "context_note": "Geographic locations frequently associated with elemental forces"
+    },
+    {
+      "timestamp": "2026-04-28 13:01 UTC",
+      "source_type": "domain_inference",
+      "symbol_a": "111/666",
+      "symbol_b": "ancient_hero_journey",
+      "co_occurrences": 2,
+      "weight": 8.0,
+      "confidence": 0.85,
+      "context_note": "Ancient traditions parallel hero narrative structures"
+    }
+  ]
+}

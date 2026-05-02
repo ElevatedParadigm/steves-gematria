@@ -1,0 +1,88 @@
+{
+  "event_id": 47,
+  "title": "Death of Adolf Hitler",
+  "date_range": {
+    "start": "1945-04-30",
+    "end": "1945-05-01"
+  },
+  "event_type": "regime_collapse",
+  "location": {
+    "city": "Berlin",
+    "country": "Germany",
+    "coordinates": {"lat": 52.52, "lng": 13.41}
+  },
+  "historical_context": {
+    "war": "World War II Europe",
+    "phase": "Final days of Berlin defense",
+    "attack_vector": "Soviet Red Army offensive",
+    "military_status": "Defensive bunker position, isolated"
+  },
+  "event_narrative": "Adolf Hitler committed suicide in his Berlin bunker apartment on 30 April 1945. Historical accounts describe this as the definitive end of Nazi leadership and a pivotal moment concluding WWII in Europe.",
+  "narrative_length": {
+    "estimated_words": 5000,
+    "character_count": 79,
+    "reduction_pattern": "124/bridge_threshold"
+  },
+  "gematria_analysis": {
+    "primary_symbol": {
+      "symbol_id": 124,
+      "name": "Universal Threshold/Bridge",
+      "confidence": 0.85,
+      "domain_mapping": ["military_biblical"]
+    },
+    "secondary_symbols": [
+      {
+        "symbol_id": 666,
+        "name": "Completion/Wholeness",
+        "confidence": 0.91,
+        "domain_mapping": ["political", "universal"],
+        "rationalization": "End of WWII Europe - definitive termination point"
+      },
+      {
+        "symbol_id": 55,
+        "name": "Life Cycle Completion",
+        "confidence": 0.65,
+        "domain_mapping": ["universal"],
+        "note": "Optional interpretation; weaker mapping for regime collapse"
+      }
+    ]
+  },
+  "domain_connections": {
+    "military_biblical": {
+      "weight": 8.5,
+      "rationale": "Major military figure death during wartime; apocalyptic war narratives",
+      "related_events": ["regime_collapse_wwii_europe"],
+      "cross_references": ["apocalyptic_warfare", "military_threshold_events"]
+    },
+    "political": {
+      "weight": 7.2,
+      "rationale": "Regime collapse; political power transfer point",
+      "related_events": ["regime_change_germany"]
+    },
+    "completion_wholeness": {
+      "weight": 9.1,
+      "rationalization": "Wholeness of historical epoch conclusion",
+      "domain_id": 666
+    }
+  },
+  "biblical_resonance": {
+    "archetype": "apocalyptic_warfare",
+    "narrative_elements": ["four_horsemen_ending", "bunker_isolation"],
+    "scriptural_parallels": ["Revelation_chapter_6", "judgment_day_imagery"]
+  },
+  "military_significance": {
+    "type": "threshold_event",
+    "impact_level": "universal",
+    "cascade_effects": [
+      "Nazi regime collapse",
+      "Berlin defense termination",
+      "WWII Europe conclusion"
+    ]
+  },
+  "database_metadata": {
+    "indexed_by": "avalon_gematria_engine",
+    "index_timestamp": "2026-04-30T08:15:00Z",
+    "source_quality": "historical_archive_verified",
+    "verification_status": "complete"
+  }
+}

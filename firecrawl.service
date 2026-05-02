@@ -1,0 +1,21 @@
+[Unit]
+Description=Gematria Local Web Research Server
+After=network.target
+Documentation=https://github.com/ScraplingAI/firecrawl
+
+[Service]
+Type=simple
+User=avalonas
+Group=avalonas
+WorkingDirectory=/home/avalonas/.hermes/gematria
+ExecStart=/bin/bash /home/avalonas/.hermes/gematria/start-local-firecrawl.sh
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+
+# Resource limits (optional - tune as needed)
+# LimitNOFILE=65536
+# MemoryMax=2G
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,139 @@
+# GEMATRIA OVERNIGHT RESEARCH - CRON JOB SETUP GUIDE
+
+## Current Status ✅
+
+### Training Data Completed
+- **5 images analyzed** with full gematria pattern detection
+- **2 core symbols detected:** 124 (3×), 666 (1×)
+- **4 elemental domains identified:** Air, Earth, Fire, Water
+- **Training patterns saved** to database for automated learning
+
+### Available Content Types Now Supported:
+1. ✅ YouTube spiritual content (Bible verses, religious overlays)
+2. ✅ Religious art with prophecy overlays (Sacred Heart imagery)
+3. ✅ French-language news articles with numerology
+4. ✅ Weather app meme-style mathematical equations
+5. ✅ Conspiracy theory imagery (9/11 false flag narratives)
+
+---
+
+## ⏰ INSTALL CRON JOB - OPTION 1: Using crontab -e (Recommended)
+
+### Step 1: Add your own crontab entry
+
+```bash
+crontab -e
+```
+
+### Step 2: Add this line at the END of your crontab:
+
+```bash
+# Steve's Gematria Overnight Research - Runs daily at 02:00 (2 AM)
+# Uses free local scraping, no API key payment required
+0 2 * * * cd $HOME/.hermes/gematria && $HOME/.hermes/gematria/cron/overnight_research.sh >> $HOME/.hermes/gematria/logs/overnight_cron.log 2>&1
+```
+
+### Step 3: Save and exit (in nano editor: Ctrl+X, Y, Enter)
+
+---
+
+## 📅 INSTALL CRON JOB - OPTION 2: Manual File Placement
+
+If `crontab -e` doesn't work, create a dedicated crontab file:
+
+```bash
+# Create user-side crontab directory if it doesn't exist
+mkdir -p ~/.crontab.d/
+
+# Copy cron job to dedicated location
+cp $HOME/.hermes/gematria/cron/overnight_research.sh ~/.crontab.d/overnight_research.cron
+
+# Add entry to the file:
+echo "0 2 * * * cd $HOME/.hermes/gematria && $HOME/.hermes/gematria/cron/overnight_research.sh >> $HOME/.hermes/gematria/logs/overnight_cron.log 2>&1" >> ~/.crontab.d/overnight_research.cron
+```
+
+Then source your crontab:
+
+```bash
+# Add these lines to your personal crontab file (~/ .crontab) or run:
+crontab -l 2>/dev/null | grep -v "^\s*$" > ~/new_crontab.tmp
+cat ~/.crontab.d/overnight_research.cron >> ~/new_crontab.tmp
+mv ~/new_crontab.tmp ~/.crontab
+```
+
+---
+
+## 🧪 TESTING (Before you go to sleep!)
+
+### Manual test run:
+
+```bash
+cd $HOME/.hermes/gematria
+$HOME/.hermes/gematria/cron/overnight_research.sh
+```
+
+### Check if it works:
+
+```bash
+# Look for generated reports
+ls -la $HOME/.hermes/gematria/reports/ | tail -5
+
+# Check JSON outputs
+ls -la $HOME/.hermes/gematria/json_reports/*.json 2>/dev/null | tail -3
+
+# Verify database updated
+tail -100 $HOME/.hermes/gematria/database/gematria_database.json | grep -A 5 "overnight"
+```
+
+---
+
+## 📊 SCHEDULE OPTIONS
+
+| Schedule | Cron Expression | When It Runs | Best For |
+|----------|-----------------|--------------|----------|
+| **Daily at 2 AM** | `0 2 * * *` | Every day at 2:00 AM | Balanced automation (default) |
+| **Weekdays only** | `0 2 * * 1-5` | Mon-Fri at 2 AM | Business hours optimization |
+| **Every 6 hours** | `0 */6 * * *` | Every 6 hours | Real-time monitoring (less recommended for free scraping) |
+| **At 3 AM** | `0 3 * * *` | Every day at 3:00 AM | Classic off-hours timing |
+| **Weekends only** | `0 2 * * 6,0` | Sat/Sun at 2 AM | Lighter schedule for weekends |
+
+---
+
+## 📈 EXPECTED OUTPUT
+
+### Reports Generated Daily:
+- `$HOME/.hermes/gematria/reports/overnight_research_summary.txt` (HTML format)
+- `$HOME/.hermes/gematria/json_reports/*.json` (raw data analysis)
+- `$HOME/.hermes/gematria/logs/overnight_cron.log` (cron execution log)
+
+### Database Updates:
+- Appends new analyses to existing entries
+- Tracks symbol detection across platforms
+- Maintains relationship graphs for Obsidian sync
+
+---
+
+## 🚀 READY TO DEPLOY?
+
+Choose your installation method and schedule, then run the manual test:
+
+```bash
+# Test before scheduling
+$HOME/.hermes/gematria/cron/overnight_research.sh
+
+# If successful, install cron job using one of the methods above
+```
+
+---
+
+## 📱 TELEGRAM INTEGRATION
+
+HTML-formatted reports will automatically send to your configured Telegram webhook channel. No changes needed!
+
+---
+
+**Need help?** Run with verbose output:
+
+```bash
+$HOME/.hermes/gematria/cron/overnight_research.sh -v 2>&1 | tee test_output.log
+```

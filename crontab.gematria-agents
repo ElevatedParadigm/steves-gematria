@@ -1,0 +1,10 @@
+# Gematria Multi-Agent System Cron Jobs
+# Schedule: 3 AM daily for overnight research and analysis
+# Manual runner: python /home/avalonas/.hermes/gematria/scripts/multi_agent_system.py
+
+# Run multi-agent system at 3 AM daily
+0 3 * * * cd /home/avalonas/.hermes && python /home/avalonas/.hermes/gematria/scripts/multi_agent_system.py >> /home/avalonas/.hermes/gematria/cron_exports/agents_overnight.log 2>&1
+
+# Manual trigger (for testing)
+# Uncomment and run: python /home/avalonas/.hermes/gematria/scripts/multi_agent_system.py
+

@@ -1,0 +1,63 @@
+# Steve's Gematria Research - Core Dependencies
+# Web scraping and data extraction
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Async web requests for overnight research
+aiohttp>=3.8.0
+httpx>=0.24.0
+aiodns>=3.0.0
+multidict>=6.0.0
+
+# Data processing and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0.0
+
+# Text processing and NLP
+nltk>=3.8.0
+spacy>=3.5.0
+textstat>=0.7.1
+
+# Image analysis and OCR
+pillow>=10.0.0
+pytesseract>=0.3.8
+Pillow>=10.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.0.0
+
+# HTML/Markdown processing
+markdown>=3.4.0
+beautifulsoup4>=4.12.0
+chardet>=5.1.0
+
+# Database storage
+jsonschema>=4.17.0
+
+# Git integration
+gitpython>=3.1.0
+
+# Jupyter notebook (optional)
+jupyter>=1.0.0
+
+# Progress tracking and reporting
+rich>=13.0.0
+tqdm>=4.65.0
+
+# Date/time handling
+python-dateutil>=2.8.2
+
+# System utilities
+filetype>=1.1.0
+psutil>=5.9.0
+
+# Web browser automation (optional, for Firecrawl integration)
+selenium>=4.10.0
+webdriver-manager>=4.0.0
+
+# API client tools
+python-dotenv>=1.0.0

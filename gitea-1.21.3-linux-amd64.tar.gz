@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			// function source found here: https://stackoverflow.com/a/40301366
+			function addSlashToUrl() {
+    //If there is no trailing shash after the path in the url add it
+    if (window.location.pathname.endsWith('/') === false) {
+        var url = window.location.protocol + '//' + 
+                window.location.host + 
+                window.location.pathname + '/' + 
+                window.location.search;
+	window.location = url;	
+        //window.history.replaceState(null, document.title, url);
+    }
+}
+		addSlashToUrl()
+		</script>
+	</head>
+	<body onload="javascript:addSlashToUrl()">
+		<h1>Page not found (404)</h1>
+	<p>Sorry, but the page you were looking for was not found. It may have been moved or deleted, or there may have been an error on this site.</p>
+	<h3>Suggestions</h3>
+	<ul>
+		<li>If you typed in the address, make sure you have spelt it correctly.</li>
+		<li>If you clicked a link to get here, the link may be out of date.</li>
+		<li>Click 'back' in your browser to try a different page, or return to the <a href="/" rel="home">home page</a></li>
+	</ul>
+	</body>
+</html>

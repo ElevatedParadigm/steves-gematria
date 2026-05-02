@@ -1,0 +1,18 @@
+[Unit]
+Description=Visual Archive Export Lock Manager Service
+Documentation=https://github.com/your-username/visual-archive
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+WorkingDirectory=/home/avalonas/.hermes/gematria/unified_overnight_research/scripts
+ExecStart=/bin/bash manage_export_locks.sh safe-cleanup
+StandardOutput=journal
+StandardError=journal
+# Run with elevated privileges if needed (removable)
+# ExecUser=avalonas
+# AmbientGroups=all
+
+[Install]
+WantedBy=multi-user.target

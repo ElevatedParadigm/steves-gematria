@@ -1,0 +1,13 @@
+# Gematria Overnight Research Crontab Entries (Hourly Schedule)
+# Install with: crontab /home/avalonas/.hermes/gematria/crontab.gematria-hourly
+
+# Environment variables
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin:/home/avalonas/.local/bin
+GEMATRIA_DB_PATH=/home/avalonas/.hermes/gematria/gematria_database.json
+
+# ============================================
+# Option 5: Hourly overnight research (NEW)
+# Runs every hour at minute 0 for continuous monitoring
+# ============================================
+0 * * * * cd /home/avalonas/.hermes/gematria && python3 scripts/run_overnight_research.py >> ~/.hermes/logs/cron_hourly.log 2>&1

@@ -1,0 +1,10 @@
+# Crontab entry to run overnight research with Tolaria MCP integration
+# Add this line to your crontab: crontab -l
+# 
+# Runs at 3 AM daily, creates analysis notes in Tolaria automatically
+
+0 3 * * * cd /home/avalonas/.hermes/gematria && \
+           python scripts/unified_overnight_research_image_seed.py >> /home/avalonas/.hermes/gematria/cron.log 2>&1
+
+# Then manually or via automation, push Tolaria MCP sync:
+# (This could be a separate cron entry if Hermes CLI is available in cron context)

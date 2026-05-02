@@ -1,0 +1,40 @@
+# Steve's Gematria - Lightweight Overnight Research Requirements
+# Core dependencies for web research and analysis scripts
+
+# HTTP requests (core research capability)
+requests>=2.31.0
+
+# Async operations for concurrent research
+aiohttp>=3.9.0
+
+# Async HTTP client with sessions
+aiofiles>=23.2.0
+
+# YAML for symbol definitions
+pyyaml>=6.0.0
+
+# JSON handling (standard lib)
+
+# HTML parsing for web pages
+beautifulsoup4>=4.12.0
+
+# LXML parser (faster than html.parser)
+lxml>=4.9.0
+
+# Async web crawling/firecrawl-like operations
+httpx>=0.25.0
+
+# Tokenization and string processing
+thefuzz>=0.19.0
+
+# Git operations for version tracking
+gitpython>=3.1.0
+
+# Path operations
+pathlib2>=2.3.7
+
+# Terminal output formatting (optional)
+rich>=13.0.0
+
+# Optional: For image processing if needed
+Pillow>=10.0.0

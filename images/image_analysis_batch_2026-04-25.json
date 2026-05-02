@@ -1,0 +1,87 @@
+{
+  "image_analysis_entries": [
+    {
+      "image_id": "tikTokTrumpCanada_2026-04-25",
+      "source": "TikTok video overlay",
+      "primary_number": "124",
+      "primary_symbol": "Universal Bridge (Water Element)",
+      "sequences_found": [
+        {"text": "124 km³", "value": 124, "reduction": 7},
+        {"text": "51+963+55", "value": 1069, "reduction": 7},
+        {"text": "51+01+24+2025+787+963+55", "value": 3906, "reduction": 9}
+      ],
+      "domains_activated": ["trump_canada_narrative", "political_events"],
+      "elemental_forces": ["water", "frequency"],
+      "connection_points": ["963 frequency activation to Epstein files", "boundary crossing metaphor"]
+    },
+    {
+      "image_id": "epsteinFilesGatesMusk_2026-04-25",
+      "source": "Epstein files collage with Gates/Musk/Lutnick",
+      "primary_number": "111",
+      "primary_symbol": "Activation/Spirit (Powerful men turning up)",
+      "sequences_found": [
+        {"text": "593+3914+85597+71251", "value": 161355, "reduction": 3},
+        {"text": "5+4+9+3 (EVIL)", "value": 21, "reduction": 3},
+        {"text": "2079 (volcano)", "value": 2079, "reduction": 9}
+      ],
+      "domains_activated": ["epstein_files_analysis", "powerful_figures_manifestation"],
+      "elemental_forces": ["fire", "air"],
+      "connection_points": ["963 frequency to Trump Canada", "2079 military coup year"]
+    },
+    {
+      "image_id": "trumpBitcoinStatue_2026-04-25",
+      "source": "Golden Trump statue holding Bitcoin coin",
+      "primary_number": "2079",
+      "primary_symbol": "Military Coup (Fire Element + Volcano)",
+      "sequences_found": [
+        {"text": "4+9+3+9+2+1+9+7+3+6+3+7", "value": 63, "reduction": 9},
+        {"text": "2+9+2+3+6+9+5 (BITCOIN)", "value": 36, "reduction": 9},
+        {"text": "18/2025", "value": 18, "reduction": 9}
+      ],
+      "domains_activated": ["bitcoin_crypto_symbolism", "military_coup_themes"],
+      "elemental_forces": ["fire", "volcano"],
+      "connection_points": ["111 activation pattern from Epstein files", "political themes from Canada narrative"]
+    },
+    {
+      "image_id": "seattleTimes_gathering_2026-04-25",
+      "source": "Seattle Times screenshot with power figure gathering",
+      "primary_number": "111",
+      "primary_symbol": "Convergence Document (Multiple Domains)",
+      "context": "Formal White House gathering with clearance markings",
+      "visible_figures": ["Robert F. Smith", "Mark Zuckerberg", "Donald Trump & Melania", "Bill Gates"],
+      "domains_activated": ["epstein_files_analysis", "powerful_figures_convergence"],
+      "elemental_forces": ["resonance"],
+      "connection_points": ["connects all three images via power figure theme", "convergence point in cross-domain matrix"]
+    }
+  ],
+  "core_symbols_verified": [
+    "124 (Universal Bridge - Water)",
+    "963 (Frequency/Air - Steve's Core)",
+    "55 (Resonance/Foundation)",
+    "111 (Activation/Spirit)",
+    "666/66 (Completion→9 / Harmony)",
+    "17 (Vessel→8)",
+    "2079 (Military Coup - Fire Element)",
+    "9 (Completion Number)",
+    "999 (Wealth/Time cipher)",
+    "137 (Fine Structure constant)",
+    "297 (Cycle variant)"
+  ],
+  "elemental_forces_tracked": ["fire", "volcano", "frequency", "resonance", "water"],
+  "domains_active": [
+    "political_events",
+    "epstein_files_analysis",
+    "trump_canada_narrative",
+    "bitcoin_crypto_symbolism",
+    "military_coup_themes"
+  ],
+  "pascal_triangle_convergence": {
+    "row_4": "1+3+3+1 = 8 → Legacy vessel/grounding (17→8)",
+    "row_6": "1+5+10+10+5+1 = 32 → Reduces to 55 cluster"
+  },
+  "theoretical_connections": {
+    "bridge_metaphor": "The Universal Bridge (124) enables boundary crossings at world-shaking events",
+    "transformation_cycle": "963 political activation → 111 manifestation → 2079 fire completion → 9 harmony",
+    "power_figures_pattern": "Triple-1 (111) activation manifests powerful men through Epstein revelations"
+  }
+}

@@ -1,0 +1,61 @@
+# Enhanced Overnight Research Protocol - Cron Configuration
+# Location: /home/avalonas/.hermes/gematria/cron/config.cron
+# 
+# This file defines scheduled runs for overnight research protocol loops
+# and hybrid scheduler monitoring.
+#
+# To install, add these lines to crontab:
+#   crontab -l | grep -v "^\s*$" | grep -v "^#" > /tmp/crontab.tmp
+#   cat >> /tmp/crontab.tmp < config.cron
+#   crontab /tmp/crontab.tmp
+#
+
+# =============================
+# OVERNIGHT RESEARCH LOOP SCHEDULER
+# Runs every 3 hours at :00 (hours 0,3,6,9,12,15,18,21)
+# =============================
+
+# Enhanced loop runner - runs stability test, auto-sync, heatmaps
+# Schedule: Every 3 hours at minute :00
+0 0,3,6,9,12,15,18,21 * * * python3 /home/avalonas/.hermes/gematria/scripts/enhanced_loop_runner.py >> /home/avalonas/.hermes/gematria/cron_logs/cron_enhanced_loop.log 2>&1
+
+# =============================
+# HYBRID SCHEDULER (Elasticity Monitoring)
+# Multi-phase rotation monitoring - runs continuously in background
+# =============================
+
+# Hybrid scheduler for phase rotation monitoring
+# Runs in daemon mode alongside overnight research loop
+@reboot python3 /home/avalonas/.hermes/gematria/hybrid_scheduler.py --interval 1800 >> /home/avalonas/.hermes/gematria/logs/hybrid_scheduler.log 2>&1 &
+
+# =============================
+# OPTIONAL: CLEANUP TASKS
+# Archive old logs monthly, clear temp files weekly
+# =============================
+
+# Archive cron logs older than 30 days (monthly cleanup)
+0 2 1 * * python3 /home/avalonas/.hermes/gematria/scripts/archive_old_logs.py >> /home/avalonas/.hermes/gematria/cron_logs/cron_cleanup.log 2>&1
+
+# Clear temporary files in obsidian_exports older than 7 days (weekly)
+0 3 * * 0 python3 /home/avalonas/.hermes/gematria/scripts/cleanup_temp.py >> /home/avalonas/.hermes/gematria/cron_logs/cron_cleanup.log 2>&1
+
+# =============================
+# NOTES FOR ADMINISTRATION
+# =============================
+# 
+# To check cron status:
+#   crontab -l | grep enhanced_loop_runner
+#   
+# To pause/restart overnight research:
+#   # Pause (comment out the line):
+#   sed -i 's/^0 0,3,6.../00\/@hourly \\/' /etc/crontab
+#   
+#   # Check last run status:
+#   tail -50 /home/avalonas/.hermes/gematria/cron_logs/cron_enhanced_loop.log
+#
+# To view hybrid scheduler status:
+#   ps aux | grep hybrid_scheduler
+#   tail -20 /home/avalonas/.hermes/gematria/logs/hybrid_scheduler.log
+#
+# Auto-restart capability is built into enhanced_loop_runner.py daemon mode
+# Hybrid scheduler runs independently for phase rotation monitoring

@@ -1,0 +1,19 @@
+# Steve's Gematria Autonomous Overnight Research Cron Jobs
+# Implements Karpathy's autoresearch methodology:
+#   - Fixed-time experiment budget
+#   - Timeout protection (>15min = auto-kill)
+#   - Structured TSV results logging
+#   - Autonomous iteration (no manual intervention)
+#   - No sudo required (uses crontab -e)
+
+# Overnight research at 4:15 AM (fixed-time experiment budget)
+# Uses autonomous_research.py with built-in timeout protection
+0 4 * * * cd /home/avalonas/.hermes/gematria && python scripts/run_autonomous_research.py >> cron_logs/overnight_autonomous.log 2>&1
+
+# Optional: Daily sync to Obsidian at 5:30 AM  
+# (runs auto_obisidian_sync_v2.py after research completes)
+30 5 * * * cd /home/avalonas/.hermes/gematria && python scripts/auto_obisidian_sync_v2.py >> cron_logs/sync_$(date +%Y%m%d).log 2>&1
+
+# Optional: Weekly comprehensive report at Sunday 6:00 AM
+# (generates domain convergence analysis and relationship matrix)
+0 6 * * 0 cd /home/avalonas/.hermes/gematria && python scripts/generate_weekly_report.py >> cron_logs/weekly_report.log 2>&1

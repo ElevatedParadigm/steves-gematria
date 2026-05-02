@@ -1,0 +1,11 @@
+#!/bin/bash
+# Cron Job Configuration for Overnight Research Protocol
+# Every 3 hours: 0,3,6,9,12,15,18,21 (* * * */3 * *)
+# With auto-restart on research cycle expiration
+
+# Add this line to your crontab with: crontab -e
+# Format: minute hour day month weekday command
+
+# Uncomment the following line for every 3 hours (0,3,6,9,12,15,18,21)
+# Run at :00 minute past each 3rd hour starting at midnight
+'0 0,3,6,9,12,15,18,21 * * * /bin/bash /home/avalonas/.hermes/gematria/cron_jobs/run_overnight_research.sh >> /home/avalonas/.hermes/gematria/cron_logs/cron.log 2>&1'

@@ -1,0 +1,16 @@
+{
+  "subscriptions": [
+    {
+      "id": "webhook-test-1777120965",
+      "url": "https://www.example.com/test-image.jpg",
+      "status": "pending",
+      "timestamp": "2026-04-25 15:42:45"
+    },
+    {
+      "id": "webhook-1777120980-30802",
+      "url": "https://example.com/new-image-feed.jpg",
+      "status": "pending",
+      "timestamp": "2026-04-25 15:43:00"
+    }
+  ]
+}

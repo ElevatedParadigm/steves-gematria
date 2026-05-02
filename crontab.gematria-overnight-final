@@ -1,0 +1,21 @@
+# Steve's Gematria — Overnight Research Pipeline @ 3 AM Daily
+# Install with: echo "..." | sudo -u avalonas crontab -e
+
+@reboot /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py >> /home/avalonas/.hermes/gematria/cron_logs/reboot.log 2>&1
+
+# ============================================
+# OVERNIGHT RESEARCH PIPELINE — 3:00 AM DAILY
+# ============================================
+# Runs at 3:00 AM to execute multi-agent research workflow:
+#   1) Scraper Agent: Web discovery using Firecrawl (localhost:3002)
+#   2) Analyzer Agent: Extract relationships & generate tracking files
+#   3) Synthesis Agent: Pattern convergence detection
+
+0 3 * * * /home/avalonas/.hermes/gematria/scripts/orchestrator.py --mode overnight >> /home/avalonas/.hermes/gematria/cron_logs/overnight.log 2>&1
+
+# ============================================
+# ERROR HANDLING — Retry failed jobs
+# ============================================
+# If overnight fails, retry at 5 AM (same day)
+
+0 5 * * * test -f /home/avalonas/.hermes/gematria/cron_logs/overnight.log && python /home/avalonas/.hermes/gematria/scripts/orchestrator.py --mode overnight >> /home/avalonas/.hermes/gematria/cron_logs/overnight_retry.log 2>&1 || true

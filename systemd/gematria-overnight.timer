@@ -1,0 +1,14 @@
+# Steve's Gematria Overnight Research - Systemd Timer
+[Unit]
+Description=Steve's Gematria Overnight Research Protocol
+After=network.target
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=3days 4h    # Runs at 4 AM if system starts during the day (roughly "3 AM relative time")
+RandomizedSec=1h            # Add randomness to prevent thundering herd effect
+AccuracySec=10min
+Persistent=true             # Run missed executions when system starts
+
+[Install]
+WantedBy=timers.target

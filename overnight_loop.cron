@@ -1,0 +1,3 @@
+>home/avalonas/.hermes/gematria/scripts/hybrid_scheduler.py --interval 1800 &>/dev/null &
+sleep 30
+/home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py >> /home/avalonas/.hermes/gematria/cron_logs/loop_runner_cron.log 2>&1

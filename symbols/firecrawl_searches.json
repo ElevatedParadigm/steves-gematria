@@ -1,0 +1,44 @@
+{
+  "geopolitical": {
+    "query": "Israel Israel, Gaza, Putin, Trump, US foreign policy",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "religious": {
+    "query": "Jesus Temple Mount, Jerusalem, Prophet, church",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "economic": {
+    "query": "Bitcoin Bitcoin, inflation, stock market, crypto",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "military": {
+    "query": "coup army, troops, war, defense",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "elemental": {
+    "query": "fire fire, climate, disaster, natural",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "cryptographic": {
+    "query": "aes-128 encryption, aes, hash, algorithm",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  },
+  "temporal": {
+    "query": "March 29 2025 timeline, date, schedule, deadline",
+    "method": "curl",
+    "success": false,
+    "error": "Exit code: 3"
+  }
+}

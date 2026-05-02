@@ -1,0 +1,21 @@
+[Unit]
+Description=GematrIA Overnight Research Loop (Enhanced) Service
+Documentation=file:///home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/avalonas/.hermes/gematria
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+StandardOutput=journal
+StandardError=journal
+# Auto-restart on failure (handles expiration or errors)
+Restart=on-failure
+RestartSec=300  # Wait 5 minutes before retry
+# Ensure hybrid_scheduler can start if needed
+ExecStartPre=-/bin/bash -c "pgrep -f 'hybrid_scheduler.py' || python3 /home/avalonas/.hermes/gematria/scripts/hybrid_scheduler.py &"
+TimeoutStartSec=600
+
+[Install]
+WantedBy=multi-user.target

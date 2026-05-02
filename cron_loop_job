@@ -1,0 +1,21 @@
+# 🔄 Gematria Overnight Research Loop - Cron Configuration
+# =========================================================
+# Schedule: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21 UTC)
+# Output to same channel as current cron job
+# Script: /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+# Logs to: /home/avalonas/.hermes/gematria/cron_logs/
+
+# =========================================================
+# CRON JOB LINE (for manual installation or system timer)
+# Format: minute hour day month weekday command
+# =========================================================
+0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas/.hermes/gematria && python scripts/loop_runner_enhanced.py --timeout 2700 >> cron_logs/cron_job.log 2>&1
+
+# =========================================================
+# ALTERNATIVE: If using systemd timer or custom scheduler
+# =========================================================
+
+[install:crontab]
+# Add this line to crontab manually:
+# Edit with: crontab -e
+# Then add the cron job line from above

@@ -1,0 +1,20 @@
+# Overnight Research Protocol - Crontab Configuration
+# Location: /home/avalonas/.hermes/gematria/crontab.gematria-overnight
+# Purpose: Automated nightly research using SearXNG local instance
+# Schedule: Daily at 3:00 AM (Option 1 default)
+
+# ============================================
+# MAIN OVERNIGHT RESEARCH CYCLE
+# Runs at 3:00 AM daily
+# Uses SearXNG local instance for web searches
+# Rate-limited to avoid overwhelming search engine
+# ============================================
+0 3 * * * cd /home/avalonas/.hermes/gematria && python scripts/overnight_research_prod.py >> logs/overnight_$(date +\%Y\%m\%d).log 2>&1
+
+# ============================================
+# AUTO-SYNC TO OBSIDIAN (OPTIONAL)
+# Runs at 4:00 AM daily (after main research completes)
+# Extracts relationships and generates markdown exports
+# Can be removed or scheduled differently if desired
+# ============================================
+0 4 * * * cd /home/avalonas/.hermes/gematria && python scripts/auto_obisidian_sync_v2.py >> logs/sync_$(date +\%Y\%m\%d).log 2>&1

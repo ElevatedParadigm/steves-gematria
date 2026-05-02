@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  firecrawl-api:
+    image: firecrawl/api:latest
+    container_name: firecrawl-api-1
+    ports:
+      - "3002:3000"
+    environment:
+      - NUMBASICAUTHUSERS=
+      - NUMBASICAUTHpasswords=
+    networks:
+      - gematria-network
+
+  firecrawl-redis:
+    image: redis:alpine
+    container_name: firecrawl-redis-1
+    ports:
+      - "6380:6379"
+    networks:
+      - gematria-network
+
+  firecrawl-rabbitmq:
+    image: rabbitmq:3-management
+    container_name: firecrawl-rabbitmq-1
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - gematria-network
+
+networks:
+  gematria-network:
+    name: gematria-network

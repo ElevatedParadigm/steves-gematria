@@ -1,0 +1,69 @@
+{
+  "knowledge": {
+    "symbols_found": {
+      "1": {
+        "context": "Hellboy Image Analysis",
+        "domains": [
+          "military_biblical"
+        ],
+        "keywords": "coup 1989 soviet military numerology gematria equation pattern historical",
+        "occurrences": 7
+      }
+    },
+    "relationships_tracked": [
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "military_biblical_connection",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Military Coup 1989"
+      },
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "biblical_law_constitution",
+        "relevance_score": 0.9,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Constitution Law Divine Order"
+      },
+      {
+        "source": "Hellboy Image Analysis",
+        "target": "ancient_mystic_biblical",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T16:14:39+00:00",
+        "source_query": "Rasputin Mystic"
+      },
+      {
+        "source": "knowledge_graph",
+        "target": "military_biblical_domain_analysis",
+        "relevance_score": 0.62,
+        "timestamp": "2026-04-28T17:05:59.476969",
+        "confidence": 0.8
+      },
+      {
+        "source": "numerical_analysis",
+        "target": "military_biblical_connection",
+        "relevance_score": 0.85,
+        "timestamp": "2026-04-28T17:05:59.476981",
+        "confidence": 0.75
+      },
+      {
+        "source": "knowledge_graph",
+        "target": "general_gematria_domain_analysis",
+        "relevance_score": 0.62,
+        "timestamp": "2026-04-28T17:05:59.476990",
+        "confidence": 0.8
+      }
+    ],
+    "domains_analyzed": [
+      "geography_elemental",
+      "ancient_mystic_biblical",
+      "general_gematria",
+      "biblical_law_constitution",
+      "military_biblical",
+      "ancient_hero_journey",
+      "elemental"
+    ],
+    "queries_run": []
+  },
+  "execution_time": "2026-04-28T17:07:08.935463"
+}

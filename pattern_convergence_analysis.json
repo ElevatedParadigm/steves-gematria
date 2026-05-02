@@ -1,0 +1,59 @@
+{
+  "convergence_points": [
+    {
+      "domain": "Calculation Infrastructure",
+      "connections": [
+        1,
+        2,
+        4
+      ],
+      "description": "Multiple calculator tools (gematrix.org, gematriacalc.net, calculator-gematria.com) provide accessible interfaces for numerical pattern mapping across different cipher systems"
+    },
+    {
+      "domain": "Internal Knowledge Integration",
+      "connections": [
+        3
+      ],
+      "description": "ElevatedParadigm/steves-gematria repository connects external research to internal predictive pattern rules (124 threshold markers, 963 Air activation, 55/666 Fire transformations)"
+    },
+    {
+      "domain": "Pattern Recognition Tools",
+      "connections": [
+        5
+      ],
+      "description": "Numeric Pattern Finder enables mathematical curiosity exploration that aligns with gematria's puzzle-based number logic approach"
+    }
+  ],
+  "relationships": [
+    {
+      "type": "Cross-Platform Calculation",
+      "external_tools": [
+        "gematrix.org",
+        "gematriacalc.net",
+        "calculator-gematria.com"
+      ],
+      "function": "Numeric value mapping across cipher systems for cross-validation"
+    },
+    {
+      "type": "Knowledge Graph Bridge",
+      "internal_source": "steves-gematria/part3_predictive_patterns.md",
+      "external_connections": [
+        "calculation tools",
+        "pattern finders"
+      ],
+      "description": "Internal predictive rules can be linked to external calculator APIs"
+    },
+    {
+      "type": "Pattern Logic Alignment",
+      "matching_concept": "Mathematical curiosity exploration",
+      "application": "Beyond traditional arithmetic, puzzle-based number logic"
+    }
+  ],
+  "core_symbols_in_context": [
+    124,
+    963,
+    55,
+    111
+  ],
+  "extended_symbols_in_context": []
+}

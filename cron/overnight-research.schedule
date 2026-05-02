@@ -1,0 +1,11 @@
+# Steve's Gematria Overnight Research Loop - Cron Schedule
+# 
+# Run daily at 2:00-4:00 AM in your local timezone (EEST for you)
+# Multi-region observers see results at their convenient work hours
+# Hybrid time sync respects YOUR hours as primary reference
+
+# Run overnight research loop every night
+0,15 2-3 * * * /usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/overnight_research_loop.py >> /home/avalonas/.hermes/gematria/logs/cron_output.log 2>&1
+
+# Alternative: Every 4 hours (for more frequent analysis)
+# */4 * * * * /usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/overnight_research_loop.py >> /home/avalonas/.hermes/gematria/logs/cron_output.log 2>&1

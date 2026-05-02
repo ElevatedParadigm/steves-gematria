@@ -1,0 +1,18 @@
+# Gematria Overnight Research Protocol - SearXNG Edition
+# Run automatically at 3:00 AM daily (off-peak hours)
+# Uses local SearXNG instance (privacy-focused, no rate limits)
+
+# Edit crontab: crontab -e
+# Add this line:
+
+# Option A: Run searxng_engine.py directly
+0 3 * * * cd /home/avalonas/.hermes/gematria && python scripts/searxng_engine.py >> /home/avalonas/.hermes/gematria/reports/cron.log 2>&1
+
+# Option B: Run with longer timeout for larger symbol batches
+# 0 3 * * * cd /home/avalonas/.hermes/gematria && python scripts/searxng_engine.py --symbols "124,6966,1753,278" >> /home/avalonas/.hermes/gematria/reports/cron.log 2>&1
+
+# Alternative: Every 4 hours instead of fixed time (for more frequent research)
+# */4 * * * * cd /home/avalonas/.hermes/gematria && python scripts/searxng_engine.py >> /home/avalonas/.hermes/gematria/reports/cron.log 2>&1
+
+# Manual trigger (when needed):
+# cd /home/avalonas/.hermes/gematria && python scripts/searxng_engine.py

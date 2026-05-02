@@ -1,0 +1,36 @@
+{
+  "analysis_timestamp": "2026-04-28T16:45:05.000958",
+  "queries_executed": 4,
+  "web_search_available": false,
+  "results": [
+    {
+      "type": "database_analysis",
+      "topic": "Military Coup 1989",
+      "domain": "military_biblical",
+      "symbols_matched": 1,
+      "relationships_added": 6
+    },
+    {
+      "type": "database_analysis",
+      "topic": "Constitution Law",
+      "domain": "biblical_law_constitution",
+      "symbols_matched": 2,
+      "relationships_added": 0
+    },
+    {
+      "type": "database_analysis",
+      "topic": "Rasputin Mystic",
+      "domain": "ancient_mystic_biblical",
+      "symbols_matched": 0,
+      "relationships_added": 0
+    },
+    {
+      "type": "database_analysis",
+      "topic": "Hellboy Core Symbols",
+      "domain": "general_gematria",
+      "symbols_matched": 0,
+      "relationships_added": 0
+    }
+  ],
+  "total_relationships_modified": 6
+}

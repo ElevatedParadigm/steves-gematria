@@ -1,0 +1,22 @@
+[Unit]
+Description=Elasticity Hybrid Scheduler for Multi-Phase Monitoring
+Documentation=file:///home/avalonas/.hermes/gematria/hybrid_scheduler.py
+
+[Service]
+Type=simple
+User=avalonas
+Group=avalonas
+WorkingDirectory=/home/avalonas/.hermes/gematria
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/hybrid_scheduler.py --interval 1800
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+Environment=TELEGRAM_BOT_TOKEN=""
+Environment=TELEGRAM_CHAT_ID="1962224247"
+
+# Ensure log files are writable
+ReadWritePaths=/home/avalonas/.hermes/gematria/logs /home/avalonas/.hermes/gematria/cron_logs
+
+[Install]
+WantedBy=multi-user.target

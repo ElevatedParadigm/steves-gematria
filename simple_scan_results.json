@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/Adolf_Hitler",
+    "status": 200,
+    "patterns_found": [],
+    "scan_time": "2026-04-27T18:27:39.478576"
+  },
+  {
+    "url": "https://www.forbes.com/sites/analyticsinsight",
+    "status": 404,
+    "patterns_found": [],
+    "scan_time": "2026-04-27T18:27:40.034571"
+  },
+  {
+    "url": "https://brainforge.ai/",
+    "status": 200,
+    "patterns_found": [],
+    "scan_time": "2026-04-27T18:27:40.862582"
+  }
+]

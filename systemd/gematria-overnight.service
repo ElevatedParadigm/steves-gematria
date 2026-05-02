@@ -1,0 +1,15 @@
+[Unit]
+Description=Steve's Gematria Overnight Research Protocol
+After=network.target
+Documentation=file:///home/avalonas/.hermes/gematria/docs/OVERNIGHT_RESEARCH.md
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/python3 /home/avalonas/.hermes/gematria/scripts/overnight_research.py --mode overnight
+WorkingDirectory=/home/avalonas/.hermes/gematria
+StandardOutput=journal+console
+StandardError=journal+console
+TimeoutStartSec=10min
+
+[Install]
+WantedBy=timers.target

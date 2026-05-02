@@ -1,0 +1,21 @@
+# Multi-Agent System — Relationship Tracking Sync
+# Path: /home/avalonas/.hermes/gematria/crontab.gematria-sync
+# Install with: crontab -e && paste content of this file
+
+# ============================================
+# HOURLY KNOWLEDGE GRAPH SYNC (Optional)
+# ============================================
+# Runs hourly to maintain fresh relationship tracking files
+0 * * * * cd /home/avalonas/.hermes/gematria && python scripts/auto_obisidian_sync_v2.py 2>&1 >> /home/avalonas/.hermes/gematria/cron_logs/hourly_sync.log
+
+# ============================================
+# PATTERN CONVERGENCE SCAN — Every 6 Hours
+# ============================================
+# Runs at 00:00, 06:00, 12:00, 18:00 for multi-domain analysis
+0 0,6,12,18 * * * cd /home/avalonas/.hermes/gematria && python scripts/auto_obisidian_sync_v2.py --mode convergence 2>&1 >> /home/avalonas/.hermes/gematria/cron_logs/pattern_scan.log
+
+# ============================================
+# HEALTH CHECK — Every 30 Minutes
+# ============================================
+# Monitors database integrity and sync status
+30 * * * * cd /home/avalonas/.hermes/gematria && python scripts/health_check.py 2>&1 >> /home/avalonas/.hermes/gematria/cron_logs/health_check.log

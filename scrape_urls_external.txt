@@ -1,0 +1,8 @@
+# Multi-domain search queries for extended overnight research discovery
+# These URLs enable cross-referencing patterns across diverse sources
+https://en.wikipedia.org/wiki/Epstein_files
+https://en.wikipedia.org/wiki/List_of_military_coups
+https://www.nytimes.com/archive/politics
+https://coindesk.com/bitcoin-crypto-symbolism
+https://en.wikipedia.org/wiki/Trump_canada_statehood_narrative
+https://epsteinfiles.com/news/archive

@@ -1,0 +1,13 @@
+[Unit]
+Description=Steve's Gematria Overnight Research Task
+Documentation=https://github.com/avalon-stevens/gematria
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py
+WorkingDirectory=/home/avalonas/.hermes/gematria
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

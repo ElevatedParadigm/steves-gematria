@@ -1,0 +1,59 @@
+{
+  "database_version": "2.1",
+  "last_updated": "2026-04-27T10:30:00Z",
+  "schema": {
+    "analyzed_symbols": {
+      "description": "Core symbol registry with properties and relationships",
+      "fields": [
+        "symbol_id",
+        "name",
+        "aliases",
+        "description",
+        "domains",
+        "elemental_force"
+      ]
+    },
+    "elemental_forces": {
+      "description": "Elemental force definitions with relationships",
+      "fields": [
+        "force_name",
+        "name",
+        "description",
+        "characteristics",
+        "correlates_to",
+        "conflicts_with",
+        "complements"
+      ]
+    },
+    "cross_domain_patterns": {
+      "description": "Multi-domain correlation synthesis patterns",
+      "fields": [
+        "pattern_id",
+        "symbol_ids_involved",
+        "confidence_score",
+        "domains_affected",
+        "synthesis_notes"
+      ]
+    }
+  },
+  "existing_symbols": [
+    {"symbol_id": 124, "name": "Universal Threshold/Bridge", "elemental_force": null},
+    {"symbol_id": 963, "name": "Elevation/Completion (→9)", "elemental_force": null},
+    {"symbol_id": 55, "name": "Foundation/Structure", "elemental_force": "earth"},
+    {"symbol_id": 111, "name": "Activation/Vessel", "elemental_force": null},
+    {"symbol_id": 279, "name": "Transformation (cycle variant)", "elemental_force": null},
+    {"symbol_id": 666, "name": "Completion/Wholeness", "elemental_force": null}
+  ],
+  "new_symbols_added": [
+    {"symbol_id": 777, "name": "Trinity/Completion"},
+    {"symbol_id": 13, "name": "Doorways"},
+    {"symbol_id": 888, "name": "Portals"}
+  ],
+  "existing_forces": ["fire", "earth", "air", "water"],
+  "new_forces_added": [
+    "lightning",
+    "ice",
+    "wind",
+    "earth"
+  ]
+}

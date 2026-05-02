@@ -1,0 +1,26 @@
+# Steve's Gematria - Flexible Execution Schedule
+# This crontab supports both overnight (3 AM) and on-demand triggers
+
+# Environment setup
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+###############################################################################
+# STANDARD OVERNIGHT RESEARCH (3 AM Daily)
+###############################################################################
+0 3 * * * root cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py >> /home/avalonas/.hermes/gematria/logs/cron_overnight_output.log 2>&1
+
+###############################################################################
+# ON-DEMAND GOODNIGHT TRIGGER (Add this line after your goodnight command)
+###############################################################################
+# Manual execution: Add to crontab when you give "goodnight" command:
+#   0 22 * * * root cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py >> /home/avalonas/.hermes/gematria/logs/goodnight_research_output.log 2>&1
+# Or simply run directly after saying goodnight:
+#   cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py
+
+###############################################################################
+# ALTERNATIVE: Use a bash wrapper for flexible scheduling
+###############################################################################
+# Create: /home/avalonas/.hermes/gematria/scripts/run_research_now.sh
+# Content: cd /home/avalonas/.hermes/gematria && python scripts/overnight_research.py >> /home/avalonas/.hermes/gematria/logs/research.log 2>&1
+# Then you can add a cron entry that runs this wrapper at night hours

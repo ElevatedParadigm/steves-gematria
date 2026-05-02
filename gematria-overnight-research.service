@@ -1,0 +1,22 @@
+[Unit]
+Description=Overnight Research Protocol - Stability Test & Auto-Sync Loop
+Documentation=file:///home/avalonas/.hermes/gematria/cron_logs/OVERNIGHT_PROTOCOL_INITIAL_20260430.md
+
+[Service]
+Type=simple
+User=avalonas
+Group=avalonas
+WorkingDirectory=/home/avalonas/.hermes/gematria
+ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/loop_runner.py --interval 10800
+Restart=on-failure
+RestartSec=60
+StandardOutput=journal
+StandardError=journal
+Environment=TELEGRAM_BOT_TOKEN=""
+Environment=TELEGRAM_CHAT_ID="1962224247"
+
+ReadWritePaths=/home/avalonas/.hermes/gematria/cron_logs
+ReadWritePaths=/home/avalonas/.hermes/gematria/obsidian_exports
+
+[Install]
+WantedBy=multi-user.target

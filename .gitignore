@@ -1,0 +1,89 @@
+# Gematria Research - Visual Archive & Core System
+# ========================================
+
+# Visual Archive galleries (keep track but not in commits)
+visual_archive/*
+!visual_archive/.gitignore
+!visual_archive/README.md
+
+# Database files (large, use separate sync)
+database/*.json
+*.db
+!*.sqlite3.example
+
+# Gematria database (too large for git)
+gematria_database.json
+
+# Cache directories
+__pycache__/
+*/__pycache__/
+.cache/
+.venv/
+venv/
+
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.svn/
+.git/
+
+# Logs (large, use separate log storage)
+logs/*.log
+cron_logs/*.log
+*.out
+*.tmp
+
+# Temp files
+*.bak
+*.backup
+temp/
+.tmp/
+
+# Build / install artifacts
+dist/
+build/
+*.egg-info/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Lock files
+*.lock
+.git/index.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Tolaria app (separate project)
+laputa/
+!laputa/.gitignore
+
+# Analysis outputs - keep separate from code
+reports/*
+unified_overnight_research/*.md
+obsidian_exports/*
+
+# Cron artifacts
+jobs/*
+hybrid_cron.log
+
+# Firecrawl cache (large binary data)
+firecrawl/cache/*
+cron_logs/*
+!cron_logs/loop_summary_*.md

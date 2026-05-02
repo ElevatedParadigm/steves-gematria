@@ -1,0 +1,33 @@
+# Gematria Anomaly Detection Crontab Entries
+# Install with: crontab /home/avalonas/.hermes/gematria/crontab.gematria-anomaly
+# OR edit directly: crontab -e
+
+# Environment variables
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin:/home/avalonas/.local/bin
+GEMATRIA_DB_PATH=/home/avalonas/.hermes/gematria/gematria_database.json
+
+# ============================================
+# Option 1: Daily overnight anomaly detection (3 AM)
+# Recommended for production use
+# ============================================
+0 3 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/test_anomaly_detection.py >> ~/.hermes/logs/anomaly-detection.log 2>&1
+
+# ============================================
+# Option 2: Daily at midnight (for comparison)
+# Use if you prefer earlier execution time
+# ============================================
+# 0 0 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/test_anomaly_detection.py >> ~/.hermes/logs/anomaly-detection.log 2>&1
+
+# ============================================
+# Option 3: Run twice daily (3 AM and 9 PM)
+# For more frequent monitoring
+# ============================================
+# 0 3 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/test_anomaly_detection.py >> ~/.hermes/logs/anomaly-detection.log 2>&1
+# 0 21 * * * cd /home/avalonas/.hermes/gematria && python3 scripts/test_anomaly_detection.py >> ~/.hermes/logs/anomaly-detection.log 2>&1
+
+# ============================================
+# Option 4: Every 6 hours (for intensive monitoring)
+# Use only if database changes frequently
+# ============================================
+# */6 * * * * cd /home/avalonas/.hermes/gematria && python3 scripts/test_anomaly_detection.py >> ~/.hermes/logs/anomaly-detection.log 2>&1

@@ -1,0 +1,9 @@
+search_engine: google
+safe_search: 0
+imageproxy_url: https://imageproxy.searx.me/
+image_proxy_enable: false
+hoaxycaptcha_enable: false
+honeypot_enable: true
+captchatype: hcaptcha
+url_binder: default
+enable_message_log: false

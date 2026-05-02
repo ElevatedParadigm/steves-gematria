@@ -1,0 +1,44 @@
+{
+  "trigger_hierarchy": {
+    "level_1": {
+      "name": "Keyword Match (Immediate)",
+      "delay_minutes": 0,
+      "percentage_of_triggers": 60,
+      "action": "immediate"
+    },
+    "level_2": {
+      "name": "Pattern Verification",
+      "delay_minutes": 5,
+      "percentage_of_triggers": 30,
+      "action": "delayed"
+    },
+    "level_3": {
+      "name": "Cross-Domain Correlation",
+      "delay_minutes": 15,
+      "percentage_of_triggers": 8,
+      "action": "queued"
+    },
+    "level_4": {
+      "name": "AI Anomaly Detection",
+      "delay_minutes": 15,
+      "percentage_of_triggers": 2,
+      "action": "ai_analysis"
+    }
+  },
+  "core_symbols": [
+    124,
+    963,
+    55,
+    111,
+    279,
+    666
+  ],
+  "domains_configured": [
+    "political",
+    "military",
+    "spiritual",
+    "cube26",
+    "water",
+    "biosciences"
+  ]
+}

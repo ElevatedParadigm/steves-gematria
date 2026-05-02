@@ -1,0 +1,13 @@
+[Unit]
+Description=GematrIA Overnight Research Loop Timer - Runs every 3 hours at :00 minute
+Documentation=file:///home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py
+Requires=overnight-research.service
+
+[Timer]
+# Every 3 hours at minute 0 (hours: 0,3,6,9,12,15,18,21 UTC)
+OnCalendar=*:00,30,60,90,120,150,180,210:*:*:*:*
+AccuracySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

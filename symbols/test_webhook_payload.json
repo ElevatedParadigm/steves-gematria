@@ -1,0 +1,15 @@
+{
+  "type": "geopolitical_event",
+  "keywords": [
+    "Israel",
+    "Gaza",
+    "Trump",
+    "policy"
+  ],
+  "timestamp": "2026-04-26T14:34:18.508733",
+  "data": {
+    "source": "breaking_news_stream",
+    "confidence": 0.95,
+    "priority": "high"
+  }
+}

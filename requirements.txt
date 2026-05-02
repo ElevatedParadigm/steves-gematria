@@ -1,0 +1,38 @@
+# Steve's Gematria — Core Dependencies
+# Scientific computing & data analysis
+numpy>=1.26.0
+
+# Data manipulation
+pandas>=2.1.0
+
+# Scientific visualization
+matplotlib>=3.8.0
+scipy>=1.11.0
+
+# Web scraping & research
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Task scheduling & automation
+apscheduler>=3.10.4
+python-dotenv>=1.0.0
+
+# YAML & configuration
+pyyaml>=6.0
+
+# Pattern recognition
+scikit-learn>=1.3.0
+
+# Visualization (terminal-friendly)
+Pillow>=10.0.0
+
+# Knowledge graph
+networkx>=3.1.0
+
+# Documentation & reporting
+markdown>=3.5.0
+jinja2>=3.1.0
+
+# Optional: Firecrawl integration (can be omitted if not using)
+# firecrawl>=0.0.16

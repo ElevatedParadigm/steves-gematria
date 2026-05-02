@@ -1,0 +1,70 @@
+# Obsidian Hybrid Architecture - Automated Cron Jobs
+# Location: /home/avalonas/.hermes/gematria/cron_exports
+
+# ==============================================================================
+# EXPORT SCHEDULE OPTIONS
+# ==============================================================================
+
+# Option 1: Daily overnight export (3 AM) - Recommended for hands-off operation
+0 3 * * * /home/avalonas/.hermes/gematria/scripts/export_obsidian_hybrid.py --vault-path ~/.hermes/obsidian_vault >> /home/avalonas/.hermes/gematria/logs/cron_export_daily.log 2>&1
+
+# Option 2: Hourly export for real-time analysis
+# 0 * * * * /home/avalonas/.hermes/gematria/scripts/export_obsidian_hybrid.py --vault-path ~/.hermes/obsidian_vault >> /home/avalonas/.hermes/gematria/logs/cron_export_hourly.log 2>&1
+
+# Option 3: Manual trigger only
+# Uncomment this line if you prefer manual control:
+# 0 * * * * /bin/sh -c 'echo "Export triggered at $(date)" >> /home/avalonas/.hermes/gematria/logs/cron_export_manual.log'
+
+
+# ==============================================================================
+# MONITORING & MAINTENANCE TASKS
+# ==============================================================================
+
+# Daily: Check export freshness, alert if last sync > 24 hours
+0 * * * * /bin/sh -c 'if [ $(date +%s -d "$(find ~/.hermes/obsidian_vault/core_symbols -name "*_core_symbol.md" | head -1 | xargs grep "last_analyzed:" | sed "s/.*: //")" $((SECONDS - 86400))) -gt 86400 ]; then echo "Warning: Core symbols not updated for 24h+"; fi' >> /home/avalonas/.hermes/gematria/logs/cron_monitor.log 2>&1
+
+# Weekly: Generate convergence report
+0 5 * * 0 /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py --generate-convergence-report >> /home/avalonas/.hermes/gematria/logs/convergence_report_weekly.log 2>&1
+
+
+# ==============================================================================
+# LOG ROTATION (Add to system crontab if needed)
+# ==============================================================================
+
+# Rotate logs weekly, keep for 90 days
+0 2 * * 0 find /home/avalonas/.hermes/gematria/logs -name "*.log" -type f -mtime +90 -delete
+
+
+# ==============================================================================
+# QUICK COMMAND REFERENCE
+# ==============================================================================
+
+# Manual export (run any time):
+#   python /home/avalonas/.hermes/gematria/scripts/export_obsidian_hybrid.py --vault-path ~/.hermes/obsidian_vault
+
+# Dry run (preview changes):
+#   python /home/avalonas/.hermes/gematria/scripts/export_obsidian_hybrid.py --vault-path ~/.hermes/obsidian_vault --dry-run
+
+# Export with convergence report:
+#   python /home/avalonas/.hermes/gematria/scripts/export_obsidian_hybrid.py --vault-path ~/.hermes/obsidian_vault --export-all
+
+
+# ==============================================================================
+# VAULT STRUCTURE (After first export)
+# ==============================================================================
+
+# ~/.hermes/obsidian_vault/
+# ├── core_symbols/        # Individual number analysis notes
+# │   ├── 124_core_symbol.md
+# │   ├── 963_core_symbol.md
+# │   └── ...
+# ├── domains/             # Domain-specific analysis
+# │   ├── epstein_files_analysis/
+# │   ├── political_events/
+# │   └── ...
+# ├── relationships/       # Connection matrices
+# │   ├── relationship_matrix.md
+# │   ├── cross_reference_index.md
+# │   └── convergence_reports/
+# ├── analysis_timelines/  # Chronological tracking
+# └── templates/           # Note templates for reuse

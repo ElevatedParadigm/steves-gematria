@@ -1,0 +1,61 @@
+# 🌙 Enhanced Overnight Research Loop - Cron Job
+# =============================================================================
+# Schedule: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21 UTC)
+# Description: Runs enhanced stability test, auto-sync, heatmaps, elasticity monitoring
+# Integration: hybrid_scheduler.py for multi-phase rotation (speed_up/slow_down/intensify)
+# Auto-restart: Supports auto-retry on failure with exponential backoff
+
+# Environment
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+HOME=/home/avalonas
+LOGS_DIR=/home/avalonas/.hermes/gematria/cron_logs
+STATE_FILE=/home/avalonas/.hermes/gematria/elasticity_state.json
+
+# Function to send output to current cron channel
+send_cron_notification() {
+    local message="$1"
+    # Send notification via webhook or other configured channel
+    # This would integrate with your existing notification system
+    return 0
+}
+
+# Phase marker for elasticity monitoring (integrates with hybrid_scheduler.py)
+log_phase_marker() {
+    local phase="$1"
+    local details="$2"
+    echo "[${phase.upper()}] ${details}" >> "${LOGS_DIR}/phase_markers_$(date '+%Y%m%d').log"
+}
+
+# Main loop execution with auto-restart capability
+run_enhanced_loop() {
+    # Check if previous run completed normally
+    local last_exit_code=0
+    if [[ -f "${STATE_FILE}" ]]; then
+        last_exit_code=$(python3 -c "import json; s=json.load(open('${STATE_FILE}')); print(s.get('last_exit', 0))" 2>/dev/null || echo "0")
+    fi
+    
+    # Auto-restart: If previous run failed, wait and retry
+    if [[ "${last_exit_code}" != "0" ]]; then
+        log_phase_marker "RESTART" "Auto-restarting after failure (previous exit: ${last_exit_code})"
+        echo "⚠️  Previous run failed. Restarting..." >> "${LOGS_DIR}/loop_enhanced_$(date '+%Y%m%d').log"
+        
+        # Wait a bit before retrying (exponential backoff)
+        sleep 300  # 5 minutes between retries on failure
+        
+        # Clear state to allow restart
+        rm -f "${STATE_FILE}"
+    fi
+    
+    # Execute the enhanced loop
+    python3 /home/avalonas/.hermes/gematria/scripts/loop_runner_enhanced.py \
+        --timeout 2700 \
+        --retry 3 \
+        --phase "$(python3 /home/avalonas/.hermes/gematria/scripts/hybrid_scheduler.py --once | grep -o 'SPEED_UP\|SLOW_DOWN\|INTENSIFY\|BASELINE' | head -1 || echo 'baseline')"
+    
+    return $?
+}
+
+# Run the loop (will be called by cron scheduler)
+run_enhanced_loop
+

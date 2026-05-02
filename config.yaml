@@ -1,0 +1,41 @@
+# Hybrid Scheduler Configuration
+elasticity_phases:
+  baseline:
+    description: Standard operations at normal pace
+    speed_multiplier: 1.0
+    batch_size: 3
+    timeout_mult: 1.0
+    parallel_depth: 2
+  slow_down:
+    description: Reduced speed for safety/precision
+    speed_multiplier: 0.75
+    batch_size: 2
+    timeout_mult: 1.25
+    parallel_depth: 1
+  intensify:
+    description: High-intensity burst mode
+    speed_multiplier: 1.5
+    batch_size: 4
+    timeout_mult: 0.8
+    parallel_depth: 3
+
+monitoring:
+  auto_restart_enabled: true
+  max_restarts: 3
+  restart_delay_seconds: 30
+
+output:
+  log_file: "cron_logs/cron_job.log"
+  phase_markers_file: "cron_logs/phase_markers.log"
+  summary_log: "cron_logs/latest_run.log"
+  sync_output_dir: "obsidian_exports"
+  heatmap_output_dir: "research/heatmap_exports"
+
+database:
+  base_path: "database/gematria_database.json"
+  symbols_file: "symbols/symbols.json"
+  forces_file: "forces/forces.json"
+
+scheduling:
+  cron_pattern: "*/3 * * * *"
+  timezone_offset_hours: 0
