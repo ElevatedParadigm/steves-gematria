@@ -1,0 +1,9 @@
+usage: continuous_loop_runner.py [-h] [--repeat REPEAT] [--interval INTERVAL]
+                                 [--image-seed] [--symbol-keying-strategies]
+                                 [--git-version-tracking]
+                                 [--hidden-layering-detection]
+                                 [--domain-correlation] [--base-dir BASE_DIR]
+                                 [--database DATABASE]
+                                 [--image-vault IMAGE_VAULT]
+                                 [--obsidian-export OBSIDIAN_EXPORT]
+continuous_loop_runner.py: error: unrecognized arguments: --loop

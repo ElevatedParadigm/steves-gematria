@@ -1,0 +1,21 @@
+{
+  "firecrawl_config": {
+    "enabled": true,
+    "mode": "cloud_api",
+    "api_key_env": "FIRECRAWL_API_KEY",
+    "base_url": "https://api.firecrawl.dev/v1",
+    "fallback_enabled": true,
+    "local_url": "http://localhost:3002/v1",
+    "local_priority": false
+  },
+  "database_integration": {
+    "path": "/home/avalonas/.hermes/gematria/database/gematria_database.json",
+    "enabled": true,
+    "schema_version": "2.1"
+  },
+  "stealth_browser": {
+    "enabled": true,
+    "user_agent_rotation": true,
+    "proxy_support": false
+  }
+}

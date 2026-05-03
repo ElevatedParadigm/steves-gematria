@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-05-03T03:30:29.403721+00:00",
+  "phase": "heatmap_generation",
+  "status": "failed",
+  "exit_code": 1,
+  "error_message": "Traceback (most recent call last):\n  File \"/home/avalonas/.hermes/gematria/scripts/correlation_heatmap_ascii.py\", line 448, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/home/avalonas/.hermes/gematria/scripts/correlation_heatmap_ascii.py\", line 442, in main\n    files = generator.generate_full_heatmap_export(output_path=output_path)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/avalonas/.hermes/gematria/scripts/correlation_heatmap_ascii.py\", line 403, in generate_full_heatmap_export\n    generated_files.append(self.generate_symbol_relationship_heatmap(rel_heatmap_path))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/avalonas/.hermes/gematria/scripts/correlation_heatmap_ascii.py\", line 100, in generate_symbol_relationship_heatmap\n    return self._generate_ascii_heatmap(export_dir, adj_data, len(self.symbols))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/avalonas/.hermes/gematria/scripts/correlation_heatmap_ascii.py\", line 214, in _generate_ascii_heatmap\n    total_connections = sum(sum(1 for row in correlation_matrix for cell in row if cell))\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'int' object is not iterable\n"
+}

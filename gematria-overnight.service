@@ -1,13 +1,26 @@
 [Unit]
-Description=Steve's Gematria Overnight Research Task
-Documentation=https://github.com/avalon-stevens/gematria
+Description=🌙 Overnight Research Loop for Gematria Database Analysis
+Documentation=https://hermes-agent.nousresearch.com
+After=network.target local-fs.target
 
 [Service]
-Type=oneshot
-ExecStart=/usr/bin/python3 /home/avalonas/.hermes/gematria/scripts/auto_obisidian_sync_v2.py
+Type=simple
+ExecStart=/bin/bash /home/avalonas/.hermes/gematria/cron_overnight_loop.sh
 WorkingDirectory=/home/avalonas/.hermes/gematria
 StandardOutput=journal+console
 StandardError=journal+console
+Restart=on-failure
+RestartSec=30
+Environment="PYTHONPATH=/home/avalonas/.hermes/gematria/scripts"
+User=avalonas
+Group=avalonas
+
+# Resource limits
+LimitNOFILE=65535
+MemoryMax=4G
+
+# Logging
+SyslogIdentifier=gematria-overnight-loop
 
 [Install]
 WantedBy=multi-user.target

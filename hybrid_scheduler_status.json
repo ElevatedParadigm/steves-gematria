@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-05-03T03:19:35.571244+00:00",
+  "current_slot": 0,
+  "phase_type": "normal",
+  "intensity_multiplier": 1.0,
+  "last_run_hour": 0,
+  "next_slot": 3,
+  "status": "READY"
+}

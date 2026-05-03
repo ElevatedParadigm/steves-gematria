@@ -1,8 +1,7 @@
-obsidian_exports/*.md
+obsidian_exports/cycle_*.md  # Cycle reports are tracked
 *.pyc
 __pycache__/
-logs/
+logs/*.log  # Keep cycle completion reports, only ignore activity logs
 *~
-firecrawl_config.json
-database/gematria_database.json
+firecrawl_config.json  # Temporary config
 .obsidian/

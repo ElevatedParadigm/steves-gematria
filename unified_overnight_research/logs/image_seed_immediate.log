@@ -1,0 +1,37 @@
+[IMMEDIATE MODE]
+Running IMAGE-SEED pattern extraction from local vault...
+
+Scanning 38 recent pattern directories...
+
+Sending top 5 pattern directories to Firecrawl...
+Query preview: [ANCHOR:CORRELATION] patterns from 2026-04-29 | [ANCHOR:CORRELATION] patterns from 2026-04-28 | [ANC...
+✗ Firecrawl returned status 404: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</tit
+
+[POST-PROCESSING]
+
+============================================================
+RECENT EXPORTS:
+============================================================
+
+📁 cycle_574 - 1 files
+   Files by type: .txt: 1
+
+📁 cycle_573 - 1 files
+   Files by type: .txt: 1
+
+📁 cycle_572 - 1 files
+   Files by type: .txt: 1
+
+📁 cycle_571 - 1 files
+   Files by type: .txt: 1
+
+📁 cycle_570 - 1 files
+   Files by type: .txt: 1
+
+✅ IMAGE-SEED immediate run complete!
+
+Image-SEED immediate mode completed!

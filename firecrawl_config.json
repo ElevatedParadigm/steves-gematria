@@ -1,0 +1,25 @@
+{
+    "firecrawl_instance": {
+        "local_url": "http://localhost:3002/v1/search",
+        "local_status": "not_running",
+        "cloud_url": "https://api.firecrawl.dev/v1",
+        "cloud_fallback": true,
+        "authentication": {
+            "type": "api_key",
+            "enabled": false,
+            "key_env_var": "FIRECRAWL_API_KEY"
+        }
+    },
+    "search_config": {
+        "max_results": 10,
+        "timeout_seconds": 60,
+        "follow_redirects": true,
+        "include_headers": false,
+        "exclude_params": ["robots.txt"]
+    },
+    "webhook_endpoint": {
+        "enabled": true,
+        "url_template": "/home/avalonas/.hermes/gematria/unified_overnight_research/reports/webhook_payload.json",
+        "retry_count": 3
+    }
+}

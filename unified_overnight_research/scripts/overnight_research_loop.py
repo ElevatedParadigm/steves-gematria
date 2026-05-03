@@ -19,7 +19,7 @@ import hashlib
 # Configuration
 REPO_PATH = Path("/home/avalonas/.hermes/gematria/unified_overnight_research")
 DB_PATH = Path("/home/avalonas/.hermes/gematria/database/gematria_database.json")
-IMAGE_VAULT = Path("/home/avalonas/Pictures/Steves%20gematria/")
+IMAGE_VAULT = Path("/home/avalonas/Pictures/Steves gematria/")
 OBSIDIAN_EXPORTS = REPO_PATH / "obsidian_exports"
 LOG_DIR = REPO_PATH / "logs"
 RELATIONSHIP_MATRIX = REPO_PATH / "relationships_matrix.json"

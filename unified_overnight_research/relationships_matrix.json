@@ -3,149 +3,222 @@
     "124-111": {
       "type": "hidden_layering",
       "confidence": 0.75,
-      "domains": [
-        "Cryptocurrency",
-        "Military",
-        "Religious"
-      ]
+      "domains": ["Cryptocurrency", "Military", "Religious"],
+      "elemental_force": "lightning",
+      "convergence_signal": true
     },
     "124-279": {
       "type": "hidden_layering",
       "confidence": 0.82,
-      "domains": [
-        "Religious",
-        "Political",
-        "Military"
-      ]
+      "domains": ["Religious", "Political", "Military"],
+      "elemental_force": "earth_balance",
+      "convergence_signal": true
     },
     "124-666": {
       "type": "hidden_layering",
       "confidence": 0.78,
-      "domains": [
-        "Elemental",
-        "Economic"
-      ]
+      "domains": ["Elemental", "Economic"],
+      "elemental_force": "fire",
+      "convergence_signal": true
+    },
+    "124-55": {
+      "type": "primary_bridge",
+      "confidence": 0.92,
+      "domains": ["Political", "Geopolitical", "International"],
+      "elemental_force": "air",
+      "convergence_signal": true
+    },
+    "124-963": {
+      "type": "complement_cycle",
+      "confidence": 0.81,
+      "domains": ["Political", "Air transformation"],
+      "elemental_force": "air",
+      "convergence_signal": true
     },
     "666-111": {
       "type": "hidden_layering",
       "confidence": 0.74,
-      "domains": [
-        "Economic"
-      ]
+      "domains": ["Economic"],
+      "elemental_force": "resonance",
+      "convergence_signal": true
     },
     "666-279": {
       "type": "hidden_layering",
       "confidence": 0.92,
-      "domains": [
-        "Elemental",
-        "Geopolitical"
-      ]
+      "domains": ["Elemental", "Geopolitical"],
+      "elemental_force": "fire",
+      "convergence_signal": true
     },
     "666-666": {
-      "type": "hidden_layering",
+      "type": "self_reference",
       "confidence": 0.77,
-      "domains": [
-        "Political"
-      ]
+      "domains": ["Political"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "963-111": {
       "type": "hidden_layering",
       "confidence": 0.76,
-      "domains": [
-        "Geopolitical",
-        "Cryptocurrency"
-      ]
+      "domains": ["Geopolitical", "Cryptocurrency"],
+      "elemental_force": "frequency",
+      "convergence_signal": true
     },
     "963-279": {
       "type": "hidden_layering",
       "confidence": 0.93,
-      "domains": [
-        "Military"
-      ]
+      "domains": ["Military"],
+      "elemental_force": "fire",
+      "convergence_signal": true
     },
     "963-666": {
       "type": "hidden_layering",
       "confidence": 0.79,
-      "domains": [
-        "Academic"
-      ]
+      "domains": ["Academic"],
+      "elemental_force": null,
+      "convergence_signal": false
     },
     "55-111": {
       "type": "hidden_layering",
       "confidence": 0.75,
-      "domains": [
-        "Religious",
-        "Political"
-      ]
+      "domains": ["Religious", "Political"],
+      "elemental_force": "air",
+      "convergence_signal": true
     },
     "55-279": {
       "type": "hidden_layering",
       "confidence": 0.88,
-      "domains": [
-        "Religious",
-        "Cryptocurrency"
-      ]
+      "domains": ["Religious", "Cryptocurrency"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "55-666": {
       "type": "hidden_layering",
       "confidence": 0.89,
-      "domains": [
-        "Cryptocurrency",
-        "Geopolitical",
-        "Academic"
-      ]
+      "domains": ["Cryptocurrency", "Geopolitical", "Academic"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "279-111": {
       "type": "hidden_layering",
       "confidence": 0.73,
-      "domains": [
-        "Cryptocurrency"
-      ]
+      "domains": ["Cryptocurrency"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "279-279": {
-      "type": "hidden_layering",
+      "type": "self_reference",
       "confidence": 0.92,
-      "domains": [
-        "Academic",
-        "Cryptocurrency",
-        "Elemental"
-      ]
+      "domains": ["Academic", "Cryptocurrency", "Elemental"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "279-666": {
       "type": "hidden_layering",
       "confidence": 0.77,
-      "domains": [
-        "AI_Advancement",
-        "Elemental"
-      ]
+      "domains": ["AI_Advancement", "Elemental"],
+      "elemental_force": null,
+      "convergence_signal": true
     },
     "111-111": {
-      "type": "hidden_layering",
+      "type": "self_reference",
       "confidence": 0.83,
-      "domains": [
-        "Religious",
-        "Economic"
-      ]
+      "domains": ["Religious", "Economic"],
+      "elemental_force": "lightning",
+      "convergence_signal": true
     },
     "111-279": {
       "type": "hidden_layering",
       "confidence": 0.78,
-      "domains": [
-        "Geopolitical",
-        "Political",
-        "Economic"
-      ]
+      "domains": ["Geopolitical", "Political", "Economic"],
+      "elemental_force": "resonance",
+      "convergence_signal": true
     },
     "111-666": {
       "type": "hidden_layering",
       "confidence": 0.88,
-      "domains": [
-        "Academic",
-        "Military",
-        "Religious"
-      ]
+      "domains": ["Academic", "Military", "Religious"],
+      "elemental_force": null,
+      "convergence_signal": true
+    },
+    "17-124": {
+      "type": "complement_threshold",
+      "confidence": 0.85,
+      "domains": ["Political", "Academic"],
+      "elemental_force": null,
+      "convergence_signal": false
     }
   },
-  "domains_discovered": [],
-  "last_update": "2026-05-01T14:04:53.227586"
+  "symbols_discovered": [],
+  "relationships_extended": [
+    {
+      "symbol_pair": "124-55",
+      "connection_type": "primary_bridge",
+      "confidence": 0.92,
+      "domains": ["Political", "Geopolitical", "International"],
+      "timestamp": "2026-05-03T08:01:00"
+    },
+    {
+      "symbol_pair": "124-963",
+      "connection_type": "complement_cycle",
+      "confidence": 0.81,
+      "domains": ["Political", "Air transformation"],
+      "timestamp": "2026-05-03T08:01:00"
+    },
+    {
+      "symbol_pair": "963-666",
+      "connection_type": "hidden_layering",
+      "confidence": 0.79,
+      "domains": ["Academic"],
+      "timestamp": "2026-05-03T08:01:00"
+    },
+    {
+      "symbol_pair": "17-124",
+      "connection_type": "complement_threshold",
+      "confidence": 0.85,
+      "domains": ["Political", "Academic"],
+      "timestamp": "2026-05-03T08:01:00"
+    }
+  ],
+  "domain_correlations": {
+    "Political": {"symbols": [124, 963, 55], "avg_confidence": 0.84, "domains_linked": ["Economic", "Military"]},
+    "Religious": {"symbols": [111, 279, 666, 55], "avg_confidence": 0.81, "domains_linked": ["Political", "Military", "Academic"]},
+    "Economic": {"symbols": [111, 55, 666], "avg_confidence": 0.82, "domains_linked": ["Cryptocurrency", "Geopolitical"]},
+    "Military": {"symbols": [124, 963, 111], "avg_confidence": 0.87, "domains_linked": ["Political", "Religious"]},
+    "Elemental": {"symbols": [124, 666, 279], "avg_confidence": 0.83, "domains_linked": ["Geopolitical", "Academic"]},
+    "Cryptocurrency": {"symbols": [55, 963, 111, 279], "avg_confidence": 0.78, "domains_linked": ["Academic", "Economic"]},
+    "Academic": {"symbols": [963, 666, 279], "avg_confidence": 0.78, "domains_linked": ["AI_Advancement", "Cryptocurrency"]},
+    "AI_Advancement": {"symbols": [279, 666], "avg_confidence": 0.77, "domains_linked": ["Elemental"]},
+    "Geopolitical": {"symbols": [124, 55, 666, 111, 963], "avg_confidence": 0.81, "domains_linked": ["Cryptocurrency", "Military"]}
+  },
+  "cycle_1_initiated": true,
+  "current_cycle": 1,
+  "items_processed_this_cycle": 30,
+  "genesis_cycle_complete": true,
+  "hidden_layering_initialized": true,
+  "cycle_timestamps": {
+    "1": "2026-05-03T08:01:00.000000",
+    "438": "2026-05-03T07:14:40.637727",
+    "439": "2026-05-03T07:15:40.985183",
+    "440": "2026-05-03T07:16:41.158634",
+    "441": "2026-05-03T07:17:41.335901",
+    "442": "2026-05-03T07:18:41.507479",
+    "443": "2026-05-03T07:19:41.677842",
+    "444": "2026-05-03T07:20:41.883587",
+    "445": "2026-05-03T07:21:42.061333",
+    "446": "2026-05-03T07:22:42.236496",
+    "447": "2026-05-03T07:23:42.242844",
+    "448": "2026-05-03T07:24:42.414184",
+    "449": "2026-05-03T07:25:42.620381",
+    "450": "2026-05-03T07:26:43.387310",
+    "451": "2026-05-03T07:27:43.562833"
+  },
+  "symbol_keying_strategies": {
+    "124": "PRIMARY",
+    "963": "AVERAGE",
+    "279": "HIDDEN_LAYERS",
+    "55": "MODERATE",
+    "111": "HIDDEN_LAYERS",
+    "666": "HIDDEN_LAYERS"
+  },
+  "last_update": "2026-05-03T08:01:00.000000"
 }

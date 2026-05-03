@@ -1,0 +1,7 @@
+[2026-04-30T11:27:54Z] [CYCLE_START] === Starting Research Cycle ===
+[2026-04-30T11:27:54Z] [ANALYZE] 
+🔍 Analyzing symbol 124: Geopolitics
+[2026-04-30T11:27:54Z] [QUERY]   🔎 Symbol-keying query: '124 geopolitical boundary events'
+[2026-04-30T11:27:54Z] [WARNING]   ⚠️  Research attempt failed (dry-run mode): NameError
+[2026-04-30T11:27:54Z] [ERROR] 
+❌ Research cycle failed: NameError: name 'SYMBOL_NAMES' is not defined

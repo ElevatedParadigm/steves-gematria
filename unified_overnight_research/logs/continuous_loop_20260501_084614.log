@@ -1,0 +1,218 @@
+[2026-05-01T08:46:14Z] [HEADER] ================================================================================
+[2026-05-01T08:46:14Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #2
+[2026-05-01T08:46:14Z] [INFO] ================================================================================
+[2026-05-01T08:46:14Z] [HEADER] ============================================================
+[2026-05-01T08:46:14Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #2
+[2026-05-01T08:46:14Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:46:14Z] [INFO] 📊 Cycle duration: 0.12s, Files generated: 1
+[2026-05-01T08:46:14Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:46:14Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:46:14Z] [SECTION] ============================================================
+[2026-05-01T08:46:14Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:46:14Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:46:14Z] [SECTION] ============================================================
+[2026-05-01T08:46:14Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:46:14Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:46:14Z] [SECTION] ============================================================
+[2026-05-01T08:46:14Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:46:14Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:46:14Z] [SECTION] ============================================================
+[2026-05-01T08:46:14Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:46:15Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:46:15Z] [SECTION] ============================================================
+[2026-05-01T08:46:15Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS
+[2026-05-01T08:46:28Z] [INFO] 🎨 Domain integrations synthesized: 0
+[2026-05-01T08:46:28Z] [SECTION] ============================================================
+[2026-05-01T08:46:28Z] [INFO] 🚀 PHASE: ADVANCED OVERNIGHT LOOP
+[2026-05-01T08:47:13Z] [INFO] 🔬 Advanced loop completed cycles: 0
+[2026-05-01T08:47:13Z] [WARNING] ⚠️  Git commit skipped or failed (git not initialized?): Command '['git', '-C', '/home/avalonas/.hermes/gematria/unified_overnight_research', 'commit', '-m', '[2026-05-01T08:47:13Z] Cycle 1: Cycle 2: Web research + hidden layering detection']' returned non-zero exit status 1.
+[2026-05-01T08:47:13Z] [INFO] 
+📊 CYCLE #2 SUMMARY
+[2026-05-01T08:47:13Z] [INFO] ✅ Successful tasks: 7/7
+[2026-05-01T08:47:13Z] [INFO] ⏱️  Cycle duration: 59.83s
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:47:13Z] [HEADER] ================================================================================
+[2026-05-01T08:47:13Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #3
+[2026-05-01T08:47:13Z] [INFO] ================================================================================
+[2026-05-01T08:47:13Z] [HEADER] ============================================================
+[2026-05-01T08:47:13Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #3
+[2026-05-01T08:47:13Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:47:14Z] [INFO] 📊 Cycle duration: 0.16s, Files generated: 1
+[2026-05-01T08:47:14Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:47:14Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:47:14Z] [SECTION] ============================================================
+[2026-05-01T08:47:14Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:47:14Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:47:14Z] [SECTION] ============================================================
+[2026-05-01T08:47:14Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:47:14Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:47:14Z] [SECTION] ============================================================
+[2026-05-01T08:47:14Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:47:14Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:47:14Z] [SECTION] ============================================================
+[2026-05-01T08:47:14Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:47:15Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:47:15Z] [SECTION] ============================================================
+[2026-05-01T08:47:15Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS
+[2026-05-01T08:47:28Z] [INFO] 🎨 Domain integrations synthesized: 0
+[2026-05-01T08:47:28Z] [SECTION] ============================================================
+[2026-05-01T08:47:28Z] [INFO] 🚀 PHASE: ADVANCED OVERNIGHT LOOP
+[2026-05-01T08:48:10Z] [INFO] 🔬 Advanced loop completed cycles: 0
+[2026-05-01T08:48:10Z] [WARNING] ⚠️  Git commit skipped or failed (git not initialized?): Command '['git', '-C', '/home/avalonas/.hermes/gematria/unified_overnight_research', 'commit', '-m', '[2026-05-01T08:48:10Z] Cycle 2: Cycle 3: Web research + hidden layering detection']' returned non-zero exit status 1.
+[2026-05-01T08:48:10Z] [INFO] 
+📊 CYCLE #3 SUMMARY
+[2026-05-01T08:48:10Z] [INFO] ✅ Successful tasks: 7/7
+[2026-05-01T08:48:10Z] [INFO] ⏱️  Cycle duration: 57.00s
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:48:10Z] [HEADER] ================================================================================
+[2026-05-01T08:48:10Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #4
+[2026-05-01T08:48:10Z] [INFO] ================================================================================
+[2026-05-01T08:48:10Z] [HEADER] ============================================================
+[2026-05-01T08:48:10Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #4
+[2026-05-01T08:48:10Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:48:11Z] [INFO] 📊 Cycle duration: 0.14s, Files generated: 1
+[2026-05-01T08:48:11Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:48:11Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:48:11Z] [SECTION] ============================================================
+[2026-05-01T08:48:11Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:48:11Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:48:11Z] [SECTION] ============================================================
+[2026-05-01T08:48:11Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:48:11Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:48:11Z] [SECTION] ============================================================
+[2026-05-01T08:48:11Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:48:11Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:48:11Z] [SECTION] ============================================================
+[2026-05-01T08:48:11Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:48:12Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:48:12Z] [SECTION] ============================================================
+[2026-05-01T08:48:12Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS
+[2026-05-01T08:48:27Z] [INFO] 🎨 Domain integrations synthesized: 0
+[2026-05-01T08:48:27Z] [SECTION] ============================================================
+[2026-05-01T08:48:27Z] [INFO] 🚀 PHASE: ADVANCED OVERNIGHT LOOP
+[2026-05-01T08:49:12Z] [INFO] 🔬 Advanced loop completed cycles: 0
+[2026-05-01T08:49:12Z] [WARNING] ⚠️  Git commit skipped or failed (git not initialized?): Command '['git', '-C', '/home/avalonas/.hermes/gematria/unified_overnight_research', 'commit', '-m', '[2026-05-01T08:49:12Z] Cycle 3: Cycle 4: Web research + hidden layering detection']' returned non-zero exit status 1.
+[2026-05-01T08:49:12Z] [INFO] 
+📊 CYCLE #4 SUMMARY
+[2026-05-01T08:49:12Z] [INFO] ✅ Successful tasks: 7/7
+[2026-05-01T08:49:12Z] [INFO] ⏱️  Cycle duration: 61.20s
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:49:12Z] [HEADER] ================================================================================
+[2026-05-01T08:49:12Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #5
+[2026-05-01T08:49:12Z] [INFO] ================================================================================
+[2026-05-01T08:49:12Z] [HEADER] ============================================================
+[2026-05-01T08:49:12Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #5
+[2026-05-01T08:49:12Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:49:12Z] [INFO] 📊 Cycle duration: 0.17s, Files generated: 1
+[2026-05-01T08:49:12Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:49:12Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:49:12Z] [SECTION] ============================================================
+[2026-05-01T08:49:12Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:49:12Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:49:12Z] [SECTION] ============================================================
+[2026-05-01T08:49:12Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:49:12Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:49:12Z] [SECTION] ============================================================
+[2026-05-01T08:49:12Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:49:12Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:49:12Z] [SECTION] ============================================================
+[2026-05-01T08:49:12Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:49:13Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:49:13Z] [SECTION] ============================================================
+[2026-05-01T08:49:13Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS
+[2026-05-01T08:49:29Z] [INFO] 🎨 Domain integrations synthesized: 0
+[2026-05-01T08:49:29Z] [SECTION] ============================================================
+[2026-05-01T08:49:29Z] [INFO] 🚀 PHASE: ADVANCED OVERNIGHT LOOP
+[2026-05-01T08:50:06Z] [INFO] 🔬 Advanced loop completed cycles: 0
+[2026-05-01T08:50:06Z] [WARNING] ⚠️  Git commit skipped or failed (git not initialized?): Command '['git', '-C', '/home/avalonas/.hermes/gematria/unified_overnight_research', 'commit', '-m', '[2026-05-01T08:50:06Z] Cycle 4: Cycle 5: Web research + hidden layering detection']' returned non-zero exit status 1.
+[2026-05-01T08:50:06Z] [INFO] 
+📊 CYCLE #5 SUMMARY
+[2026-05-01T08:50:06Z] [INFO] ✅ Successful tasks: 7/7
+[2026-05-01T08:50:06Z] [INFO] ⏱️  Cycle duration: 54.33s
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:50:06Z] [HEADER] ================================================================================
+[2026-05-01T08:50:06Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #6
+[2026-05-01T08:50:06Z] [INFO] ================================================================================
+[2026-05-01T08:50:06Z] [HEADER] ============================================================
+[2026-05-01T08:50:06Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #6
+[2026-05-01T08:50:06Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:50:06Z] [INFO] 📊 Cycle duration: 0.19s, Files generated: 1
+[2026-05-01T08:50:06Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:50:06Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:50:06Z] [SECTION] ============================================================
+[2026-05-01T08:50:06Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:50:06Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:50:06Z] [SECTION] ============================================================
+[2026-05-01T08:50:06Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:50:06Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:50:06Z] [SECTION] ============================================================
+[2026-05-01T08:50:06Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:50:06Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:50:06Z] [SECTION] ============================================================
+[2026-05-01T08:50:06Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:50:07Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:50:07Z] [SECTION] ============================================================
+[2026-05-01T08:50:07Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS
+[2026-05-01T08:50:26Z] [INFO] 🎨 Domain integrations synthesized: 0
+[2026-05-01T08:50:26Z] [SECTION] ============================================================
+[2026-05-01T08:50:26Z] [INFO] 🚀 PHASE: ADVANCED OVERNIGHT LOOP
+[2026-05-01T08:51:08Z] [INFO] 🔬 Advanced loop completed cycles: 0
+[2026-05-01T08:51:08Z] [WARNING] ⚠️  Git commit skipped or failed (git not initialized?): Command '['git', '-C', '/home/avalonas/.hermes/gematria/unified_overnight_research', 'commit', '-m', '[2026-05-01T08:51:08Z] Cycle 5: Cycle 6: Web research + hidden layering detection']' returned non-zero exit status 1.
+[2026-05-01T08:51:08Z] [INFO] 
+📊 CYCLE #6 SUMMARY
+[2026-05-01T08:51:08Z] [INFO] ✅ Successful tasks: 7/7
+[2026-05-01T08:51:08Z] [INFO] ⏱️  Cycle duration: 61.74s
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [INFO]    ⚠️ task: result
+[2026-05-01T08:51:08Z] [HEADER] ================================================================================
+[2026-05-01T08:51:08Z] [INFO] 🔄 OVERNIGHT RESEARCH PIPELINE - CYCLE #7
+[2026-05-01T08:51:08Z] [INFO] ================================================================================
+[2026-05-01T08:51:08Z] [HEADER] ============================================================
+[2026-05-01T08:51:08Z] [INFO] 🌙 STARTING OVERNIGHT RESEARCH CYCLE #7
+[2026-05-01T08:51:08Z] [INFO] 🔍 Running overnight research protocol (web scraping + cross-symbol analysis)...
+[2026-05-01T08:51:08Z] [INFO] 📊 Cycle duration: 0.13s, Files generated: 1
+[2026-05-01T08:51:08Z] [WARNING] ⚠️ Database not initialized for cycle counting
+[2026-05-01T08:51:08Z] [INFO] 💾 Database updated with cycle results
+[2026-05-01T08:51:08Z] [SECTION] ============================================================
+[2026-05-01T08:51:08Z] [INFO] 🔮 PHASE: HIDDEN LAYERING DETECTION
+[2026-05-01T08:51:08Z] [INFO] 🔗 Hidden layering detection complete. Connections identified: 2
+[2026-05-01T08:51:08Z] [SECTION] ============================================================
+[2026-05-01T08:51:08Z] [INFO] 🔬 PHASE: DOMAIN CORRELATION ANALYSIS
+[2026-05-01T08:51:08Z] [INFO] 📊 Domain correlation matrices created: 2
+[2026-05-01T08:51:08Z] [SECTION] ============================================================
+[2026-05-01T08:51:08Z] [INFO] 🖼️  PHASE: IMAGE-SEED ANALYSIS
+[2026-05-01T08:51:08Z] [INFO] 📂 Image seed analysis bootstrapping from 0 images...
+[2026-05-01T08:51:08Z] [SECTION] ============================================================
+[2026-05-01T08:51:08Z] [INFO] 📤 PHASE: PUSH COMPONENTS TO TOLARIA
+[2026-05-01T08:51:09Z] [INFO] 📦 Components pushed to Tolaria: 5
+[2026-05-01T08:51:09Z] [SECTION] ============================================================
+[2026-05-01T08:51:09Z] [INFO] 🧩 PHASE: COMPOSER - DOMAIN INTEGRATION SYNTHESIS

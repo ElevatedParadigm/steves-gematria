@@ -165,8 +165,23 @@ class OvernightResearchEngine:
         if not db_file.exists():
             self.init_database()
             
+        # Ensure proper structure exists before loading
         with open(db_file, 'r') as f:
-            db = json.load(f)
+            try:
+                db = json.load(f)
+            except json.JSONDecodeError:
+                print("⚠️ Database file corrupted, reinitializing...")
+                self.init_database()
+                with open(db_file, 'r') as f2:
+                    db = json.load(f2)
+        
+        # Ensure required keys exist and are arrays
+        for key in ["entries", "cycle_history"]:
+            if key not in db:
+                db[key] = []
+            elif not isinstance(db[key], list):
+                print(f"⚠️ Converting {key} from {type(db[key]).__name__} to list")
+                db[key] = []
         
         # Add entries from this cycle
         for symbol_str, result in symbol_results.items():

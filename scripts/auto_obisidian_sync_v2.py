@@ -127,6 +127,54 @@ class AutoObsidianSync:
         print(f"\n✅ Generated {len(note_files)} symbol definition files")
         return note_files
     
+    def _compute_adjacency_scores(self, adj_data: List[Dict], n_symbols: int) -> str:
+        """Compute ASCII heatmap for relationship adjacency"""
+        
+        if len(adj_data) == 0:
+            return "*No relationships found*"
+        
+        symbols_list = sorted(adj_data.keys())
+        sym_names = {sid: self.symbols[sid].get("name", f"Symbol {sid}") for sid in symbols_list}
+        
+        n = len(symbols_list)
+        
+        matrix_lines = []
+        header = "   " + "    ".join([f"{sid[:3]:>4}" for sid in symbols_list])
+        matrix_lines.append(header)
+        
+        max_len = 20
+        for i, src in enumerate(symbols_list):
+            row_vals = []
+            row_str = f"{sym_names[src][:15]:15}"
+            
+            # For simplicity, compute score as average confidence of connected symbols
+            connections = [d["to"] for d in adj_data if d.get("from") == src]
+            if connections:
+                avg_score = sum(self.symbols[c].get("confidence_score", 0) for c in connections if c in self.symbols) / len(connections)
+            else:
+                avg_score = 0
+            
+            row_vals.append(min(avg_score, 1.0))
+            
+            # Convert score to ASCII characters (heatmap colors)
+            if row_vals[0] >= 0.9:
+                char = "██"
+            elif row_vals[0] >= 0.7:
+                char = "█░"
+            elif row_vals[0] >= 0.5:
+                char = "▉▁"
+            elif row_vals[0] >= 0.3:
+                char = "▄▅"
+            elif row_vals[0] >= 0.1:
+                char = "▀▂"
+            else:
+                char = "··"
+            row_str += f" {char}"
+            
+            matrix_lines.append(row_str)
+        
+        return "\n".join(matrix_lines)
+    
     def generate_relationship_matrix(self) -> Path:
         """Generate relationship matrix file for all symbols"""
         
@@ -158,7 +206,7 @@ class AutoObsidianSync:
         # Generate matrix visualization (ASCII)
         if len(adj_data) > 0:
             try:
-                ascii_matrix = self._generate_ascii_matrix(adj_data, len(self.symbols))
+                ascii_matrix = self._compute_adjacency_scores(adj_data, len(self.symbols))
                 content = "---\ntype: relationships\n---\n\n# 🕸️ Symbol Relationship Matrix\n\n" + ascii_matrix
             except Exception as e:
                 print(f"⚠️ ASCII matrix generation error (non-fatal): {e}")
@@ -216,10 +264,10 @@ class AutoObsidianSync:
                     
                     # Correlates to symbols
                     correlates = force_data.get("correlates_to", [])
-                    if correlates:
+                    if correlates and len(correlates) > 0:
                         related_sigs = [str(s) for s in correlates if s in self.symbols]
                         if related_sigs:
-                            content += f"**Correlates:** {', '.join(f'S{sid}' for sid in relates)}\n\n"
+                            content += f"**Correlates:** {', '.join(f'S{sid}' for sid in related_sigs)}\n\n"
                     
                     # Complements
                     complements = force_data.get("complements", [])

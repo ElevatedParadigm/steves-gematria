@@ -1,0 +1,13 @@
+# 🌙 Overnight Research Loop Cron Configuration
+# ====================================================
+# Schedule: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21)
+# Format: hour * * * *
+
+# Add to system crontab (sudo):
+# 0 0,3,6,9,12,15,18,21 * * * /usr/bin/python3 /home/avalonas/.hermes/gematria/run_overnight_loop.py >> /home/avalonas/.hermes/gematria/logs/cron_overnight.log 2>&1
+
+# Or add to user crontab (crontab -e):
+0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas && /usr/bin/python3 /home/avalonas/.hermes/gematria/run_overnight_loop.py --validate >> /home/avalonas/.hermes/gematria/logs/cron_overnight.log 2>&1
+
+# Alternative: Using bash script wrapper
+0 0,3,6,9,12,15,18,21 * * * /bin/bash /home/avalonas/.hermes/gematria/cron_overnight_loop.sh >> /home/avalonas/.hermes/gematria/logs/cron_overnight.log 2>&1
