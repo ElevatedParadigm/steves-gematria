@@ -210,10 +210,13 @@ class CorrelationHeatmapGenerator:
         lines.append("")
         lines.append(f"Total symbols analyzed:      {len(self.symbols)}")
         lines.append(f"Direct relationships found:  {len(adj_data)}")
-        if adj_data and num_nodes > 0 and isinstance(correlation_matrix, list) and correlation_matrix:
-            total_connections = sum(sum(1 for row in correlation_matrix for cell in row if cell))
-            avg_connections = (total_connections // max(len(node_ids), 1)) * len(node_ids) / 2
-            lines.append(f"Average connections/node:    {avg_connections:.2f}")
+        if adj_data and num_nodes > 0 and correlation_matrix is not None and isinstance(correlation_matrix, list):
+            try:
+                total_connections = sum(sum(1 for row in correlation_matrix for cell in row if cell))
+                avg_connections = (total_connections // max(len(node_ids), 1)) * len(node_ids) / 2
+                lines.append(f"Average connections/node:    {avg_connections:.2f}")
+            except Exception as e:
+                lines.append("Average connections/node:    N/A")
         else:
             lines.append("Average connections/node:    N/A")
         
@@ -227,8 +230,9 @@ class CorrelationHeatmapGenerator:
         except Exception as e:
             print(f"❌ Error writing heatmap: {e}")
         
-        return output_path
-    
+        # Return the export_dir path as the result
+        return export_dir / "relationships_matrix.md" if export_dir.exists() else None
+
     def generate_symbol_correlation_heatmap(self) -> Path:
         """Generate correlation heatmap showing strength of associations"""
         
@@ -400,15 +404,25 @@ class CorrelationHeatmapGenerator:
         
         # Generate symbol relationship heatmap
         rel_heatmap_path = output_path or "symbol_relationships.md"
-        generated_files.append(self.generate_symbol_relationship_heatmap(rel_heatmap_path))
+        rel_result = self.generate_symbol_relationship_heatmap(rel_heatmap_path)
+        if rel_result is not None:
+            generated_files.append(rel_result)
+        else:
+            print(f"⚠️ Symbol relationship heatmap returned None")
         
         # Generate correlation heatmap
-        corr_heatmap_path = self.generate_symbol_correlation_heatmap()
-        generated_files.append(corr_heatmap_path)
+        corr_result = self.generate_symbol_correlation_heatmap()
+        if corr_result is not None:
+            generated_files.append(corr_result)
+        else:
+            print(f"⚠️ Correlation heatmap returned None")
         
         # Generate force compatibility heatmap
-        force_heatmap_path = self.generate_force_correlation_heatmap()
-        generated_files.append(force_heatmap_path)
+        force_result = self.generate_force_correlation_heatmap()
+        if force_result is not None:
+            generated_files.append(force_result)
+        else:
+            print(f"⚠️ Force heatmap returned None")
         
         # Summary
         print("\n" + "=" * 60)

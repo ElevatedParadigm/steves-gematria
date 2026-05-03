@@ -127,11 +127,6 @@ class EnhancedOvernightLoop:
         except Exception as e:
             print(f"⚠️ Hybrid scheduler management: {e}")
     
-    def check_hybrid_scheduler_phase(self) -> Optional[str]:
-        """Check current elasticity phase from hybrid scheduler"""
-        if not self.hybrid_scheduler_active:
-            return "baseline"
-
     def log_hybrid_event(self, event_type: str, data: Dict[str, Any]):
         """Log an event to the hybrid scheduler events directory"""
         try:
@@ -161,50 +156,23 @@ class EnhancedOvernightLoop:
         
         result = subprocess.run(
             ["python3", str(self.hybrid_scheduler_path)],
-                capture_output=True,
-                text=True,
-                timeout=5
-            )
-            
-            # Look for phase markers in output
-            if "[BASELINE]" in result.stdout or "baseline" in result.stdout.lower():
-                return "baseline"
-            elif "[SPEED_UP]" in result.stdout:
-                return "speed_up"
-            elif "[SLOW_DOWN]" in result.stdout:
-                return "slow_down"
-            elif "[INTENSIFY]" in result.stdout:
-                return "intensify"
-            
-    except Exception as e:
-        pass
-
-        try:
-            config_content = self.config_path.read_text() if self.config_path.exists() else None
-            
-            elasticity_rules = {
-                "speed_up": {"batch_multiplier": 3, "subtask_increase": "+50%", "timing_adjustment": "+20%"},
-                "slow_down": {"batch_multiplier": 0.3, "verification_mode": "checkpoints between each step", "timing_adjustment": "-15%"},
-                "intensify": {"analysis_depth": "deep + cross-check queries", "subtask_increase": "+30%", "timing_adjustment": "unchanged"}
-            }
-            
-            if config_content and "elasticity" in config_content.lower():
-                import yaml
-                try:
-                    config = yaml.safe_load(config_content)
-                    elasticity_config = config.get("elasticity", {})
-                    
-                    for rule_name, rule_data in elasticity_rules.items():
-                        if rule_name not in elasticity_config:
-                            print(f"   ⚠️ Elasticity rule '{rule_name}' not in config.yaml")
-                except Exception as e:
-                    print(f"   ⚠️ Error parsing config.yaml: {e}")
-            
-        except Exception as e:
-            pass
+            capture_output=True,
+            text=True,
+            timeout=5
+        )
+        
+        # Look for phase markers in output
+        if "[BASELINE]" in result.stdout or "baseline" in result.stdout.lower():
+            return "baseline"
+        elif "[SPEED_UP]" in result.stdout:
+            return "speed_up"
+        elif "[SLOW_DOWN]" in result.stdout:
+            return "slow_down"
+        elif "[INTENSIFY]" in result.stdout:
+            return "intensify"
         
         return "baseline"
-    
+
     def run_stability_test(self) -> Dict[str, Any]:
         """Run enhanced stability test on gematria database"""
         

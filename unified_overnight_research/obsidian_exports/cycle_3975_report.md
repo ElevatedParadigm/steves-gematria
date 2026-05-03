@@ -3,8 +3,8 @@
 ## 📊 Cycle Statistics
 - **Cycle ID:** 3975
 - **Items Processed:** ~30
-- **Domains Discovered:** 2
-- **Symbols Detected:** 6
+- **Domains Discovered:** 4
+- **Symbols Detected:** 5
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
@@ -12,12 +12,6 @@
 - **Keying Strategy:** PRIMARY
 - **Primary Domains:** geopolitical
 - **Hidden Layering:** Standard
-
----
-### 666 - Completion→9
-- **Keying Strategy:** HIDDEN_LAYERS
-- **Primary Domains:** sacred_completeness, cycle_conclusion
-- **Hidden Layering:** Active
 
 ---
 ### 963 - Cycle Turning Variant
@@ -45,7 +39,9 @@
 
 ---
 ## 📁 Domains Covered
-- `Academic`
+- `Military`
+- `Cryptocurrency`
+- `AI_Advancement`
 - `Political`
 
 ## 🔮 Hidden Layering Detections
@@ -66,5 +62,5 @@ New connections established between:
 > _Cycle #3975 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 18:09  
+**Generated:** 2026-05-03 14:23  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

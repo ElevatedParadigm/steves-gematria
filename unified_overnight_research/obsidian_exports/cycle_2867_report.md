@@ -45,9 +45,9 @@
 
 ---
 ## 📁 Domains Covered
-- `Political`
 - `Elemental`
-- `Cryptocurrency`
+- `Economic`
+- `Religious`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -67,5 +67,5 @@ New connections established between:
 > _Cycle #2867 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:46  
+**Generated:** 2026-05-03 13:16  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

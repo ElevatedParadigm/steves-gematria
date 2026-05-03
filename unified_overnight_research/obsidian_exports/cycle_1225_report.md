@@ -4,7 +4,7 @@
 - **Cycle ID:** 1225
 - **Items Processed:** ~30
 - **Domains Discovered:** 2
-- **Symbols Detected:** 6
+- **Symbols Detected:** 4
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
@@ -20,12 +20,6 @@
 - **Hidden Layering:** Active
 
 ---
-### 963 - Cycle Turning Variant
-- **Keying Strategy:** MODERATE
-- **Primary Domains:** air_transformation, fire_transformation
-- **Hidden Layering:** Standard
-
----
 ### 55 - Cycle Turning Variants
 - **Keying Strategy:** MODERATE
 - **Primary Domains:** air_fire_transformation
@@ -38,15 +32,9 @@
 - **Hidden Layering:** Active
 
 ---
-### 111 - Activation Initiation
-- **Keying Strategy:** HIDDEN_LAYERS
-- **Primary Domains:** triple_manifestation, spirit
-- **Hidden Layering:** Active
-
----
 ## 📁 Domains Covered
+- `Elemental`
 - `Economic`
-- `Religious`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -66,5 +54,5 @@ New connections established between:
 > _Cycle #1225 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:17  
+**Generated:** 2026-05-03 11:43  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

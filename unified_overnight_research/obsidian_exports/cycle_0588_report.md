@@ -46,8 +46,8 @@
 ---
 ## 📁 Domains Covered
 - `Religious`
-- `Academic`
-- `Military`
+- `Geopolitical`
+- `AI_Advancement`
 - `Political`
 
 ## 🔮 Hidden Layering Detections
@@ -68,5 +68,5 @@ New connections established between:
 > _Cycle #588 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-02 17:00  
+**Generated:** 2026-05-03 11:08  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

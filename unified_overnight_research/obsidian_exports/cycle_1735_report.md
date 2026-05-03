@@ -3,7 +3,7 @@
 ## 📊 Cycle Statistics
 - **Cycle ID:** 1735
 - **Items Processed:** ~30
-- **Domains Discovered:** 3
+- **Domains Discovered:** 5
 - **Symbols Detected:** 6
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
@@ -45,8 +45,10 @@
 
 ---
 ## 📁 Domains Covered
-- `Economic`
-- `Cryptocurrency`
+- `Elemental`
+- `Academic`
+- `Military`
+- `Religious`
 - `Geopolitical`
 
 ## 🔮 Hidden Layering Detections
@@ -54,7 +56,7 @@
 These symbols provide deeper symbolic connections beneath surface indexing.
 
 - **Symbol 111 (Activation Initiation):** Triple manifestation and spirit domain signals detected across 8 contexts
-- **Symbol 279 (Military Coup Earth Balance):** Military-coupling earth transformations identified in 4 patterns
+- **Symbol 279 (Military Coup Earth Balance):** Military-coupling earth transformations identified in 2 patterns
 - **Symbol 666 (Completion→9):** Sacred completeness markers found at cycle conclusions
 
 ## 🧩 Relationship Matrix Updates
@@ -67,5 +69,5 @@ New connections established between:
 > _Cycle #1735 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:26  
+**Generated:** 2026-05-03 12:13  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

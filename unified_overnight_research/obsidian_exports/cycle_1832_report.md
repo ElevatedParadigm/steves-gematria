@@ -4,7 +4,7 @@
 - **Cycle ID:** 1832
 - **Items Processed:** ~30
 - **Domains Discovered:** 4
-- **Symbols Detected:** 5
+- **Symbols Detected:** 6
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
@@ -26,6 +26,12 @@
 - **Hidden Layering:** Standard
 
 ---
+### 55 - Cycle Turning Variants
+- **Keying Strategy:** MODERATE
+- **Primary Domains:** air_fire_transformation
+- **Hidden Layering:** Standard
+
+---
 ### 279 - Military Coup Earth Balance
 - **Keying Strategy:** HIDDEN_LAYERS
 - **Primary Domains:** military, earth_balance
@@ -39,10 +45,10 @@
 
 ---
 ## 📁 Domains Covered
+- `Religious`
 - `Political`
-- `Military`
-- `Geopolitical`
 - `Academic`
+- `Elemental`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -62,5 +68,5 @@ New connections established between:
 > _Cycle #1832 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:28  
+**Generated:** 2026-05-03 12:19  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

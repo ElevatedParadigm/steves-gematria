@@ -93,7 +93,7 @@ def bootstrap_image_vault():
 def process_cycle(cycle_num, db):
     """Execute one research cycle"""
     print("\n" + "=" * 60)
-    print(f"Cycle #{cycle_num} STARTING...")
+    print(f"Cycle #{cycle_number} STARTING...")
     print("=" * 60)
     
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -131,7 +131,7 @@ def process_cycle(cycle_num, db):
     print(f"Processed {len(all_items)} items")
     
     # Generate relationship matrix content
-    matrix_content = f"""# Gematria Relationship Matrix - Cycle {cycle_num}
+    matrix_content = f"""# Gematria Relationship Matrix - Cycle {cycle_number}
 **Generated:** {timestamp}
 **Image-Seed Source:** {IMAGE_VAULT}
 
@@ -188,9 +188,9 @@ def process_cycle(cycle_num, db):
 """
     
     # Generate export file
-    exports_dir = OBSIDIAN_EXPORTS / f"cycle_{cycle_num}"
+    exports_dir = OBSIDIAN_EXPORTS / f"cycle_{cycle_number}"
     exports_dir.mkdir(parents=True, exist_ok=True)
-    export_file = exports_dir / f"research_cycle_{cycle_num}.md"
+    export_file = exports_dir / f"research_cycle_{cycle_number}.md"
     with open(export_file, 'w') as f:
         f.write(matrix_content)
     
@@ -201,7 +201,7 @@ def process_cycle(cycle_num, db):
         db["last_update"] = timestamp
     
     entry = {
-        "action": f"cycle_{cycle_num}",
+        "action": f"cycle_{cycle_number}",
         "timestamp": timestamp,
         "items_processed": len(all_items),
         "symbols_analyzed": sorted(CORE_SYMBOLS.keys()),
@@ -227,7 +227,7 @@ def process_cycle(cycle_num, db):
         )
         
         if result.stdout.strip():
-            commit_msg = f"Cycle {cycle_num} checkpoint - Image-seed bootstrapping complete"
+            commit_msg = f"Cycle {cycle_number} checkpoint - Image-seed bootstrapping complete"
             
             subprocess.run(
                 ["git", "-C", str(BASE_DIR), "add", "."],
@@ -295,7 +295,7 @@ def main():
         cycles_completed += 1
         cycle_time = time.time() - start_time
         
-        print(f"\nCycle #{cycle_num} completed in {cycle_time:.1f}s")
+        print(f"\nCycle #{cycle_number} completed in {cycle_time:.1f}s")
         print(f"  Cycles completed: {cycles_completed}")
         print(f"  Status: Ready for next cycle...\n")
         

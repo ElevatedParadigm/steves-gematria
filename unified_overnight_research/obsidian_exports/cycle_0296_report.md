@@ -3,7 +3,7 @@
 ## 📊 Cycle Statistics
 - **Cycle ID:** 296
 - **Items Processed:** ~30
-- **Domains Discovered:** 2
+- **Domains Discovered:** 5
 - **Symbols Detected:** 5
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
@@ -20,9 +20,9 @@
 - **Hidden Layering:** Active
 
 ---
-### 55 - Cycle Turning Variants
+### 963 - Cycle Turning Variant
 - **Keying Strategy:** MODERATE
-- **Primary Domains:** air_fire_transformation
+- **Primary Domains:** air_transformation, fire_transformation
 - **Hidden Layering:** Standard
 
 ---
@@ -39,8 +39,11 @@
 
 ---
 ## 📁 Domains Covered
-- `Elemental`
+- `Academic`
+- `AI_Advancement`
+- `Political`
 - `Economic`
+- `Religious`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -60,5 +63,5 @@ New connections established between:
 > _Cycle #296 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-02 16:56  
+**Generated:** 2026-05-03 10:51  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

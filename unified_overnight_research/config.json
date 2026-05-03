@@ -1,0 +1,68 @@
+{
+  "pipeline_version": "1.0",
+  "working_directory": "/home/avalonas/.hermes/gematria/unified_overnight_research",
+  "image_source": "/home/avalonas/Pictures/Steves gematria/",
+  "database_path": "database/gematria_database.json",
+  "logs_path": "research_log.tsv",
+  "exports_path": "obsidian_exports",
+  "reports_path": "reports",
+  
+  "symbols": {
+    "124": {
+      "name": "Universal Bridge",
+      "primary_key": "geopolitical boundary events",
+      "meaning": "Universal Bridge/Threshold"
+    },
+    "55": {
+      "name": "Catalyst/Delay", 
+      "primary_key": "International terminology",
+      "meaning": "Catalyst/Delay"
+    },
+    "963": {
+      "name": "Cycle Turning",
+      "primary_key": "Air activation phrase pattern", 
+      "meaning": "Cycle Turning"
+    },
+    "111": {
+      "name": "Activation Initiation",
+      "enable_hidden_layering": true
+    },
+    "279": {
+      "name": "Cycle Turning Variant",
+      "enable_hidden_layering": true
+    },
+    "666": {
+      "name": "Completion Threshold",
+      "primary_key": "hidden layering depth detection",
+      "meaning": "Completion→9",
+      "enable_hidden_layering": true
+    }
+  },
+
+  "research_focuses": [
+    "Universal Bridge symbolism patterns (124)",
+    "Completion Threshold dynamics (666 → 9/6)",
+    "Elemental Cycle correlations (fire/volcano/frequency/resonance)",
+    "Vessel Fire relationships (17 → 8)",
+    "Harmony Integration findings (963/279/55 → 9/6)"
+  ],
+
+  "parameters": {
+    "items_per_cycle": 30,
+    "repeat_mode": 9999,
+    "confidence_range_min": 0.60,
+    "confidence_range_max": 0.95,
+    "parallel_jobs": 8,
+    "enable_hidden_layering": true,
+    "git_version_tracking": true,
+    "image_seed_analysis": true,
+    "symbol_keying_strategies": true
+  },
+
+  "flags": {
+    "--enable-hidden-layering": "true",
+    "--git-version-tracking": "true", 
+    "--symbol-keying-strategies": "true",
+    "--image-seed": "true"
+  }
+}

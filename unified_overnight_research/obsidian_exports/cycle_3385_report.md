@@ -14,16 +14,16 @@
 - **Hidden Layering:** Standard
 
 ---
-### 963 - Cycle Turning Variant
-- **Keying Strategy:** MODERATE
-- **Primary Domains:** air_transformation, fire_transformation
-- **Hidden Layering:** Standard
+### 666 - Completion→9
+- **Keying Strategy:** HIDDEN_LAYERS
+- **Primary Domains:** sacred_completeness, cycle_conclusion
+- **Hidden Layering:** Active
 
 ---
-### 55 - Cycle Turning Variants
-- **Keying Strategy:** MODERATE
-- **Primary Domains:** air_fire_transformation
-- **Hidden Layering:** Standard
+### 279 - Military Coup Earth Balance
+- **Keying Strategy:** HIDDEN_LAYERS
+- **Primary Domains:** military, earth_balance
+- **Hidden Layering:** Active
 
 ---
 ### 111 - Activation Initiation
@@ -33,11 +33,11 @@
 
 ---
 ## 📁 Domains Covered
-- `Cryptocurrency`
-- `Political`
-- `Military`
 - `Geopolitical`
+- `Religious`
 - `Economic`
+- `Military`
+- `AI_Advancement`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -57,5 +57,5 @@ New connections established between:
 > _Cycle #3385 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 17:58  
+**Generated:** 2026-05-03 13:46  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

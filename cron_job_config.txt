@@ -1,0 +1,16 @@
+# Gematria Overnight Research Loop - Cron Job Configuration
+# =========================================================
+# Schedule: Every 3 hours at :00 minute (hours 0,3,6,9,12,15,18,21 UTC)
+# =========================================================
+
+# CRON JOB LINE (add this to crontab with: crontab -e)
+0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas/.hermes/gematria && python scripts/loop_runner_enhanced.py --timeout 2700 >> cron_logs/cron_job.log 2>&1
+
+# Alternative: Add this entire block to crontab with: crontab -e
+# ==========================================
+0 0,3,6,9,12,15,18,21 * * * cd /home/avalonas/.hermes/gematria && python scripts/loop_runner_enhanced.py --timeout 2700 --retry 3 >> cron_logs/cron_job.log 2>&1
+# ==========================================
+
+# To check existing crontab: crontab -l
+# To edit crontab: crontab -e
+# To remove this job: Edit the line above or run: crontab -e and delete the line

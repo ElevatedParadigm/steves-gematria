@@ -3,8 +3,8 @@
 ## 📊 Cycle Statistics
 - **Cycle ID:** 1202
 - **Items Processed:** ~30
-- **Domains Discovered:** 3
-- **Symbols Detected:** 5
+- **Domains Discovered:** 4
+- **Symbols Detected:** 4
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
@@ -26,12 +26,6 @@
 - **Hidden Layering:** Standard
 
 ---
-### 279 - Military Coup Earth Balance
-- **Keying Strategy:** HIDDEN_LAYERS
-- **Primary Domains:** military, earth_balance
-- **Hidden Layering:** Active
-
----
 ### 111 - Activation Initiation
 - **Keying Strategy:** HIDDEN_LAYERS
 - **Primary Domains:** triple_manifestation, spirit
@@ -39,9 +33,10 @@
 
 ---
 ## 📁 Domains Covered
-- `AI_Advancement`
-- `Geopolitical`
+- `Elemental`
+- `Cryptocurrency`
 - `Political`
+- `Military`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -61,5 +56,5 @@ New connections established between:
 > _Cycle #1202 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:17  
+**Generated:** 2026-05-03 11:42  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

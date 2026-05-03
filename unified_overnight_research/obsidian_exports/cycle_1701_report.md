@@ -4,10 +4,16 @@
 - **Cycle ID:** 1701
 - **Items Processed:** ~30
 - **Domains Discovered:** 5
-- **Symbols Detected:** 5
+- **Symbols Detected:** 6
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
+### 124 - Universal Bridge/Threshold
+- **Keying Strategy:** PRIMARY
+- **Primary Domains:** geopolitical
+- **Hidden Layering:** Standard
+
+---
 ### 666 - Completion→9
 - **Keying Strategy:** HIDDEN_LAYERS
 - **Primary Domains:** sacred_completeness, cycle_conclusion
@@ -39,11 +45,11 @@
 
 ---
 ## 📁 Domains Covered
-- `Political`
+- `Military`
 - `Academic`
-- `AI_Advancement`
 - `Cryptocurrency`
-- `Geopolitical`
+- `Religious`
+- `Economic`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -63,5 +69,5 @@ New connections established between:
 > _Cycle #1701 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:26  
+**Generated:** 2026-05-03 12:11  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

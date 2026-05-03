@@ -3,7 +3,7 @@
 ## 📊 Cycle Statistics
 - **Cycle ID:** 1732
 - **Items Processed:** ~30
-- **Domains Discovered:** 5
+- **Domains Discovered:** 2
 - **Symbols Detected:** 6
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
@@ -45,11 +45,8 @@
 
 ---
 ## 📁 Domains Covered
-- `Economic`
-- `Religious`
-- `Geopolitical`
-- `Elemental`
 - `Military`
+- `Political`
 
 ## 🔮 Hidden Layering Detections
 **Active Symbols:** 111, 279, 666  
@@ -69,5 +66,5 @@ New connections established between:
 > _Cycle #1732 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 20:26  
+**Generated:** 2026-05-03 12:13  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research

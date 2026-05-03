@@ -4,13 +4,19 @@
 - **Cycle ID:** 3483
 - **Items Processed:** ~30
 - **Domains Discovered:** 3
-- **Symbols Detected:** 4
+- **Symbols Detected:** 5
 - **Hidden Layering Detections:** Active across all 6 core symbols
 
 ## 🔗 Core Symbols Detected
-### 124 - Universal Bridge/Threshold
-- **Keying Strategy:** PRIMARY
-- **Primary Domains:** geopolitical
+### 666 - Completion→9
+- **Keying Strategy:** HIDDEN_LAYERS
+- **Primary Domains:** sacred_completeness, cycle_conclusion
+- **Hidden Layering:** Active
+
+---
+### 963 - Cycle Turning Variant
+- **Keying Strategy:** MODERATE
+- **Primary Domains:** air_transformation, fire_transformation
 - **Hidden Layering:** Standard
 
 ---
@@ -33,8 +39,8 @@
 
 ---
 ## 📁 Domains Covered
-- `Political`
 - `AI_Advancement`
+- `Political`
 - `Academic`
 
 ## 🔮 Hidden Layering Detections
@@ -55,5 +61,5 @@ New connections established between:
 > _Cycle #3483 continues the unified overnight research pipeline with continuous discovery engine. All 6 core symbols active for hidden layering detection._
 
 ---
-**Generated:** 2026-05-01 18:00  
+**Generated:** 2026-05-03 13:53  
 **Repository:** /home/avalonas/.hermes/gematria/unified_overnight_research
