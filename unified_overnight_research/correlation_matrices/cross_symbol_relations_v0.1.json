@@ -1,0 +1,75 @@
+{
+  "cross_matrix_correlations": [
+    {
+      "pair": [124, 279],
+      "coherence": 0.73,
+      "interpretation": "Volcanic/Earth-Fire coupling",
+      "key_patterns": ["magma_chamber_pressure", "thermal_ventilation", "eruption_cycles"]
+    },
+    {
+      "pair": [55, 666],
+      "coherence": 0.68,
+      "interpretation": "Protocol-Completion bridge",
+      "key_patterns": ["diplomatic_immunity", "treaty_finalization", "unity_resolution"]
+    },
+    {
+      "pair": [963, 111],
+      "coherence": 0.81,
+      "interpretation": "Air-Spirit activation link",
+      "key_patterns": ["breath_cycle", "ventilation_surge", "spiritual_communication"]
+    },
+    {
+      "pair": [124, 666],
+      "coherence": 0.45,
+      "interpretation": "Boundary-Resolution tension",
+      "key_patterns": ["sovereign_closure", "territorial_wholeness", "resolution_completion"]
+    }
+  ],
+  "primary_correlations": {
+    "geopolitical_events": {
+      "primary_symbol": 124,
+      "secondary_symbols": [55, 666],
+      "correlations": {
+        "volcanic_boundary_terms": 0.87,
+        "diplomatic_dispute_terms": 0.64,
+        "boundary_resolution_terms": 0.52
+      }
+    },
+    "fire_force_patterns": {
+      "primary_symbol": 279,
+      "secondary_symbols": [124, 963],
+      "correlations": {
+        "thermal_activation_terms": 0.89,
+        "volcanic_energy_terms": 0.76,
+        "air_pressure_terms": 0.58
+      }
+    },
+    "air_activation": {
+      "primary_symbol": 963,
+      "secondary_symbols": [111, 279],
+      "correlations": {
+        "ventilation_terminology": 0.71,
+        "communication_patterns": 0.84,
+        "respiratory_language": 0.67
+      }
+    },
+    "diplomatic_language": {
+      "primary_symbol": 55,
+      "secondary_symbols": [124, 666],
+      "correlations": {
+        "protocol_terms": 0.88,
+        "formal_discourse_terms": 0.79,
+        "boundary_language": 0.61
+      }
+    },
+    "spirit_manifestation": {
+      "primary_symbol": 111,
+      "secondary_symbols": [666, 963],
+      "correlations": {
+        "intention_language": 0.82,
+        "completion_terms": 0.56,
+        "reality_construction": 0.74
+      }
+    }
+  }
+}

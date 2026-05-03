@@ -1,7 +1,7 @@
 ---
 tags: [gematria/cross-reference, correlation-index]
 cycle: 336
-date: 2026-05-02
+date: 2026-05-03
 ---
 
 # 📍 Cross-Reference Index — Cycle #336

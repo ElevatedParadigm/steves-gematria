@@ -1,0 +1,37 @@
+{
+  "pipeline_name": "Steve's Gematria Unified Overnight Research",
+  "version": "2.1",
+  "loop_mode": true,
+  "repeat_cycles": 9999,
+  "cycles_per_iteration": 50,
+  "items_per_cycle": 30,
+
+  "symbol_keying_strategies": [124, 963, 55, 111, 279, 666],
+
+  # Continuous loop flags
+  "--enable-hidden-layering",
+  "--git-version-tracking",
+  "--symbol-keying-strategies",
+  "--image-seed"
+  "domains": {
+    "core": ["political", "religious", "economic", "military", "elemental"],
+    "new": ["structural_engineering", "chemical_compounds", "mathematical_geometry", "time_zone_systems", "quantum_chronology"]
+  },
+  
+  "paths": {
+    "base": "/home/avalonas/.hermes/gematria/unified_overnight_research",
+    "database": "/home/avalonas/.hermes/gematria/database/gematria_database.json",
+    "image_vault": "/home/avalonas/Pictures/Steves%20gematria/",
+    "obsidian_exports": "/home/avalonas/.hermes/gematria/unified_overnight_research/obsidian_exports"
+  },
+  
+  "hidden_layering_detection": true,
+  "git_version_tracking": true,
+  "output_format": "markdown",
+  
+  "status_reporting": {
+    "cycle_interval": 10,
+    "include_key_findings": true,
+    "log_relationship_matrix": true
+  }
+}

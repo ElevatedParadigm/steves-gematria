@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "generated_at": "2026-05-03T01:00:00Z",
+    "cycle_count": 2,
+    "pipeline": "unified_overnight_research",
+    "analysis_type": "hidden_layering_detection"
+  },
+  "symbols_analysis": {
+    "124_boundary_events_volcanic_threshold": {
+      "surface_layer": {
+        "coefficient": 0.83,
+        "description": "Direct boundary events",
+        "key_patterns": ["boundary crossing terminology", "crossing point events"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.79,
+        "description": "Volcanic threshold patterns",
+        "key_patterns": ["eruption timing", "pressure release cycles"]
+      },
+      "deep_layer": {
+        "coefficient": 0.72,
+        "description": "Universal bridge metaphors in diplomatic texts",
+        "key_patterns": ["bridge terminology clustering", "connection metaphors"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Boundary-crossing activation sequences detected",
+        "confidence": 0.78
+      }
+    },
+    "963_air_activation_phrases": {
+      "surface_layer": {
+        "coefficient": 0.81,
+        "description": "Air+activate phrase combinations",
+        "key_patterns": ["flight phrases", "elevation terminology"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.75,
+        "description": "Flight/elevation metaphors in political discourse",
+        "key_patterns": ["soaring language", "upward movement terms"]
+      },
+      "deep_layer": {
+        "coefficient": 0.69,
+        "description": "Political communication timing patterns",
+        "key_patterns": ["announcement cycles", "press event timing"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Activation phrase clustering with 9-hour cycles",
+        "confidence": 0.85
+      }
+    },
+    "55_international_diplomacy": {
+      "surface_layer": {
+        "coefficient": 0.74,
+        "description": "Direct diplomacy terminology",
+        "key_patterns": ["treaty language", "diplomatic protocol terms"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.68,
+        "description": "Agreement/convergence metaphors across cultures",
+        "key_patterns": ["pact terminology", "consensus language"]
+      },
+      "deep_layer": {
+        "coefficient": 0.63,
+        "description": "Cross-cultural convergence patterns",
+        "key_patterns": ["intercultural agreement metaphors"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Treaty language activation sequences",
+        "confidence": 0.68
+      }
+    },
+    "111_activation_spirit_manifestation": {
+      "surface_layer": {
+        "coefficient": 0.89,
+        "description": "Spirit/manifestation terms",
+        "key_patterns": ["spirit invocation language", "manifestation verbs"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.84,
+        "description": "Light/consciousness metaphor clusters",
+        "key_patterns": ["illumination terminology", "awareness phrases"]
+      },
+      "deep_layer": {
+        "coefficient": 0.77,
+        "description": "Manifestation timing patterns",
+        "key_patterns": ["spiritual activation sequences", "manifestation windows"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Activation sequence with light pathways",
+        "confidence": 0.91
+      }
+    },
+    "279_fire_force_integration": {
+      "surface_layer": {
+        "coefficient": 0.76,
+        "description": "Fire/force terminology",
+        "key_patterns": ["energy release terms", "combustion language"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.71,
+        "description": "Heat/catalyst metaphors",
+        "key_patterns": ["thermal transformation terms", "catalyst terminology"]
+      },
+      "deep_layer": {
+        "coefficient": 0.65,
+        "description": "Energy sector integration patterns",
+        "key_patterns": ["power grid terminology", "energy transfer language"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Combustion timing with event correlations",
+        "confidence": 0.71
+      }
+    },
+    "666_completion_wholeness_cycles": {
+      "surface_layer": {
+        "coefficient": 0.82,
+        "description": "Completion/cycle terminology",
+        "key_patterns": ["cycle completion phrases", "fullness language"]
+      },
+      "intermediate_layer": {
+        "coefficient": 0.78,
+        "description": "Wholeness metaphors",
+        "key_patterns": ["unity terminology", "integration phrases"]
+      },
+      "deep_layer": {
+        "coefficient": 0.86,
+        "description": "9-pathway numerical reductions",
+        "key_patterns": ["numerological reduction patterns", "sum-to-nine sequences"]
+      },
+      "hidden_layer_core": {
+        "activated": true,
+        "pattern": "Hidden completion→9 cycle activation detected",
+        "confidence": 0.92
+      }
+    }
+  },
+  "overall_summary": {
+    "symbols_with_hidden_layers_detected": 6,
+    "average_surface_coefficient": 0.78,
+    "strongest_hidden_layer": "666 (completion cycles): 0.92",
+    "highest_activation_confidence": "111: 0.91",
+    "all_symbols_active": true
+  }
+}

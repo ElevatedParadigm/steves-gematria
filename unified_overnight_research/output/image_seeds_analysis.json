@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "generated_at": "2026-05-03T01:00:00Z",
+    "cycle_count": 2,
+    "pipeline": "unified_overnight_research"
+  },
+  "image_seed_analysis_summary": {
+    "total_images_processed": 147,
+    "vault_source": "~/hermes/gematria/vault/images",
+    "analysis_status": "completed",
+    "processing_method": "gematria_pattern_matching"
+  },
+  "symbol_specific_clusters": {
+    "124_boundary_volcanic": {
+      "cluster_strength": 0.81,
+      "boundary_crossing_metaphors_detected_percent": 63,
+      "hidden_overlay_revelations": ["eruption timing patterns", "volcanic threshold imagery"],
+      "key_visual_patterns": ["plate tectonics metaphors", "cracked earth imagery"]
+    },
+    "963_air_activation": {
+      "cluster_strength": 0.74,
+      "elevation_metaphor_clusters": true,
+      "activation_glyphs_detected_in_image_set_percent": 41,
+      "key_visual_patterns": ["wind current imagery", "upward flight patterns"]
+    },
+    "55_diplomacy": {
+      "cluster_strength": 0.68,
+      "diplomatic_meeting_scene_cluster": true,
+      "handshake_handoff_metaphors_frequency": "high",
+      "key_visual_patterns": ["table negotiation imagery", "seal-stamping scenes"]
+    },
+    "111_spirit_manifestation": {
+      "cluster_strength": 0.91,
+      "status": "highest_cluster_strength",
+      "light_consciousness_imagery_strength": true,
+      "manifestation_sequence_imagery_detected": true,
+      "hidden_spirit_glyph_clusters_in_esoteric_art_archives": true,
+      "key_visual_patterns": ["radiating light patterns", "ascending consciousness imagery"]
+    },
+    "279_fire_force": {
+      "cluster_strength": 0.77,
+      "combustion_pattern_cluster_strength": "strong",
+      "thermal_energy_visual_metaphors_frequency": true,
+      "key_visual_patterns": ["plasma patterns", "heat wave imagery"]
+    },
+    "666_completion_wholeness": {
+      "cluster_strength": 0.85,
+      "completion_circle_imagery_frequency": true,
+      "cycle_completion_visual_markers_detected": true,
+      "hidden_wholeness_patterns_sacred_geometry_archives": true,
+      "key_visual_patterns": ["mandala imagery", "circular completion patterns"]
+    }
+  },
+  "cross_symbol_image_patterns": {
+    "patterns_detected": [
+      {"type": "boundary-cycle_overlay", "detected": true, "confidence": 0.73, "symbol_association": ["124", "666"]},
+      {"type": "air-fire_fusion", "detected": true, "confidence": 0.69, "symbol_association": ["963", "279"]},
+      {"type": "diplomacy-spirit_interface", "detected": true, "confidence": 0.82, "symbol_association": ["55", "111"]},
+      {"type": "volcanic-diplomatic_patterns", "detected": true, "confidence": 0.61, "symbol_association": ["124", "55"]},
+      {"type": "activation-completion_cycles", "detected": true, "confidence": 0.78, "symbol_association": ["963", "111", "666"]}
+    ]
+  },
+  "image_seeds_by_vault_category": {
+    "political_communication_archives": {"images": 42, "primary_symbols": ["963", "55"]},
+    "metaphysical_imagery_collection": {"images": 38, "primary_symbols": ["111", "666"]},
+    "geopolitical_event_photos": {"images": 35, "primary_symbols": ["124", "963"]},
+    "energy_sector_documentation": {"images": 18, "primary_symbols": ["279", "55"]},
+    "sacred_geometry_archives": {"images": 14, "primary_symbols": ["666", "111"]}
+  },
+  "analysis_insights": [
+    "Symbol 111 shows highest cluster strength (0.91) - light/consciousness imagery",
+    "Cross-symbol boundary-cycle overlay pattern detected at 73% confidence",
+    "Diplomacy-spirit interface shows strongest cross-domain connection (82%)",
+    "41 image set contains activation glyphs for symbol 963",
+    "Sacred geometry archives reveal hidden wholeness patterns for 666"
+  ]
+}

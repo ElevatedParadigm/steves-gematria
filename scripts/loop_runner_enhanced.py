@@ -131,10 +131,36 @@ class EnhancedOvernightLoop:
         """Check current elasticity phase from hybrid scheduler"""
         if not self.hybrid_scheduler_active:
             return "baseline"
-        
+
+    def log_hybrid_event(self, event_type: str, data: Dict[str, Any]):
+        """Log an event to the hybrid scheduler events directory"""
         try:
-            result = subprocess.run(
-                ["python3", str(self.hybrid_scheduler_path)],
+            events_dir = Path.home() / ".hermes" / "gematria" / "elasticity_events"
+            events_dir.mkdir(parents=True, exist_ok=True)
+            
+            timestamp = datetime.now().strftime('%Y-%m-%dT%H%M%S')
+            event_path = events_dir / f"{event_type}_2026-05-02T{timestamp}.json"
+            
+            event_data = {
+                "event_type": event_type,
+                "timestamp": datetime.now().isoformat(),
+                "data": data
+            }
+            
+            with open(event_path, 'w') as f:
+                json.dump(event_data, f, indent=2)
+            
+            print(f"   Event logged: {event_type}")
+        except Exception as e:
+            print(f"   ⚠️ Could not log hybrid event: {e}")
+    
+    def check_hybrid_scheduler_phase(self) -> Optional[str]:
+        """Check current elasticity phase from hybrid scheduler"""
+        if not self.hybrid_scheduler_active:
+            return "baseline"
+        
+        result = subprocess.run(
+            ["python3", str(self.hybrid_scheduler_path)],
                 capture_output=True,
                 text=True,
                 timeout=5
@@ -149,6 +175,30 @@ class EnhancedOvernightLoop:
                 return "slow_down"
             elif "[INTENSIFY]" in result.stdout:
                 return "intensify"
+            
+    except Exception as e:
+        pass
+
+        try:
+            config_content = self.config_path.read_text() if self.config_path.exists() else None
+            
+            elasticity_rules = {
+                "speed_up": {"batch_multiplier": 3, "subtask_increase": "+50%", "timing_adjustment": "+20%"},
+                "slow_down": {"batch_multiplier": 0.3, "verification_mode": "checkpoints between each step", "timing_adjustment": "-15%"},
+                "intensify": {"analysis_depth": "deep + cross-check queries", "subtask_increase": "+30%", "timing_adjustment": "unchanged"}
+            }
+            
+            if config_content and "elasticity" in config_content.lower():
+                import yaml
+                try:
+                    config = yaml.safe_load(config_content)
+                    elasticity_config = config.get("elasticity", {})
+                    
+                    for rule_name, rule_data in elasticity_rules.items():
+                        if rule_name not in elasticity_config:
+                            print(f"   ⚠️ Elasticity rule '{rule_name}' not in config.yaml")
+                except Exception as e:
+                    print(f"   ⚠️ Error parsing config.yaml: {e}")
             
         except Exception as e:
             pass

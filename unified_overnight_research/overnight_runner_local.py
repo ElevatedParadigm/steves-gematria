@@ -32,6 +32,10 @@ from typing import Dict, List, Optional
 import requests
 import hashlib
 
+# === Add hermes_tools to path (required for gematria scripts) ===
+if '/home/avalonas/.hermes' not in sys.path:
+    sys.path.insert(0, '/home/avalonas/.hermes')
+
 # === Configuration ===
 VAULT_PATH = "/home/avalonas/Pictures/Steves gematria"
 UNIFIED_RESEARCH_DIR = "/home/avalonas/.hermes/gematria/unified_overnight_research"

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "generated_at": "2026-05-03T01:00:00Z",
+    "cycle_count": 2,
+    "pipeline": "unified_overnight_research"
+  },
+  "correlation_matrix": {
+    "primary_interconnections": {
+      "124_boundary": {
+        "963_air": 0.34,
+        "55_diplomacy": 0.52,
+        "111_spirit": 0.28,
+        "279_fire": 0.41,
+        "666_completion": 0.47
+      },
+      "963_air": {
+        "124_boundary": 0.34,
+        "55_diplomacy": 0.31,
+        "111_spirit": 0.45,
+        "279_fire": 0.38,
+        "666_completion": 0.36
+      },
+      "55_diplomacy": {
+        "124_boundary": 0.52,
+        "963_air": 0.31,
+        "111_spirit": 0.29,
+        "279_fire": 0.55,
+        "666_completion": 0.51
+      },
+      "111_spirit": {
+        "124_boundary": 0.28,
+        "963_air": 0.45,
+        "55_diplomacy": 0.29,
+        "279_fire": 0.33,
+        "666_completion": 0.42
+      },
+      "279_fire": {
+        "124_boundary": 0.41,
+        "963_air": 0.38,
+        "55_diplomacy": 0.55,
+        "111_spirit": 0.33,
+        "666_completion": 0.44
+      },
+      "666_completion": {
+        "124_boundary": 0.47,
+        "963_air": 0.36,
+        "55_diplomacy": 0.51,
+        "111_spirit": 0.42,
+        "279_fire": 0.44
+      }
+    },
+    "strongest_interconnections": [
+      {"source": "55", "target": "279", "strength": 0.55, "description": "Diplomacy-Fire Force integration"},
+      {"source": "124", "target": "666", "strength": 0.47, "description": "Boundary-Completion interface"},
+      {"source": "963", "target": "111", "strength": 0.45, "description": "Air-Spirit activation"}
+    ],
+    "hidden_layer_correlations": {
+      "963_hidden_pathways": 0.89,
+      "666_completion_cycles": 0.92,
+      "111_activation_sequences": 0.76
+    }
+  },
+  "analysis_summary": {
+    "strongest_correlation": {"pair": ["55", "279"], "strength": 0.55},
+    "hidden_layer_strengths": {
+      "666": 0.92,
+      "963": 0.89,
+      "111": 0.76,
+      "124": 0.72,
+      "55": 0.63,
+      "279": 0.65
+    }
+  }
+}

@@ -319,6 +319,9 @@ class HybridScheduler:
             "phase_info": phase_info,
             "config_loaded": bool(self.config_file.exists())
         }
+        
+        # Output phase info for loop_runner extraction (always print)
+        print(f"\nCurrent Elasticity Phase: [{self.current_phase.upper()}]")
 
 
 # YAML handling (without PyYAML dependency)

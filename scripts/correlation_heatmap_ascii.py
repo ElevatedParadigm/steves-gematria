@@ -104,6 +104,9 @@ class CorrelationHeatmapGenerator:
     def _generate_ascii_heatmap(self, export_dir: Path, adj_data: list, num_nodes: int) -> Path:
         """Generate ASCII heatmap with relationship visualization"""
         
+        # Initialize correlation matrix to None - will be set in if block or left as None for edge cases
+        correlation_matrix = None  # type: ignore
+        
         lines = []
         
         # Header
@@ -140,16 +143,16 @@ class CorrelationHeatmapGenerator:
         lines.append("")
         
         if len(self.symbols) <= 15 and num_nodes > 0:  # Only generate full matrix for small datasets
-        
+            
             # Calculate relationship strengths from adjacency data
             node_ids = sorted([int(s) for s in self.symbols.keys() if s.isdigit()])[:num_nodes]
             node_map = {sid: idx for idx, sid in enumerate(node_ids)}
             
-            # Initialize matrix with 0 (no relationship)
-            matrix = [[0] * len(node_ids) for _ in range(len(node_ids))]
+            # Initialize correlation matrix with 0 (no relationship)
+            correlation_matrix = [[0] * len(node_ids) for _ in range(len(node_ids))]
             names = [self.symbols[str(sid)].get('name', f'S{id}') for sid in node_ids]
             
-            # Fill matrix based on relationships
+            # Fill correlation matrix based on relationships
             for adj in adj_data:
                 from_id = str(adj["from"])
                 to_id = str(adj["to"])
@@ -160,7 +163,7 @@ class CorrelationHeatmapGenerator:
                         to_idx = node_map.get(to_id, -1)
                         
                         if from_idx >= 0 and to_idx >= 0:
-                            matrix[from_idx][to_idx] = matrix[to_idx][from_idx] = 2  # Relationship exists
+                            correlation_matrix[from_idx][to_idx] = correlation_matrix[to_idx][from_idx] = 2  # Relationship exists
                     except (ValueError, KeyError):
                         pass
             
@@ -168,7 +171,7 @@ class CorrelationHeatmapGenerator:
             for row in range(len(node_ids)):
                 line = ""
                 for col in range(len(node_ids)):
-                    strength = matrix[row][col]
+                    strength = correlation_matrix[row][col]
                     
                     if strength == 0:
                         # No relationship - empty space or light gray
@@ -207,8 +210,9 @@ class CorrelationHeatmapGenerator:
         lines.append("")
         lines.append(f"Total symbols analyzed:      {len(self.symbols)}")
         lines.append(f"Direct relationships found:  {len(adj_data)}")
-        if adj_data and num_nodes > 0:
-            avg_connections = sum(sum(1 for row in matrix for cell in row if cell) // max(len(node_ids), 1)) * len(node_ids) / 2
+        if adj_data and num_nodes > 0 and isinstance(correlation_matrix, list) and correlation_matrix:
+            total_connections = sum(sum(1 for row in correlation_matrix for cell in row if cell))
+            avg_connections = (total_connections // max(len(node_ids), 1)) * len(node_ids) / 2
             lines.append(f"Average connections/node:    {avg_connections:.2f}")
         else:
             lines.append("Average connections/node:    N/A")

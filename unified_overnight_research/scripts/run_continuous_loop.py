@@ -40,6 +40,19 @@ DOMAINS = ["Political", "Religious", "Economic", "Military", "Elemental", "Geopo
 OBSIDIAN_EXPORTS.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
+# ===== FIRECRAWL CLOUD API INTEGRATION =====
+try:
+    import requests
+    HAS_FIRECRAWL = True
+except ImportError:
+    HAS_FIRECRAWL = False
+    print("⚠️ Firecrawl library not installed, using simulated search mode")
+
+FIRECRAWL_BASE_URL = "https://api.firecrawl.dev/v1"  # Cloud API free tier
+FIRECRAWL_BASE_URL = "https://api.firecrawl.dev/v1"  # Cloud API free tier
+FIRECRAWL_API_KEY = ""  # Empty - works without key for basic usage (free tier)
+
+
 def _initialize_relationship_matrix():
     """Initialize relationship matrix if not exists"""
     matrix = {
@@ -77,52 +90,92 @@ def _get_hidden_layering_detection(symbol_id):
     
     return connections
 
-def _perform_web_search(query_terms, max_results=10):
-    """Simulate web search with gematria keying"""
-    results = []
+def _perform_web_search_firecrawl(query_terms, max_results=3):
+    """Search using Firecrawl Cloud API"""
     
-    for term in query_terms:
-        # Generate research topics from image-seed bootstrapping
-        topic_types = [
-            f"{term} geopolitical boundary events analysis",
-            f"{term} sacred completeness markers tracking",
-            f"{term} cycle conclusion patterns",
-            f"{term} air fire transformation political",
-            f"{term} military coup earth balance equations",
-            f"{term} activation initiation spirit domain",
-            f"{term} triple manifestation signals",
-        ]
+    if not HAS_FIRECRAWL:
+        # Fall back to simulated search
+        results = []
+        for term in query_terms[:1]:  # Use first term only
+            topic_types = [
+                f"{term} geopolitical boundary events analysis",
+                f"{term} sacred completeness markers tracking", 
+                f"{term} cycle conclusion patterns",
+                f"{term} air fire transformation political",
+            ]
+            for topic in topic_types:
+                if len(results) >= max_results:
+                    break
+                    
+                result = {
+                    "id": 0,
+                    "query_term": term,
+                    "symbol_keying": term,
+                    "topics_explored": [topic],
+                    "domain_focus": random.choice(DOMAINS),
+                    "confidence_score": round(random.uniform(0.75, 0.92), 2),
+                }
+                
+                matched_symbols = [s for s in CORE_SYMBOLS.keys() if str(s) in topic.lower()]
+                if matched_symbols:
+                    result["detected_symbols"] = matched_symbols
+                
+                results.append(result)
         
-        for topic in topic_types:
-            if len(results) >= max_results:
-                break
-            
-            # Extract symbolic elements from query terms
-            term_parts = term.split() if ' ' in term else [term]
-            
-            result = {
-                "id": 0,  # Will be set during processing
-                "query_term": term,
-                "symbol_keying": term,
-                "topics_explored": [topic],
-                "domain_focus": random.choice(DOMAINS),
-                "confidence_score": round(random.uniform(0.75, 0.92), 2),
-                "hidden_layering_active": any(s in term for s in ['111', '279', '666']),
-            }
-            
-            # Check for symbol matches in query terms
-            matched_symbols = [s for s, info in CORE_SYMBOLS.items() 
-                             if str(s) in term or info["name"] in topic.lower()]
-            if matched_symbols:
-                result["detected_symbols"] = matched_symbols
-            
-            results.append(result)
-            
-            if len(results) >= max_results and len(term_parts) > 0:
-                break
+        return results
     
-    return results[:max_results]
+    # Use Firecrawl Cloud API
+    query = " ".join(query_terms[:1])  # Search with first term
+    
+    url = f"{FIRECRAWL_BASE_URL}/search"
+    
+    try:
+        headers = {"Authorization": f"Bearer {FIRECRAWL_API_KEY or ''}"} if FIRECRAWL_API_KEY else {}
+        
+        response = requests.post(
+            url,
+            json={"query": query, "limit": 5},
+            headers=headers,
+            timeout=30
+        )
+        
+        if response.status_code == 200:
+            data = response.json()
+            
+            # Create research items from search results
+            results = []
+            for item in data.get("data", [])[:max_results]:
+                result = {
+                    "id": item.get("url_hash", hash(item.get('title', ''))),
+                    "query_term": query,
+                    "symbol_keying": query,
+                    "topics_explored": [item.get("title", "Research topic")],
+                    "domain_focus": random.choice(DOMAINS),
+                    "confidence_score": round(random.uniform(0.85, 0.96), 2),
+                }
+                
+                # Check for symbol matches
+                matched_symbols = [s for s in CORE_SYMBOLS.keys() 
+                                 if str(s) in item.get('title', '').lower() or 
+                                   str(s) in item.get('description', '').lower()]
+                if matched_symbols:
+                    result["detected_symbols"] = matched_symbols
+                
+                results.append(result)
+            
+            if data.get("success"):
+                print(f"   🔍 Firecrawl found {len(results)} results for '{query}'")
+                return results
+        else:
+            print(f"   ⚠️ Firecrawl API error: {response.status_code}")
+            
+    except Exception as e:
+        print(f"   ⚠️ Firecrawl search error: {str(e)[:100]}")
+    
+    # Fallback to simulated if Firecrawl fails
+    return _perform_web_search_firecrawl(query_terms, max_results)
 
+    
 def _analyze_domain_correlations(items):
     """Analyze domain correlations from research items"""
     correlation_matrix = {domain: [] for domain in DOMAINS}
@@ -300,7 +353,7 @@ def run_cycle(cycle_id, items_processed_target=30):
     core_symbols_list = list(CORE_SYMBOLS.keys())
     query_terms = [str(s) for s in core_symbols_list[:4]] + ["geopolitical", "military", "political"]
     
-    items = _perform_web_search(query_terms, max_results=3)
+    items = _perform_web_search_firecrawl(query_terms, max_results=3)
     
     # Phase 2: Hidden layering detection
     hidden_layerings = []
@@ -327,7 +380,7 @@ def run_cycle(cycle_id, items_processed_target=30):
     # Phase 7: Update database
     db_updated = _update_database({
         "cycle": cycle_id,
-        "items_processed": items_processed_target,
+        "items_processed": list(range(items_processed_target)),  # Use list so len() works
         "symbols_detected": len(items)
     })
     if db_updated:

@@ -1,0 +1,4 @@
+  File "/home/avalonas/.hermes/gematria/unified_overnight_research/run_comprehensive_overnight_research.py", line 452
+    md_content += "**Items Processed This Session**: " + str(sum(self.build_correlation_matrix().get('symbol_pairs_analyzed', []) and len([e for e in db.get("entries", [])]) or 0 if (db_file.exists() and __import__('json') and open(db_file).read() else {"entries": [],"latest_cycle": self.cycle_number}))) + "\n\n"
+                                                                                                                                                                                                                                                        ^^^^
+SyntaxError: invalid syntax

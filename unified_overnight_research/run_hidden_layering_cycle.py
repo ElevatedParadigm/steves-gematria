@@ -275,6 +275,10 @@ def update_database(cycle_number: int):
     except FileNotFoundError:
         db = {"version": "5.0", "symbols": [], "relationships": [], "database_history": []}
     
+    # Initialize database_history if missing (backwards compatibility)
+    if "database_history" not in db:
+        db["database_history"] = []
+    
     # Add cycle history entry
     history_entry = {
         "timestamp": datetime.now().isoformat(),

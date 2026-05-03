@@ -4,3 +4,10 @@
 [2026-05-02T00:39:41Z] ======================================================================
 [2026-05-02T00:39:41Z] 🚀 STARTING VISUAL ARCHIVE EXPORT BATCH PROCESSING
 [2026-05-02T00:39:41Z] ℹ️ No exports in queue - nothing to process
+[2026-05-03T00:07:29.241414Z] Export failed for symbol #1001: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.256404Z] Export failed for symbol #1002: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.277938Z] Export failed for symbol #1004: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.278385Z] Export failed for symbol #1005: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.279920Z] Export failed for symbol #1006: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.283391Z] Export failed for symbol #1003: cannot access local variable 'export_data' where it is not associated with a value
+[2026-05-03T00:07:29.289494Z] Export failed for symbol #1007: cannot access local variable 'export_data' where it is not associated with a value
