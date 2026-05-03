@@ -1,10 +1,10 @@
 ---
 tags: [gematria/relationships, correlation-matrix]
-cycle: 216
+cycle: 217
 date: 2026-05-03
 ---
 
-# 🔗 Relationship Matrix — Cycle #216
+# 🔗 Relationship Matrix — Cycle #217
 
 ## Cross-Symbol Correlation Analysis
 
