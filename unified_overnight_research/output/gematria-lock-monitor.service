@@ -1,0 +1,23 @@
+[Unit]
+Description=Git Lock Monitor for Visual Archive Export
+Documentation=https://github.com/nousresearch/gematria/tree/main/output
+After=local-fs.target
+Before=output-visual-archive-export.service
+# Ensure this runs before any export job that might be affected by stale locks
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /path/to/git_lock_monitor.py output --db /data/gematria/outputs/output.db
+WorkingDirectory=/path/to/gematria/outputs
+StandardOutput=journal
+StandardError=journal
+
+# Ensure the script has proper permissions
+ExecStartPre=/bin/chmod +x /path/to/run_git_lock_monitor.py
+
+# Restart policy - run once per trigger
+Restart=no
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

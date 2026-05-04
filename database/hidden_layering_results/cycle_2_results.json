@@ -1,0 +1,183 @@
+{
+  "55": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.733,
+        "confidence": 0.928
+      },
+      "2": {
+        "pattern_strength": 0.608,
+        "confidence": 0.87
+      },
+      "3": {
+        "pattern_strength": 0.56,
+        "confidence": 0.771
+      }
+    },
+    "primary_keyword": "activation",
+    "secondary_keywords": [
+      "respiration",
+      "flow",
+      "breath",
+      "upward",
+      "elevation",
+      "ascension"
+    ],
+    "detected_patterns": [
+      "dual polarity shift",
+      "cross-domain correlation"
+    ],
+    "correlation_score": 0.72
+  },
+  "111": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.823,
+        "confidence": 0.936
+      },
+      "2": {
+        "pattern_strength": 0.676,
+        "confidence": 0.851
+      },
+      "3": {
+        "pattern_strength": 0.477,
+        "confidence": 0.761
+      }
+    },
+    "primary_keyword": "spirit",
+    "secondary_keywords": [
+      "manifestation",
+      "spiritual",
+      "beginning",
+      "telepathic",
+      "impulse",
+      "signal"
+    ],
+    "detected_patterns": [
+      "frequency amplification",
+      "dual polarity shift"
+    ],
+    "correlation_score": 0.762
+  },
+  "124": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.854,
+        "confidence": 0.861
+      },
+      "2": {
+        "pattern_strength": 0.758,
+        "confidence": 0.822
+      },
+      "3": {
+        "pattern_strength": 0.722,
+        "confidence": 0.845
+      }
+    },
+    "primary_keyword": "fire",
+    "secondary_keywords": [
+      "combustion",
+      "energy",
+      "discharge",
+      "integration",
+      "heat",
+      "force"
+    ],
+    "detected_patterns": [
+      "elemental harmonization",
+      "cross-domain correlation",
+      "dual polarity shift"
+    ],
+    "correlation_score": 0.716
+  },
+  "279": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.776,
+        "confidence": 0.901
+      },
+      "2": {
+        "pattern_strength": 0.594,
+        "confidence": 0.894
+      },
+      "3": {
+        "pattern_strength": 0.729,
+        "confidence": 0.846
+      }
+    },
+    "primary_keyword": "spirit",
+    "secondary_keywords": [
+      "manifestation",
+      "spiritual",
+      "beginning",
+      "telepathic",
+      "impulse",
+      "signal"
+    ],
+    "detected_patterns": [
+      "cyclical activation",
+      "cross-domain correlation"
+    ],
+    "correlation_score": 0.903
+  },
+  "666": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.747,
+        "confidence": 0.881
+      },
+      "2": {
+        "pattern_strength": 0.725,
+        "confidence": 0.814
+      },
+      "3": {
+        "pattern_strength": 0.733,
+        "confidence": 0.759
+      }
+    },
+    "primary_keyword": "geopolitics",
+    "secondary_keywords": [
+      "threshold",
+      "bridge",
+      "boundary",
+      "gate",
+      "passage",
+      "crossing"
+    ],
+    "detected_patterns": [
+      "elemental harmonization",
+      "triangular resonance"
+    ],
+    "correlation_score": 0.755
+  },
+  "963": {
+    "layers": {
+      "1": {
+        "pattern_strength": 0.935,
+        "confidence": 0.944
+      },
+      "2": {
+        "pattern_strength": 0.607,
+        "confidence": 0.802
+      },
+      "3": {
+        "pattern_strength": 0.532,
+        "confidence": 0.831
+      }
+    },
+    "primary_keyword": "spirit",
+    "secondary_keywords": [
+      "manifestation",
+      "spiritual",
+      "beginning",
+      "telepathic",
+      "impulse",
+      "signal"
+    ],
+    "detected_patterns": [
+      "triangular resonance",
+      "cross-domain correlation"
+    ],
+    "correlation_score": 0.757
+  }
+}

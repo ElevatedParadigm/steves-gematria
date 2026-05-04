@@ -1,0 +1,57 @@
+{
+  "matrix_id": "overnight_2026-05-03_cycle_30",
+  "timestamp": "2026-05-03T17:32:17.572181",
+  "symbols_analyzed": [
+    124,
+    963,
+    55,
+    111,
+    279,
+    666
+  ],
+  "total_layers_detected": 19,
+  "correlations": {
+    "124_666": {
+      "confidence": 0.89,
+      "type": "threshold_completion",
+      "patterns": [
+        "geopolitical\u2192wholeness"
+      ]
+    },
+    "124_963": {
+      "confidence": 0.78,
+      "type": "bridge_ascent",
+      "patterns": [
+        "boundary\u2192air activation"
+      ]
+    },
+    "55_111": {
+      "confidence": 0.8,
+      "type": "catalyst_activation",
+      "patterns": [
+        "diplomacy\u2192spirit"
+      ]
+    },
+    "55_666": {
+      "confidence": 0.74,
+      "type": "delay_completion",
+      "patterns": [
+        "pause\u2192wholeness"
+      ]
+    },
+    "111_279": {
+      "confidence": 0.82,
+      "type": "activation_force",
+      "patterns": [
+        "spirit\u2192fire amplification"
+      ]
+    },
+    "279_666": {
+      "confidence": 0.85,
+      "type": "force_completion",
+      "patterns": [
+        "fire\u2192completion"
+      ]
+    }
+  }
+}
