@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/avalonas/.hermes/gematria/unified_overnight_research/run_overnight_research_loop.py", line 36, in <module>
+    class OvernightResearchProtocol:
+  File "/home/avalonas/.hermes/gematria/unified_overnight_research/run_overnight_research_loop.py", line 42, in OvernightResearchProtocol
+    self.symbol_keying_strategies = {
+    ^^^^
+NameError: name 'self' is not defined

@@ -1,0 +1,452 @@
+{
+  "124": {
+    "symbol_id": 124,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.78,
+        "patterns_found": 6,
+        "dominant_theme": "geopolitical shifts",
+        "cross_reference_symbols": [
+          963,
+          55,
+          666
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.79,
+        "patterns_found": 6,
+        "dominant_theme": "geopolitical shifts",
+        "cross_reference_symbols": [
+          963,
+          55,
+          666
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.881,
+        "patterns_found": 8,
+        "dominant_theme": "volcanic thresholds",
+        "cross_reference_symbols": [
+          963,
+          55,
+          666
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.867
+      },
+      {
+        "layer": 2,
+        "score": 0.751
+      },
+      {
+        "layer": 3,
+        "score": 0.694
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.759,
+        "related_symbols": [
+          963,
+          55
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.698,
+        "related_symbols": [
+          963,
+          55
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.561,
+        "related_symbols": [
+          963,
+          55
+        ]
+      }
+    ]
+  },
+  "963": {
+    "symbol_id": 963,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.721,
+        "patterns_found": 2,
+        "dominant_theme": "air activation",
+        "cross_reference_symbols": [
+          124,
+          55,
+          666
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.935,
+        "patterns_found": 6,
+        "dominant_theme": "speech frequency",
+        "cross_reference_symbols": [
+          124,
+          55,
+          666
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.738,
+        "patterns_found": 8,
+        "dominant_theme": "respiratory patterns",
+        "cross_reference_symbols": [
+          124,
+          55,
+          666
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.908
+      },
+      {
+        "layer": 2,
+        "score": 0.959
+      },
+      {
+        "layer": 3,
+        "score": 0.74
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.745,
+        "related_symbols": [
+          124,
+          55
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.701,
+        "related_symbols": [
+          124,
+          55
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.552,
+        "related_symbols": [
+          124,
+          55
+        ]
+      }
+    ]
+  },
+  "55": {
+    "symbol_id": 55,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.789,
+        "patterns_found": 7,
+        "dominant_theme": "diplomatic summits",
+        "cross_reference_symbols": [
+          124,
+          963,
+          666
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.728,
+        "patterns_found": 8,
+        "dominant_theme": "diplomatic summits",
+        "cross_reference_symbols": [
+          124,
+          963,
+          666
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.923,
+        "patterns_found": 8,
+        "dominant_theme": "peace processes",
+        "cross_reference_symbols": [
+          124,
+          963,
+          666
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.805
+      },
+      {
+        "layer": 2,
+        "score": 0.912
+      },
+      {
+        "layer": 3,
+        "score": 0.868
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.625,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.694,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.779,
+        "related_symbols": [
+          124,
+          963
+        ]
+      }
+    ]
+  },
+  "666": {
+    "symbol_id": 666,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.892,
+        "patterns_found": 3,
+        "dominant_theme": "wholeness patterns",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.737,
+        "patterns_found": 5,
+        "dominant_theme": "completion cycles",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.851,
+        "patterns_found": 4,
+        "dominant_theme": "wholeness patterns",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.763
+      },
+      {
+        "layer": 2,
+        "score": 0.785
+      },
+      {
+        "layer": 3,
+        "score": 0.93
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.668,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.605,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.709,
+        "related_symbols": [
+          124,
+          963
+        ]
+      }
+    ]
+  },
+  "279": {
+    "symbol_id": 279,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.935,
+        "patterns_found": 7,
+        "dominant_theme": "energy discharge",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.756,
+        "patterns_found": 7,
+        "dominant_theme": "fire integration",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.888,
+        "patterns_found": 5,
+        "dominant_theme": "energy discharge",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.759
+      },
+      {
+        "layer": 2,
+        "score": 0.818
+      },
+      {
+        "layer": 3,
+        "score": 0.796
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.638,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.756,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.528,
+        "related_symbols": [
+          124,
+          963
+        ]
+      }
+    ]
+  },
+  "111": {
+    "symbol_id": 111,
+    "layers_detected": {
+      "layer_1": {
+        "confidence": 0.74,
+        "patterns_found": 6,
+        "dominant_theme": "beginning cycles",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_2": {
+        "confidence": 0.768,
+        "patterns_found": 5,
+        "dominant_theme": "activation sequences",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      },
+      "layer_3": {
+        "confidence": 0.948,
+        "patterns_found": 8,
+        "dominant_theme": "beginning cycles",
+        "cross_reference_symbols": [
+          124,
+          963,
+          55
+        ]
+      }
+    },
+    "pattern_strength_scores": [
+      {
+        "layer": 1,
+        "score": 0.858
+      },
+      {
+        "layer": 2,
+        "score": 0.895
+      },
+      {
+        "layer": 3,
+        "score": 0.708
+      }
+    ],
+    "convergence_signals": [
+      {
+        "timestamp": "2026-05-04T16:03:17 +5ms",
+        "signal_strength": 0.58,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +10ms",
+        "signal_strength": 0.686,
+        "related_symbols": [
+          124,
+          963
+        ]
+      },
+      {
+        "timestamp": "2026-05-04T16:03:17 +15ms",
+        "signal_strength": 0.733,
+        "related_symbols": [
+          124,
+          963
+        ]
+      }
+    ]
+  }
+}

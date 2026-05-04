@@ -1,19 +1,25 @@
 ---
-type: core-symbol
+type: core-symbol-research
 symbol_id: 111
 name: Activation / Spirit Manifestation
-aliases: [activation-/-spirit-manifestation]
-description: "Gematria symbol analysis with hidden layering detection"
+description: "Overnight research findings with hidden layering detection"
 domains:
-  - Political
-  - Religious
-  - Economic
-  - Military
   - Elemental
-elemental_force: null
-confidence_score: 0.85
-version: "1.0.13"
-hidden_layering_active: true
+confidence_score: 0.781
+version: "1.0.999"
+hidden_layering_active: false
 ---
 
-# Activation / Spirit Manifestation
+# Research Findings for 111
+
+**Symbol:** Activation / Spirit Manifestation
+
+**Pattern Strength:** 0.781
+
+**Theme:** spiritual manifestation activation
+
+- Correlates with `124` (Universal Bridge / Threshold): **0.680
+- Correlates with `963` (Air Activation Phrase): **0.710
+- Correlates with `55` (International Diplomacy): **0.720
+- Correlates with `279` (Fire Force Integration): **0.700
+- Correlates with `666` (Completion / Wholeness Cycles): **0.770

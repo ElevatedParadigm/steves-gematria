@@ -10,10 +10,13 @@ It uses Firecrawl (local Docker) → SearXNG fallback chain for web discovery.
 import sys
 from pathlib import Path
 
-# Add parent directory to path for hermes_tools import
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Import from Hermes venv (correct location)
+HERMES_VENV_PATH = str(Path.home() / ".hermes/hermes-agent/venv/lib/python3.12/site-packages")
+if HERMES_VENV_PATH not in sys.path:
+    sys.path.insert(0, HERMES_VENV_PATH)
 
-from hermes_tools import terminal, search_files, write_file
+# Now import from the venv-installed hermes_tools package
+from hermes_tools import terminal, search_files, write_file, web_search, web_extract, read_file
 import subprocess
 import json
 

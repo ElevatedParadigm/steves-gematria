@@ -1,0 +1,593 @@
+{
+  "version": "4.0",
+  "initialized": true,
+  "core_symbols": [
+    124,
+    963,
+    55,
+    111,
+    279,
+    666
+  ],
+  "domains_active": [
+    "Political",
+    "Religious",
+    "Economic",
+    "Military",
+    "Elemental"
+  ],
+  "elemental_forces": [
+    "Fire",
+    "Volcano",
+    "Frequency",
+    "Resonance"
+  ],
+  "hidden_layering_active": true,
+  "symbol_keying_strategies": {
+    "124": {
+      "strategy": "PRIMARY",
+      "keys": [
+        "geopolitics",
+        "bridge",
+        "threshold"
+      ]
+    },
+    "55": {
+      "strategy": "MODERATE",
+      "keys": [
+        "diplomacy",
+        "international",
+        "peace"
+      ]
+    },
+    "963": {
+      "strategy": "AVERAGE",
+      "keys": [
+        "activation",
+        "speech",
+        "air"
+      ]
+    },
+    "111": {
+      "strategy": "HIDDEN",
+      "keys": [
+        "activation",
+        "spirit",
+        "beginning"
+      ]
+    },
+    "279": {
+      "strategy": "HIDDEN",
+      "keys": [
+        "fire",
+        "force",
+        "integration"
+      ]
+    },
+    "666": {
+      "strategy": "HIDDEN",
+      "keys": [
+        "completion",
+        "wholeness",
+        "cycles"
+      ]
+    }
+  },
+  "symbols": {
+    "124": {
+      "name": "Universal Bridge / Threshold",
+      "weight": 0.8724319722044297
+    },
+    "963": {
+      "name": "Air Activation Phrase",
+      "weight": 0.9017640142752068
+    },
+    "55": {
+      "name": "International Diplomacy",
+      "weight": 0.8799849933080789
+    },
+    "111": {
+      "name": "Activation / Spirit Manifestation",
+      "weight": 0.8825419426154497
+    },
+    "279": {
+      "name": "Fire Force Integration",
+      "weight": 0.7877139309371636
+    },
+    "666": {
+      "name": "Completion / Wholeness Cycles",
+      "weight": 0.8540800989051567
+    }
+  },
+  "entries": [
+    {
+      "id": "124_item_1",
+      "symbol_id": 124,
+      "domain": "Political",
+      "theme": "geopolitical shifts",
+      "confidence": 0.666
+    },
+    {
+      "id": "124_item_2",
+      "symbol_id": 124,
+      "domain": "Religious",
+      "theme": "boundary events",
+      "confidence": 0.875
+    },
+    {
+      "id": "124_item_3",
+      "symbol_id": 124,
+      "domain": "Economic",
+      "theme": "bridge activations",
+      "confidence": 0.96
+    },
+    {
+      "id": "124_item_4",
+      "symbol_id": 124,
+      "domain": "Military",
+      "theme": "threshold crossings",
+      "confidence": 0.766
+    },
+    {
+      "id": "124_item_5",
+      "symbol_id": 124,
+      "domain": "Elemental",
+      "theme": "volcanic thresholds",
+      "confidence": 0.849
+    },
+    {
+      "id": "963_item_6",
+      "symbol_id": 963,
+      "domain": "Political",
+      "theme": "respiratory patterns",
+      "confidence": 0.807
+    },
+    {
+      "id": "963_item_7",
+      "symbol_id": 963,
+      "domain": "Religious",
+      "theme": "speech patterns",
+      "confidence": 0.854
+    },
+    {
+      "id": "963_item_8",
+      "symbol_id": 963,
+      "domain": "Economic",
+      "theme": "activation sequences",
+      "confidence": 0.927
+    },
+    {
+      "id": "963_item_9",
+      "symbol_id": 963,
+      "domain": "Military",
+      "theme": "air activation",
+      "confidence": 0.912
+    },
+    {
+      "id": "963_item_10",
+      "symbol_id": 963,
+      "domain": "Elemental",
+      "theme": "respiratory patterns",
+      "confidence": 0.976
+    },
+    {
+      "id": "55_item_11",
+      "symbol_id": 55,
+      "domain": "Political",
+      "theme": "international relations",
+      "confidence": 0.719
+    },
+    {
+      "id": "55_item_12",
+      "symbol_id": 55,
+      "domain": "Religious",
+      "theme": "peace agreements",
+      "confidence": 0.957
+    },
+    {
+      "id": "55_item_13",
+      "symbol_id": 55,
+      "domain": "Economic",
+      "theme": "diplomatic summits",
+      "confidence": 0.968
+    },
+    {
+      "id": "55_item_14",
+      "symbol_id": 55,
+      "domain": "Military",
+      "theme": "treaties",
+      "confidence": 0.936
+    },
+    {
+      "id": "55_item_15",
+      "symbol_id": 55,
+      "domain": "Elemental",
+      "theme": "international relations",
+      "confidence": 0.707
+    },
+    {
+      "id": "666_item_16",
+      "symbol_id": 666,
+      "domain": "Political",
+      "theme": "transformation completion",
+      "confidence": 0.673
+    },
+    {
+      "id": "666_item_17",
+      "symbol_id": 666,
+      "domain": "Religious",
+      "theme": "completion cycles",
+      "confidence": 0.919
+    },
+    {
+      "id": "666_item_18",
+      "symbol_id": 666,
+      "domain": "Economic",
+      "theme": "wholeness events",
+      "confidence": 0.772
+    },
+    {
+      "id": "666_item_19",
+      "symbol_id": 666,
+      "domain": "Military",
+      "theme": "final synthesis",
+      "confidence": 0.66
+    },
+    {
+      "id": "666_item_20",
+      "symbol_id": 666,
+      "domain": "Elemental",
+      "theme": "transformation completion",
+      "confidence": 0.851
+    },
+    {
+      "id": "279_item_21",
+      "symbol_id": 279,
+      "domain": "Political",
+      "theme": "fire integration",
+      "confidence": 0.767
+    },
+    {
+      "id": "279_item_22",
+      "symbol_id": 279,
+      "domain": "Religious",
+      "theme": "energy discharge",
+      "confidence": 0.934
+    },
+    {
+      "id": "279_item_23",
+      "symbol_id": 279,
+      "domain": "Economic",
+      "theme": "force convergence",
+      "confidence": 0.78
+    },
+    {
+      "id": "279_item_24",
+      "symbol_id": 279,
+      "domain": "Military",
+      "theme": "transformation cycles",
+      "confidence": 0.823
+    },
+    {
+      "id": "279_item_25",
+      "symbol_id": 279,
+      "domain": "Elemental",
+      "theme": "fire integration",
+      "confidence": 0.927
+    },
+    {
+      "id": "111_item_26",
+      "symbol_id": 111,
+      "domain": "Political",
+      "theme": "activation signals",
+      "confidence": 0.9
+    },
+    {
+      "id": "111_item_27",
+      "symbol_id": 111,
+      "domain": "Religious",
+      "theme": "beginning patterns",
+      "confidence": 0.7
+    },
+    {
+      "id": "111_item_28",
+      "symbol_id": 111,
+      "domain": "Economic",
+      "theme": "manifestation seeds",
+      "confidence": 0.824
+    },
+    {
+      "id": "111_item_29",
+      "symbol_id": 111,
+      "domain": "Military",
+      "theme": "spiritual manifestations",
+      "confidence": 0.94
+    },
+    {
+      "id": "111_item_30",
+      "symbol_id": 111,
+      "domain": "Elemental",
+      "theme": "activation signals",
+      "confidence": 0.674
+    }
+  ],
+  "cycle_history": [
+    {
+      "cycle": 1,
+      "timestamp": "2026-05-04T06:56:48.714104",
+      "items_processed": 150
+    },
+    {
+      "cycle": 2,
+      "timestamp": "2026-05-04T07:47:33.101169",
+      "items_processed": 150
+    },
+    {
+      "cycle": 3,
+      "timestamp": "2026-05-04T07:54:48.268471",
+      "items_processed": 300,
+      "batch_generated": true
+    },
+    {
+      "cycle": 4,
+      "timestamp": "2026-05-04T07:56:10.913864",
+      "items_processed": 450,
+      "batch_generated": true
+    },
+    {
+      "cycle": 5,
+      "timestamp": "2026-05-04T07:57:41.859427",
+      "items_processed": 600,
+      "batch_generated": true
+    },
+    {
+      "cycle": 6,
+      "timestamp": "2026-05-04T07:58:56.181585",
+      "items_processed": 750,
+      "batch_generated": true
+    },
+    {
+      "cycle": 7,
+      "timestamp": "2026-05-04T08:02:46.242263",
+      "items_processed": 900,
+      "batch_generated": true
+    },
+    {
+      "cycle": 8,
+      "timestamp": "2026-05-04T08:03:57.973615",
+      "items_processed": 1050,
+      "batch_generated": true
+    },
+    {
+      "cycle": 9,
+      "timestamp": "2026-05-04T08:04:43.006295",
+      "items_processed": 1200,
+      "batch_generated": true
+    },
+    {
+      "cycle": 10,
+      "timestamp": "2026-05-04T08:05:28.754016",
+      "items_processed": 1350,
+      "batch_generated": true
+    },
+    {
+      "cycle": 11,
+      "timestamp": "2026-05-04T08:06:30.363732",
+      "items_processed": 1500,
+      "batch_generated": true
+    },
+    {
+      "cycle": 12,
+      "timestamp": "2026-05-04T08:08:01.494040",
+      "items_processed": 1650,
+      "batch_generated": true
+    },
+    {
+      "cycle": 13,
+      "timestamp": "2026-05-04T08:51:16.675427",
+      "items_processed": 30
+    }
+  ],
+  "latest_cycle": 13,
+  "hidden_layering_results": {
+    "124": {
+      "layer_1": {
+        "pattern_strength": 0.66,
+        "detected_patterns": [
+          "124_core_pattern_1"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.734,
+        "detected_patterns": []
+      },
+      "layer_3": {
+        "pattern_strength": 0.554,
+        "detected_patterns": [
+          "124_hidden_pattern_1",
+          "124_hidden_pattern_2"
+        ]
+      },
+      "total_layers_detected": 3
+    },
+    "963": {
+      "layer_1": {
+        "pattern_strength": 0.666,
+        "detected_patterns": [
+          "963_core_pattern_1"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.635,
+        "detected_patterns": [
+          "963_sub_pattern_1",
+          "963_sub_pattern_2"
+        ]
+      },
+      "layer_3": {
+        "pattern_strength": 0.646,
+        "detected_patterns": []
+      },
+      "total_layers_detected": 3
+    },
+    "55": {
+      "layer_1": {
+        "pattern_strength": 0.728,
+        "detected_patterns": [
+          "55_core_pattern_1",
+          "55_core_pattern_2",
+          "55_core_pattern_3"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.674,
+        "detected_patterns": [
+          "55_sub_pattern_1",
+          "55_sub_pattern_2",
+          "55_sub_pattern_3"
+        ]
+      },
+      "layer_3": {
+        "pattern_strength": 0.569,
+        "detected_patterns": [
+          "55_hidden_pattern_1",
+          "55_hidden_pattern_2"
+        ]
+      },
+      "total_layers_detected": 2
+    },
+    "666": {
+      "layer_1": {
+        "pattern_strength": 0.668,
+        "detected_patterns": [
+          "666_core_pattern_1",
+          "666_core_pattern_2",
+          "666_core_pattern_3",
+          "666_core_pattern_4"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.6,
+        "detected_patterns": []
+      },
+      "layer_3": {
+        "pattern_strength": 0.462,
+        "detected_patterns": [
+          "666_hidden_pattern_1"
+        ]
+      },
+      "total_layers_detected": 3
+    },
+    "279": {
+      "layer_1": {
+        "pattern_strength": 0.669,
+        "detected_patterns": [
+          "279_core_pattern_1",
+          "279_core_pattern_2"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.596,
+        "detected_patterns": [
+          "279_sub_pattern_1"
+        ]
+      },
+      "layer_3": {
+        "pattern_strength": 0.739,
+        "detected_patterns": [
+          "279_hidden_pattern_1",
+          "279_hidden_pattern_2"
+        ]
+      },
+      "total_layers_detected": 3
+    },
+    "111": {
+      "layer_1": {
+        "pattern_strength": 0.881,
+        "detected_patterns": [
+          "111_core_pattern_1",
+          "111_core_pattern_2",
+          "111_core_pattern_3"
+        ]
+      },
+      "layer_2": {
+        "pattern_strength": 0.58,
+        "detected_patterns": [
+          "111_sub_pattern_1",
+          "111_sub_pattern_2"
+        ]
+      },
+      "layer_3": {
+        "pattern_strength": 0.701,
+        "detected_patterns": []
+      },
+      "total_layers_detected": 2
+    }
+  },
+  "correlation_matrices": {
+    "124": {
+      "963": 0.823,
+      "55": 0.657,
+      "666": 0.724,
+      "279": 0.71,
+      "111": 0.849
+    },
+    "963": {
+      "124": 0.833,
+      "55": 0.891,
+      "666": 0.673,
+      "279": 0.764,
+      "111": 0.658
+    },
+    "55": {
+      "124": 0.709,
+      "963": 0.786,
+      "666": 0.657,
+      "279": 0.704,
+      "111": 0.825
+    },
+    "666": {
+      "124": 0.797,
+      "963": 0.71,
+      "55": 0.809,
+      "279": 0.869,
+      "111": 0.652
+    },
+    "279": {
+      "124": 0.868,
+      "963": 0.838,
+      "55": 0.742,
+      "666": 0.692,
+      "111": 0.908
+    },
+    "111": {
+      "124": 0.741,
+      "963": 0.675,
+      "55": 0.676,
+      "666": 0.879,
+      "279": 0.813
+    }
+  },
+  "metadata": {
+    "pipeline": "Steve's Gematria Unified Overnight Research",
+    "mode": "continuous loop",
+    "repeat_count": 9999,
+    "hidden_layering_enabled": true,
+    "core_symbols": [
+      124,
+      963,
+      55,
+      666,
+      279,
+      111
+    ],
+    "domains_tracked": [
+      "Political",
+      "Religious",
+      "Economic",
+      "Military",
+      "Elemental"
+    ],
+    "last_update": "2026-05-04T07:47:33.101175"
+  }
+}

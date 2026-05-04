@@ -1,6 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# Visual Archive Export Lock Manager Wrapper Script
+# Visual Archive Export Lock Manager - Shell Wrapper Script
 # =============================================================================
 # Usage:
 #   ./manage_export_locks.sh check       # Check for lock files before export
@@ -9,29 +9,48 @@
 #   ./manage_export_locks.sh health      # Health check
 # =============================================================================
 
-set -e
+set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_PATH="/home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.py"
+PYTHON_SCRIPT="/home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.py"
+
+# Configuration
+LOCK_CHECK_INTERVAL="${LOCK_CHECK_INTERVAL:-15}"  # minutes before export
+LOG_FILE="${LOG_FILE:-/home/avalonas/.hermes/cron/output/export-locks.log}"
 
 usage() {
-    echo "Usage: $0 {check|cleanup|safe-cleanup|health} [options]"
-    echo ""
-    echo "Commands:"
-    echo "  check       Check for .git/index.lock files before export"
-    echo "  cleanup     Remove stale lock files"
-    echo "  safe-cleanup Perform safe cleanup with git verification"
-    echo "  health      Perform full health check of lock management system"
-    echo ""
-    echo "Options:"
-    echo "  -s, --subdir DIR    Specific output subdirectory (default: all)"
-    echo ""
+    cat << EOF
+Usage: $0 {check|cleanup|safe-cleanup|health} [options]
+
+Commands:
+  check              Check for .git/index.lock files before export
+  cleanup           Remove stale lock files (direct deletion)
+  safe-cleanup      Safe cleanup with git verification and integrity check
+  health            Perform full health check of lock management system
+
+Options:
+  -s, --subdir DIR   Specific output subdirectory (default: all)
+  -v, --verbose      Enable verbose output
+  -d, --dry-run      Show what would be done without making changes
+
+Examples:
+  $0 check                        # Check for locks in entire output/
+  $0 check -s visual_archive      # Check only in visual_archive subdirectory
+  $0 safe-cleanup -s visual_archive  # Safe cleanup with verification
+  $0 health -v                   # Verbose health check
+
+Cron Integration:
+  See /home/avalonas/.hermes/gematria/unified_overnight_research/cron_export_locks
+  
+EOF
     exit 1
 }
 
 # Parse arguments
 COMMAND=""
 SUBDIR=""
+VERBOSE=false
+DRY_RUN=false
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -40,45 +59,102 @@ while [[ $# -gt 0 ]]; do
             ;;
         -s|--subdir)
             SUBDIR="$2"
-            shift 2
+            shift
+            ;;
+        -v|--verbose)
+            VERBOSE=true
+            ;;
+        -d|--dry-run)
+            DRY_RUN=true
+            ;;
+        -h|--help)
+            usage
             ;;
         *)
-            echo "Unknown option: $1"
+            echo "Unknown option: $1" >&2
             usage
             ;;
     esac
+    shift 2>/dev/null || shift
 done
 
+# Validate command
 if [[ -z "$COMMAND" ]]; then
     usage
 fi
 
-# Change to script directory and run Python script
-cd /home/avalonas/.hermes/gematria/unified_overnight_research/scripts
+# Validate Python script exists
+if [[ ! -f "$PYTHON_SCRIPT" ]]; then
+    echo "ERROR: Python script not found: $PYTHON_SCRIPT" >&2
+    exit 1
+fi
+
+# Change to base directory and run Python script
+cd /home/avalonas/.hermes/gematria/unified_overnight_research
+
+# Build command arguments
+ARGS=""
+if [[ -n "$SUBDIR" ]]; then
+    ARGS="--subdir $SUBDIR"
+fi
+
+if [[ "$VERBOSE" == true ]]; then
+    export VERBOSE=true
+fi
 
 case $COMMAND in
     check)
-        python3 manage_export_locks.py check
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Checking for lock files..."
+        python3 "$PYTHON_SCRIPT" check $ARGS
+        
+        if [[ $? -eq 0 ]]; then
+            echo "✅ Lock check completed successfully"
+        else
+            echo "⚠️  Lock check completed with warnings"
+            exit 1
+        fi
         ;;
+        
     cleanup)
-        if [[ -n "$SUBDIR" ]]; then
-            python3 manage_export_locks.py cleanup --subdir "$SUBDIR"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Cleaning up stale lock files..."
+        python3 "$PYTHON_SCRIPT" cleanup $ARGS
+        
+        if [[ $? -eq 0 ]]; then
+            echo "✅ Cleanup completed successfully"
         else
-            python3 manage_export_locks.py cleanup
+            echo "⚠️  Cleanup completed with warnings"
+            exit 1
         fi
         ;;
+        
     safe-cleanup)
-        if [[ -n "$SUBDIR" ]]; then
-            python3 manage_export_locks.py safe-cleanup --subdir "$SUBDIR"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Running safe cleanup with verification..."
+        python3 "$PYTHON_SCRIPT" safe-cleanup $ARGS
+        
+        if [[ $? -eq 0 ]]; then
+            echo "✅ Safe cleanup completed successfully"
         else
-            python3 manage_export_locks.py safe-cleanup
+            echo "⚠️  Safe cleanup completed with issues (review recommendations)"
+            exit 1
         fi
         ;;
+        
     health)
-        python3 manage_export_locks.py health
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Running health check..."
+        python3 "$PYTHON_SCRIPT" health
+        
+        if [[ $? -eq 0 ]]; then
+            echo "✅ Health check completed successfully"
+        else
+            echo "⚠️  Health check completed with warnings"
+            exit 1
+        fi
         ;;
+        
     *)
-        echo "Unknown command: $COMMAND"
+        echo "Unknown command: $COMMAND" >&2
         usage
         ;;
 esac
+
+exit 0

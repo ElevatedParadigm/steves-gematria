@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-05-04T18:30:00Z",
+    "symbols_analyzed": [124, 963, 55, 111, 279, 666],
+    "domains": ["Politics", "Military", "Religious", "Geopolitical", "Cryptocurrency", "Academic", "AI_Advancement", "Economic", "Elemental"],
+    "analysis_type": "domain_correlation_matrix"
+  },
+  "symbol_profiles": {
+    "124": {
+      "name": "Universal Bridge / Threshold",
+      "primary_domains": ["Politics", "Military", "Geopolitical"],
+      "elemental_force": "fire",
+      "layering_coherence": 0.741,
+      "dominant_layering": {
+        "surface": {"domain": "Military", "strength": 0.911},
+        "resonance": {"domain": "Political", "strength": 0.69},
+        "structural": {"domain": "Elemental", "strength": 0.622}
+      }
+    },
+    "963": {
+      "name": "Air Activation Phrase",
+      "primary_domains": ["Economic", "Military", "Religious"],
+      "elemental_force": "air",
+      "layering_coherence": 0.802,
+      "dominant_layering": {
+        "surface": {"domain": "Economic", "strength": 0.809},
+        "resonance": {"domain": "Military", "strength": 0.858},
+        "structural": {"domain": "Elemental", "strength": 0.739}
+      }
+    },
+    "55": {
+      "name": "International Diplomacy / Foundation",
+      "primary_domains": ["Religious", "Geopolitical", "Economic"],
+      "elemental_force": "earth",
+      "layering_coherence": 0.817,
+      "dominant_layering": {
+        "surface": {"domain": "Elemental", "strength": 0.871},
+        "resonance": {"domain": "Religious", "strength": 0.867},
+        "structural": {"domain": "Religious", "strength": 0.714}
+      }
+    },
+    "111": {
+      "name": "Unity / Spirit Manifestation",
+      "primary_domains": ["Military", "Economic", "Religious"],
+      "elemental_force": "air",
+      "layering_coherence": 0.691,
+      "dominant_layering": {
+        "surface": {"domain": "Military", "strength": 0.776},
+        "resonance": {"domain": "Elemental", "strength": 0.68},
+        "structural": {"domain": "Elemental", "strength": 0.617}
+      }
+    },
+    "279": {
+      "name": "Fire Force Integration",
+      "primary_domains": ["Religious", "Political", "Academic"],
+      "elemental_force": "fire",
+      "layering_coherence": 0.759,
+      "dominant_layering": {
+        "surface": {"domain": "Religious", "strength": 0.836},
+        "resonance": {"domain": "Political", "strength": 0.764},
+        "structural": {"domain": "Elemental", "strength": 0.678}
+      }
+    },
+    "666": {
+      "name": "Completion / Wholeness Cycles",
+      "primary_domains": ["Economic", "Political", "Military"],
+      "elemental_force": "fire",
+      "layering_coherence": 0.772,
+      "dominant_layering": {
+        "surface": {"domain": "Economic", "strength": 0.796},
+        "resonance": {"domain": "Political", "strength": 0.827},
+        "structural": {"domain": "Elemental", "strength": 0.694}
+      }
+    }
+  },
+  "cross_symbol_correlations": {
+    "geopolitical_events": {
+      "primary_symbol": 124,
+      "secondary_symbols": [55, 666],
+      "correlations": {
+        "volcanic_boundary_terms": 0.87,
+        "diplomatic_dispute_terms": 0.64,
+        "boundary_resolution_terms": 0.52
+      },
+      "elemental_connection": "fire_earth"
+    },
+    "fire_force_patterns": {
+      "primary_symbol": 279,
+      "secondary_symbols": [124, 963],
+      "correlations": {
+        "thermal_activation_terms": 0.89,
+        "volcanic_energy_terms": 0.76,
+        "air_pressure_terms": 0.58
+      },
+      "elemental_connection": "fire_air"
+    },
+    "air_activation": {
+      "primary_symbol": 963,
+      "secondary_symbols": [111, 279],
+      "correlations": {
+        "ventilation_terminology": 0.71,
+        "communication_patterns": 0.84,
+        "respiratory_language": 0.67
+      },
+      "elemental_connection": "air_resonance"
+    },
+    "diplomatic_language": {
+      "primary_symbol": 55,
+      "secondary_symbols": [124, 666],
+      "correlations": {
+        "protocol_terms": 0.88,
+        "formal_discourse_terms": 0.79,
+        "boundary_language": 0.61
+      },
+      "elemental_connection": "earth_air"
+    },
+    "spirit_manifestation": {
+      "primary_symbol": 111,
+      "secondary_symbols": [666, 963],
+      "correlations": {
+        "intention_language": 0.82,
+        "completion_terms": 0.56,
+        "reality_construction": 0.74
+      },
+      "elemental_connection": "air_frequency"
+    }
+  },
+  "domain_specific_matrices": {
+    "Politics": {
+      "primary_symbols": [124, 963, 55, 279],
+      "correlation_matrix": {
+        "124_963": 0.81,
+        "124_55": 0.773,
+        "124_279": 0.594,
+        "963_55": 0.664,
+        "963_279": 0.817,
+        "55_279": 0.603
+      },
+      "avg_confidence": 0.72,
+      "dominant_connections": ["124-963", "963-279"],
+      "elemental_influence": {"fire": 0.35, "air": 0.40, "earth": 0.25}
+    },
+    "Military": {
+      "primary_symbols": [124, 963, 111],
+      "correlation_matrix": {
+        "124_963": 0.789,
+        "124_111": 0.692,
+        "963_111": 0.758
+      },
+      "avg_confidence": 0.75,
+      "dominant_connections": ["124-963", "963-111"],
+      "elemental_influence": {"fire": 0.20, "air": 0.55, "earth": 0.25}
+    },
+    "Religious": {
+      "primary_symbols": [111, 279, 55, 666],
+      "correlation_matrix": {
+        "111_279": 0.567,
+        "111_55": 0.76,
+        "111_666": 0.855,
+        "279_55": 0.762,
+        "279_666": 0.8,
+        "55_666": 0.829
+      },
+      "avg_confidence": 0.76,
+      "dominant_connections": ["55-666", "111-666", "279-666"],
+      "elemental_influence": {"fire": 0.40, "earth": 0.30, "air": 0.30}
+    },
+    "Geopolitical": {
+      "primary_symbols": [124, 55, 666, 111, 963],
+      "correlation_matrix": {
+        "124_55": 0.773,
+        "124_666": 0.56,
+        "124_111": 0.765,
+        "124_963": 0.591,
+        "55_666": 0.829,
+        "55_111": 0.521,
+        "55_963": 0.7,
+        "666_111": 0.855,
+        "666_963": 0.847,
+        "111_963": 0.901,
+        "279_55": 0.603,
+        "279_666": 0.8
+      },
+      "avg_confidence": 0.72,
+      "dominant_connections": ["111-963", "666-111", "55-666"],
+      "elemental_influence": {"fire": 0.30, "air": 0.40, "earth": 0.30}
+    },
+    "Economic": {
+      "primary_symbols": [55, 963, 111, 666],
+      "correlation_matrix": {
+        "55_963": 0.7,
+        "55_111": 0.521,
+        "55_666": 0.829,
+        "963_111": 0.901,
+        "963_666": 0.498,
+        "111_666": 0.797
+      },
+      "avg_confidence": 0.70,
+      "dominant_connections": ["963-111", "55-666"],
+      "elemental_influence": {"fire": 0.25, "earth": 0.35, "air": 0.40}
+    },
+    "Cryptocurrency": {
+      "primary_symbols": [55, 963, 111, 279],
+      "correlation_matrix": {
+        "55_963": 0.7,
+        "55_111": 0.76,
+        "55_279": 0.762,
+        "963_111": 0.817,
+        "963_279": 0.825,
+        "111_279": 0.567
+      },
+      "avg_confidence": 0.74,
+      "dominant_connections": ["963-111", "963-279"],
+      "elemental_influence": {"fire": 0.25, "earth": 0.25, "air": 0.50}
+    },
+    "Academic": {
+      "primary_symbols": [963, 666, 279],
+      "correlation_matrix": {
+        "963_666": 0.498,
+        "963_279": 0.825,
+        "279_666": null
+      },
+      "avg_confidence": 0.66,
+      "dominant_connections": ["963-279"],
+      "elemental_influence": {"fire": 0.40, "earth": 0.30, "air": 0.30}
+    },
+    "AI_Advancement": {
+      "primary_symbols": [279, 666],
+      "correlation_matrix": {
+        "279_666": null
+      },
+      "avg_confidence": null,
+      "dominant_connections": [],
+      "elemental_influence": {"fire": 0.50, "earth": 0.30, "air": 0.20}
+    }
+  },
+  "cross_domain_synthesis": {
+    "political_military_bridge": {
+      "connecting_symbols": [124, 963, 111],
+      "confidence_score": 0.77,
+      "patterns": ["sovereign_closure", "territorial_wholeness", "resolution_completion"],
+      "elemental_flow": "fire_air_earth"
+    },
+    "diplomatic_economic_union": {
+      "connecting_symbols": [55, 666, 963],
+      "confidence_score": 0.74,
+      "patterns": ["protocol_terms", "unity_resolution", "ventilation_terminology"],
+      "elemental_flow": "earth_fire_air"
+    },
+    "spiritual_completion_cycle": {
+      "connecting_symbols": [111, 666, 963],
+      "confidence_score": 0.82,
+      "patterns": ["reality_construction", "completion_terms", "breath_cycle"],
+      "elemental_flow": "air_frequency"
+    },
+    "fire_force_integration_matrix": {
+      "core_symbol": 279,
+      "connected_symbols": [124, 666, 55],
+      "correlations": {
+        "124_thermal_activation": 0.89,
+        "666_volcanic_energy": 0.76,
+        "55_diplomatic_immunity": 0.88
+      },
+      "elemental_balance": {"fire": 0.60, "earth": 0.25, "air": 0.15}
+    }
+  },
+  "relationship_network": {
+    "connections": {
+      "124-111": {"type": "hidden_layering", "confidence": 0.75, "domains": ["Cryptocurrency", "Military", "Religious"], "elemental_force": "lightning", "convergence_signal": true},
+      "124-279": {"type": "hidden_layering", "confidence": 0.82, "domains": ["Religious", "Political", "Military"], "elemental_force": "earth_balance", "convergence_signal": true},
+      "124-666": {"type": "hidden_layering", "confidence": 0.78, "domains": ["Elemental", "Economic"], "elemental_force": "fire", "convergence_signal": true},
+      "124-55": {"type": "primary_bridge", "confidence": 0.92, "domains": ["Political", "Geopolitical", "International"], "elemental_force": "air", "convergence_signal": true},
+      "124-963": {"type": "complement_cycle", "confidence": 0.81, "domains": ["Political", "Air transformation"], "elemental_force": "air", "convergence_signal": true},
+      "666-111": {"type": "hidden_layering", "confidence": 0.74, "domains": ["Economic"], "elemental_force": "resonance", "convergence_signal": true},
+      "666-279": {"type": "hidden_layering", "confidence": 0.92, "domains": ["Elemental", "Geopolitical"], "elemental_force": "fire", "convergence_signal": true},
+      "963-111": {"type": "hidden_layering", "confidence": 0.76, "domains": ["Geopolitical", "Cryptocurrency"], "elemental_force": "frequency", "convergence_signal": true},
+      "963-279": {"type": "hidden_layering", "confidence": 0.93, "domains": ["Military"], "elemental_force": "fire", "convergence_signal": true},
+      "55-111": {"type": "hidden_layering", "confidence": 0.75, "domains": ["Religious", "Political"], "elemental_force": "air", "convergence_signal": true},
+      "55-279": {"type": "hidden_layering", "confidence": 0.88, "domains": ["Religious", "Cryptocurrency"], "elemental_force": null, "convergence_signal": true},
+      "55-666": {"type": "hidden_layering", "confidence": 0.89, "domains": ["Cryptocurrency", "Geopolitical", "Academic"], "elemental_force": null, "convergence_signal": true},
+      "279-111": {"type": "hidden_layering", "confidence": 0.73, "domains": ["Cryptocurrency"], "elemental_force": null, "convergence_signal": true},
+      "279-666": {"type": "hidden_layering", "confidence": 0.77, "domains": ["AI_Advancement", "Elemental"], "elemental_force": null, "convergence_signal": true},
+      "111-666": {"type": "hidden_layering", "confidence": 0.88, "domains": ["Academic", "Military", "Religious"], "elemental_force": null, "convergence_signal": true}
+    }
+  },
+  "symbol_activation_patterns": {
+    "124": {"strategy": "PRIMARY", "use_cases": ["geopolitical_boundary_events", "volcanic_threshold_patterns", "sovereign_thresholds"]},
+    "963": {"strategy": "AVERAGE", "use_cases": ["air_activation_phrase_patterns", "communication_breath_cycles"]},
+    "279": {"strategy": "HIDDEN_LAYERS", "use_cases": ["fire_force_integration", "thermal_activation", "volcanic_energy"]},
+    "55": {"strategy": "MODERATE", "use_cases": ["international_diplomacy", "protocol_language", "formal_discourse"]},
+    "111": {"strategy": "HIDDEN_LAYERS", "use_cases": ["spirit_manifestation", "reality_construction", "intention_activation"]},
+    "666": {"strategy": "HIDDEN_LAYERS", "use_cases": ["completion_cycles", "wholeness_patterns", "resonance_states"]}
+  }
+}

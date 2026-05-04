@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/avalonas/.hermes/gematria/unified_overnight_research/run_overnight_research_loop.py", line 20, in <module>
+    import hermes_tools
+ModuleNotFoundError: No module named 'hermes_tools'

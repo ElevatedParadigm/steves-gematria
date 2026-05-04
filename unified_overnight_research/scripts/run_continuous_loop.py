@@ -10,11 +10,9 @@ import json
 import os
 import sys
 import time
-import random
 from datetime import datetime
 from pathlib import Path
 import subprocess
-import hashlib
 
 # Configuration
 REPO_PATH = Path("/home/avalonas/.hermes/gematria/unified_overnight_research")

@@ -1,8 +1,13 @@
 # =============================================================================
 # Visual Archive Export Lock Manager - Crontab Configuration
 # =============================================================================
+# 
+# This file contains cron schedules for monitoring and handling .git/index.lock
+# files during Visual Archive exports to prevent stale locks after interrupted runs.
+#
 # Install with: crontab -u avalonas < /home/avalonas/.hermes/gematria/unified_overnight_research/cron_export_locks
 # Edit with: crontab -e (user: avalonas) or sudo crontab -e (system-wide)
+#
 # =============================================================================
 
 # Environment variables
@@ -15,7 +20,7 @@ HOME=/home/avalonas
 # =============================================================================
 
 # Check for lock files BEFORE each Visual Archive export job (at start time)
-# 15 mins before scheduled exports
+# Run 15 minutes before scheduled exports to ensure clean state
 */15 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh check >> /home/avalonas/.hermes/cron/output/export-locks-check.log 2>&1
 
 # Safe cleanup AFTER each export job completes or if interrupted
@@ -28,18 +33,73 @@ HOME=/home/avalonas
 # 0 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh safe-cleanup -s visual_archive >> /home/avalonas/.hermes/cron/output/export-locks-cleanup.log 2>&1
 
 # =============================================================================
-# HEALTH CHECKS (Optional)
+# HEALTH CHECKS (Recommended)
 # =============================================================================
 
 # Run health check every 4 hours to monitor system status
+# This provides ongoing visibility into lock file status and repository health
 0 */4 * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh health >> /home/avalonas/.hermes/cron/output/export-locks-health.log 2>&1
 
+# More frequent monitoring (every hour) - uncomment if needed
+# 0 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh health >> /home/avalonas/.hermes/cron/output/export-locks-health.log 2>&1
+
 # =============================================================================
-# MANUAL INTERVENTION COMMANDS (Add to user's crontab or run manually)
+# ON-DEMAND INTERVENTION COMMANDS (Add to user's crontab or run manually)
 # =============================================================================
 
-# Quick cleanup check
+# Quick cleanup check - run every minute for tight loops
 # * * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh check >> /tmp/export-locks-check.log 2>&1
 
-# Immediate safe cleanup (add on-demand as needed)
+# Immediate safe cleanup - add on-demand as needed (e.g., after known interruptions)
 # */5 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh safe-cleanup >> /home/avalonas/.hermes/cron/output/export-locks-immediate.log 2>&1
+
+# =============================================================================
+# VISUAL ARCHIVE SPECIFIC MONITORING
+# =============================================================================
+
+# Monitor visual_archive subdirectory specifically
+# Run every hour for this heavy-processing subdirectory
+# 0 * * * * /home/avalonas/.hermes/gematria/unified_overnight_research/scripts/manage_export_locks.sh check -s visual_archive >> /home/avalonas/.hermes/cron/output/export-locks-visual-archive-check.log 2>&1
+
+# =============================================================================
+# LOG ROTATION AND CLEANUP (Recommended)
+# =============================================================================
+
+# Compress log files older than 7 days to prevent filesystem bloat
+# Run daily at 3 AM
+0 3 * * * find /home/avalonas/.hermes/cron/output -name "export-locks-*.log" -mtime +7 -exec gzip {} \; >> /dev/null 2>&1
+
+# Remove log files older than 30 days
+0 4 * * 0 find /home/avalonas/.hermes/cron/output -name "export-locks-*.log.gz" -mtime +30 -delete >> /dev/null 2>&1
+
+# =============================================================================
+# ERROR NOTIFICATION (Optional)
+# =============================================================================
+
+# Send alert if permission issues detected (check logs every 2 hours)
+0 */2 * * * if grep -q "permission_denied\|permission_error" /home/avalonas/.hermes/cron/output/export-locks-check.log 2>/dev/null; then echo "⚠️ Lock manager permission issue detected!" | mail -s "Lock Manager Alert" avalonas@localhost; fi
+
+# =============================================================================
+# MONITORING AND ALERTING
+# =============================================================================
+
+# Create daily summary report (optional)
+0 9 * * * /bin/bash -c 'echo "=== Export Lock Manager Daily Summary ==="; echo "Date: $(date +%Y-%m-%d)"; echo ""; grep -c "Removed stale lock" /home/avalonas/.hermes/cron/output/export-locks-check.log 2>/dev/null | xargs -I {} echo "Locks removed today: {}"; touch /home/avalonas/.hermes/cron/output/export-locks-summary.txt' >> /home/avalonas/.hermes/cron/output/export-locks-daily-summary.txt 2>&1
+
+# =============================================================================
+# NOTES AND BEST PRACTICES
+# =============================================================================
+
+# Check logs regularly:
+#   tail -f /home/avalonas/.hermes/cron/output/export-locks-check.log
+#   cat /home/avalonas/.hermes/cron/output/git_operations.log
+
+# Review database for detailed records:
+#   cat /home/avalonas/.hermes/gematria/unified_overnight_research/output/database/visual_archive_locks_log.json | python3 -m json.tool
+
+# Manual intervention commands (run when needed):
+#   sudo rm /path/to/.git/index.lock
+#   chmod 644 /path/to/.git/index.lock
+#   chown avalonas:avalonas /path/to/.git
+
+# See also: /home/avalonas/.hermes/gematria/unified_overnight_research/AGENTS.md for script documentation

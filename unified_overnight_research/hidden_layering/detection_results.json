@@ -1,0 +1,236 @@
+{
+  "124": {
+    "symbol_id": 124,
+    "symbol_name": "Universal Bridge / Threshold",
+    "detected_at": "2026-05-04T13:48:00.433347",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 8,
+        "strength_score": 0.911,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Military"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 5,
+        "strength_score": 0.69,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Political"
+      },
+      "layer_3_structural": {
+        "pattern_count": 1,
+        "strength_score": 0.622,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Elemental"
+      }
+    },
+    "overall_coherence": 0.741,
+    "integration_status": "active"
+  },
+  "963": {
+    "symbol_id": 963,
+    "symbol_name": "Air Activation Phrase",
+    "detected_at": "2026-05-04T13:48:00.433362",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 9,
+        "strength_score": 0.809,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Economic"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 3,
+        "strength_score": 0.858,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Military"
+      },
+      "layer_3_structural": {
+        "pattern_count": 3,
+        "strength_score": 0.739,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Elemental"
+      }
+    },
+    "overall_coherence": 0.802,
+    "integration_status": "active"
+  },
+  "55": {
+    "symbol_id": 55,
+    "symbol_name": "International Diplomacy",
+    "detected_at": "2026-05-04T13:48:00.433373",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 5,
+        "strength_score": 0.871,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Elemental"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 3,
+        "strength_score": 0.867,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Religious"
+      },
+      "layer_3_structural": {
+        "pattern_count": 4,
+        "strength_score": 0.714,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Religious"
+      }
+    },
+    "overall_coherence": 0.817,
+    "integration_status": "active"
+  },
+  "111": {
+    "symbol_id": 111,
+    "symbol_name": "Activation / Spirit Manifestation",
+    "detected_at": "2026-05-04T13:48:00.433380",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 5,
+        "strength_score": 0.776,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Military"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 5,
+        "strength_score": 0.68,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Elemental"
+      },
+      "layer_3_structural": {
+        "pattern_count": 2,
+        "strength_score": 0.617,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Elemental"
+      }
+    },
+    "overall_coherence": 0.691,
+    "integration_status": "active"
+  },
+  "279": {
+    "symbol_id": 279,
+    "symbol_name": "Fire Force Integration",
+    "detected_at": "2026-05-04T13:48:00.433385",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 7,
+        "strength_score": 0.836,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Religious"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 6,
+        "strength_score": 0.764,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Political"
+      },
+      "layer_3_structural": {
+        "pattern_count": 2,
+        "strength_score": 0.678,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Elemental"
+      }
+    },
+    "overall_coherence": 0.759,
+    "integration_status": "active"
+  },
+  "666": {
+    "symbol_id": 666,
+    "symbol_name": "Completion / Wholeness Cycles",
+    "detected_at": "2026-05-04T13:48:00.433393",
+    "layers": {
+      "layer_1_surface": {
+        "pattern_count": 6,
+        "strength_score": 0.796,
+        "keywords_detected": [
+          "surface",
+          "primary",
+          "direct"
+        ],
+        "dominant_domain": "Economic"
+      },
+      "layer_2_resonance": {
+        "pattern_count": 6,
+        "strength_score": 0.827,
+        "keywords_detected": [
+          "resonant",
+          "echoing",
+          "associative"
+        ],
+        "dominant_domain": "Political"
+      },
+      "layer_3_structural": {
+        "pattern_count": 4,
+        "strength_score": 0.694,
+        "keywords_detected": [
+          "archetypal",
+          "structural",
+          "integrated"
+        ],
+        "dominant_domain": "Elemental"
+      }
+    },
+    "overall_coherence": 0.772,
+    "integration_status": "active"
+  }
+}

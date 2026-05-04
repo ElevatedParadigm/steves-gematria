@@ -139,7 +139,7 @@ class HeatmapGenerator:
             return "*No force-domain correlations computed*"
         
         matrix_lines = []
-        header = "     " + "    ".join([f[:3].upper():>8] for f in forces))
+        header = "     " + "    ".join("{:>8}".format(f[:3].upper()) for f in forces)
         matrix_lines.append(header)
         
         for domain in domains:

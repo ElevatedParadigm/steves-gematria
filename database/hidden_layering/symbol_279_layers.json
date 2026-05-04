@@ -1,0 +1,38 @@
+{
+  "1": {
+    "layer_number": 1,
+    "theme_modifier": "",
+    "confidence": 0.8,
+    "pattern_strength_score": 0.716,
+    "symbol_keying_active": true,
+    "hidden_concepts": [
+      "279 resonance field 1",
+      "threshold crossing at layer 1",
+      "elemental force convergence layer 1"
+    ]
+  },
+  "2": {
+    "layer_number": 2,
+    "theme_modifier": "shadowed",
+    "confidence": 0.729,
+    "pattern_strength_score": 0.649,
+    "symbol_keying_active": false,
+    "hidden_concepts": [
+      "279 resonance field 2",
+      "threshold crossing at layer 2",
+      "elemental force convergence layer 2"
+    ]
+  },
+  "3": {
+    "layer_number": 3,
+    "theme_modifier": "reflected",
+    "confidence": 0.783,
+    "pattern_strength_score": 0.679,
+    "symbol_keying_active": false,
+    "hidden_concepts": [
+      "279 resonance field 3",
+      "threshold crossing at layer 3",
+      "elemental force convergence layer 3"
+    ]
+  }
+}
